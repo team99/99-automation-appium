@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_Support">
+        <methods>
+          <include name="Test_Regression_Pre_TestCases_Support"/>
+        </methods>
+      </class> <!-- com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_Support -->
+      <class name="com.telkomsel.android.vmp.test.Group2_Regression_PostLoginBrowseFlow_ContentPlayback">
+        <methods>
+          <include name="test_Group2_Regression_PostLoginBrowseFlow_ContentPlayback"/>
+        </methods>
+      </class> <!-- com.telkomsel.android.vmp.test.Group2_Regression_PostLoginBrowseFlow_ContentPlayback -->
+      <class name="com.telkomsel.android.vmp.test.Group2_Regression_PostLoginBrowseFlow_GenrePreference">
+        <methods>
+          <include name="Test_Regression_PostLoginBrowseFlow_GenrePreference"/>
+        </methods>
+      </class> <!-- com.telkomsel.android.vmp.test.Group2_Regression_PostLoginBrowseFlow_GenrePreference -->
+      <class name="com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_TnC">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_TnC -->
+      <class name="com.telkomsel.android.vmp.test.Group1_Regression_PreLoginBrowseFlow_Nickelodeon">
+        <methods>
+          <include name="Test_Group1_Regression_PreBrowse_Nickelodeon"/>
+        </methods>
+      </class> <!-- com.telkomsel.android.vmp.test.Group1_Regression_PreLoginBrowseFlow_Nickelodeon -->
+      <class name="com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_Search">
+        <methods>
+          <include name="Test_Regression_Pre_TestCases_Search"/>
+        </methods>
+      </class> <!-- com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_Search -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
