@@ -21,7 +21,9 @@ public class Regression_Login extends Base_Test {
 		login = new Login(driver);
 		asl = new AssertEqual_List(driver);
 		
-		login.Click_HomeLogin();
+		
+		
+		login.Click_Home_Me();
 		login.Click_MeLogin();
 		
 		login.Click_Login();

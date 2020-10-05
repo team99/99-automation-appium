@@ -14,6 +14,7 @@ public class AssertEqual_List extends Base_Test {
 	}
 	
 	By Homepage_Text = By.xpath("//*[@text='Listings specially curated by 99 for a better home buying experience.']");
+	By Me_Edit = By.xpath("//*[@text='Edit']");
 	
 	//Homepage text 
 	public boolean Verify_HomepageText() {
@@ -21,6 +22,13 @@ public class AssertEqual_List extends Base_Test {
 		verify=driver.findElement(Homepage_Text).isDisplayed();
 		return verify;
 	}
+	
+	//This method to verify if the state is logged in 
+		public boolean Verify_LoggedIn() {
+			boolean verify=false;
+			verify=driver.findElement(Me_Edit).isDisplayed();
+			return verify;
+		}
 	
 	
 }
