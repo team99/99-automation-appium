@@ -5,11 +5,17 @@
     <classes>
       <class name="android.ninetynine.login.Regression_Login">
         <methods>
-          <include name="Regression_Login_Account"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- android.ninetynine.login.Regression_Login -->
+      <class name="android.ninetynine.login.Regression_Logout">
+        <methods>
+          <include name="Regression_Login_Account"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.login.Regression_Logout -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
