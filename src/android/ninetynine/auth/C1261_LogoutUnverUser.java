@@ -1,4 +1,4 @@
-package android.ninetynine.login;
+package android.ninetynine.auth;
 
 import static org.testng.Assert.assertEquals;
 
@@ -8,13 +8,13 @@ import org.testng.annotations.Test;
 import android.ninetynine.util.Base_Test;
 import android.ninetynine.pageobjects.*;
 
-public class Regression_Logout extends Base_Test {
+public class C1261_LogoutUnverUser extends Base_Test {
 	
 	private Login login;
-	private AssertEqual_List asl;
+	private AssertEqual_List asl; 
 	
 	@Test
-	public void Regression_Login_Account() throws Exception {
+	public void C1261_Logout_UnverUser() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);
@@ -25,6 +25,7 @@ public class Regression_Logout extends Base_Test {
 		
 		try {
 			assertEquals(asl.Verify_LoggedIn(), true, "Verify the homepage text");
+			
 			System.out.println("State : Logged in");
 			
 		} catch (Exception e){

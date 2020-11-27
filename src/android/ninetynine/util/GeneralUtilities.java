@@ -19,6 +19,8 @@ import org.testng.annotations.BeforeSuite;
 
 public class GeneralUtilities{
 	
+	By Me_Edit = By.xpath("//*[@text='Edit']");
+	
 	
 	Dimension size;
 	/*Activity change;*/
@@ -78,6 +80,21 @@ public class GeneralUtilities{
 		String a = driver.findElement(Object).getText();
 		return a;
 	}
+	
+	public boolean verifyLogin() {
+		boolean login=false;
+		
+		try {
+			login = driver.findElement(Me_Edit).isDisplayed();
+		} catch (Exception e) {
+			
+		}
+		
+		return login;
+		
+	}
+	
+	
 	
 	
 }
