@@ -16,6 +16,10 @@ public class AssertEqual_List extends Base_Test {
 	By Homepage_Text = By.xpath("//*[@text='Listings specially curated by 99 for a better home buying experience.']");
 	By Me_Edit = By.xpath("//*[@text='Edit']");
 	
+	//LDP
+	By ChatWithAgent = By.xpath("//*[@text='Chat with agent']");
+	By CWA_Success = By.xpath("//*[@text='Message sent!']");
+	
 	//Homepage text 
 	public boolean Verify_HomepageText() {
 		boolean verify=false;
@@ -30,6 +34,24 @@ public class AssertEqual_List extends Base_Test {
 			return verify;
 		}
 	
+		
+		
+	//LDP assert equal
+		//This method to verify 'chat enquire form displayed
+		public boolean Verify_ModalChatWithAgent() {
+			boolean verify=false;
+			verify=driver.findElement(ChatWithAgent).isDisplayed();
+			return verify;
+		}
+		
+		//LDP chat with agent success modal
+				//This method to verify success in chat with agent modal
+				public boolean Verify_SuccessModalChatWithAgent() {
+					boolean verify=false;
+					verify=driver.findElement(CWA_Success).isDisplayed();
+					return verify;
+				}
+		
 	
 }
 	

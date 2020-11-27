@@ -1,4 +1,4 @@
-package android.ninetynine.login;
+package android.ninetynine.auth;
 
 import static org.testng.Assert.assertEquals;
 
@@ -8,13 +8,13 @@ import org.testng.annotations.Test;
 import android.ninetynine.util.Base_Test;
 import android.ninetynine.pageobjects.*;
 
-public class Regression_Login extends Base_Test {
+public class C1259_LoginUnverUser extends Base_Test {
 	
 	private Login login;
 	private AssertEqual_List asl;
 	
 	@Test
-	public void Regression_Login_Account() throws Exception {
+	public void C1259_Login_UnverUser() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);
@@ -28,15 +28,15 @@ public class Regression_Login extends Base_Test {
 		
 		login.Click_Login();
 		
-		login.InputUsername(CONFIG.getProperty("AccUsername"));
-		login.InputPassword(CONFIG.getProperty("AccPassword"));
+		login.InputUsername(CONFIG.getProperty("Unver_Email"));
+		login.InputPassword(CONFIG.getProperty("Unver_Pass"));
 		
 		login.Click_ButtonLogin();
 		//login.Click_HomeSearch(); 
 		
 		wait_Med();
 		login.Click_ModalNotNow();
-		wait_Med();
+		wait_Long();
 		
 		try {
 			assertEquals(asl.Verify_HomepageText(), true, "Verify the homepage text");
