@@ -16,10 +16,19 @@ public class SearchResultPage extends Base_Test {
 
 		//SRP
 		By Srp_Listing = By.xpath("//*[@id='cvSearchListingViewContent']");
-		By Srp_Reg_Listing = By.xpath("//*[@id='cvSearchListingViewContent' and ./*[./*[./*[./*[@id='ivSearchResultPagePhoto']] and ./*[@id='ivSearchResultPageForRegularListing']]]]");
+		By Srp_Reg_Listing = By.xpath("//*[@id='cvSearchListingViewContent' and ./*[./*[./*[@id='ivSearchResultPageForRegularListing'] and ./*[@id='llSearchResultPagePhotoInfo']]]]");
 		
+		//Listing
+		By Srp_Button_Chat = By.xpath("//*[@text='Chat']");
+		By Srp_Button_Phone = By.xpath("//*[@id='ivSearchResultPageCall']");
 
-
+		//Call Agent Modal
+		By CA_Name = By.xpath("//*[@id='etConfirmEnquiryName']");
+		By CA_Phone = By.xpath("//*[@id='etPhone']");
+		By CA_Email = By.xpath("//*[@id='etConfirmEnquiryEmail']");
+		By CA_Button_Confirm = By.xpath("//*[@text='Verify & continue']");
+		
+		
 		//method below for click listing in SRP
 			public void Click_Srp_Ldp_List() throws Exception{
 				function.click(Srp_Listing);
@@ -29,6 +38,40 @@ public class SearchResultPage extends Base_Test {
 			public void Click_Srp_Reg_List() throws Exception{
 				function.click(Srp_Reg_Listing);
 			}
+			
+			//method below for click chat button in SRP
+			public void Click_Srp_BtChat() throws Exception{
+				function.click(Srp_Button_Chat);
+			}
+			
+			//method below for click chat button in SRP
+			public void Click_Srp_BtPhone() throws Exception{
+				function.click(Srp_Button_Phone);
+			}
+			
+			
+			//Call Agent Modal
+		//Chat with agent input name	
+			public void Ca_InputName(String ca_name) throws Exception { 
+				function.input(CA_Name, ca_name);
+			}
+			
+			//Chat with agent input phone	
+			public void Ca_InputPhone(String ca_phone) throws Exception { 
+				function.input(CA_Phone, ca_phone);
+			}
+			
+			//Chat with agent input email	
+			public void Ca_InputEmail(String ca_email) throws Exception { 
+				function.input(CA_Email, ca_email);
+			}
+			
+			//method below for click confirm button in SRP call
+			public void Click_CA_BtConfirm() throws Exception{
+				function.click(CA_Button_Confirm);
+			}
+			
+			
 			
 	
 		
