@@ -1,4 +1,4 @@
-package android.ninetynine.enquiry;
+package android.ninetynine.srp.enquiry;
 
 import static org.testng.Assert.assertEquals;
 
@@ -9,7 +9,7 @@ import android.ninetynine.util.Base_Test;
 import android.ninetynine.util.GeneralUtilities;
 import android.ninetynine.pageobjects.*;
 
-public class C1336_LDP_NoAcc_MustSee_ChatEnquiry extends Base_Test {
+public class C1040_SRP_Ver_MustSee_ChatEnquiry extends Base_Test {
 	
 	private Login login;
 	private AssertEqual_List asl;
@@ -19,7 +19,7 @@ public class C1336_LDP_NoAcc_MustSee_ChatEnquiry extends Base_Test {
 	private SearchResultPage srp;
 	
 	@Test
-	public void C1336_LDP_NoAcc_MustSee_Chat_Enquiry() throws Exception {
+	public void C1040_SRP_Ver_MustSee_Chat_Enquiry() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);
@@ -31,8 +31,8 @@ public class C1336_LDP_NoAcc_MustSee_ChatEnquiry extends Base_Test {
 		srp = new SearchResultPage(driver);
 			
 		
-		 System.out.println("TestCase : C1336");	
-		 System.out.println("Must See - Chat Enquiry for logged out and user has no account");	
+		 System.out.println("TestCase : C1040");	
+		 System.out.println("Must See - Chat Enquiry for logged out, verified user");	
 		 System.out.println("---------");		 
 		 System.out.println("#Given I am a logged-out, has no account user");
 		wait_Long();	
@@ -52,23 +52,14 @@ public class C1336_LDP_NoAcc_MustSee_ChatEnquiry extends Base_Test {
 		     wait_Med();
 		     
 		     
-		     //LDP search method in SRP
+		     System.out.println("#And I am on search page");
 //		     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
 			 ldp.Click_LdpSaleResult();
 			 
-			 
-			 srp.Click_Srp_Ldp_List();
-			 System.out.println("#And I am on Must see listing detail page");
-			 
-			
-			ldp.Click_BtEnquireNow();
-			System.out.println("#When click enquire now button");	
-			 
-			 
-			 
-			 ldp.Click_BtChatWithAgent();
-			 System.out.println("#And I click Chat with agent");	
-			 
+		
+			srp.Click_Srp_BtChat();
+			System.out.println("#When click chat button");	
+			  
 			 
 			 try {
 					assertEquals(asl.Verify_ModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
@@ -81,9 +72,9 @@ public class C1336_LDP_NoAcc_MustSee_ChatEnquiry extends Base_Test {
 				}
 			 
 			   System.out.println("#And the form will ask for my name, phone number, and email address"); 
-			   ldp.Cwa_InputName(CONFIG.getProperty("NoAcc_Name"));
-			   ldp.Cwa_InputPhone(CONFIG.getProperty("NoAcc_Phone"));
-			   ldp.Cwa_InputEmail(CONFIG.getProperty("NoAcc_Email"));
+			   ldp.Cwa_InputName(CONFIG.getProperty("Ver_Name"));
+			   ldp.Cwa_InputPhone(CONFIG.getProperty("Ver_Phone"));
+			   ldp.Cwa_InputEmail(CONFIG.getProperty("Ver_Name"));
 			 
 			   System.out.println("#And I send enquiry"); 
 			   ldp.Click_CWA_BtEnquireNow();
@@ -102,20 +93,14 @@ public class C1336_LDP_NoAcc_MustSee_ChatEnquiry extends Base_Test {
 				hp.Click_HomeSale();
 				wait_Med();			
 				
-			    //LDP search method in SRP
+			     System.out.println("#And I am on search page");
 //			     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
-				 ldp.Click_LdpSaleResult(); 
+				 ldp.Click_LdpSaleResult();
 				 
-				 srp.Click_Srp_Ldp_List(); 
-				 System.out.println("#And I am on Must see listing detail page");	
-				
-				 
-				 ldp.Click_BtEnquireNow();
-				 System.out.println("#When click enquire now button");	
-					
-				 ldp.Click_BtChatWithAgent();
-				 System.out.println("#And I click Chat with agent");	
-					
+			
+				srp.Click_Srp_BtChat();
+				System.out.println("#When click chat button");	
+
 				 
 				 try {
 						assertEquals(asl.Verify_ModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
@@ -128,10 +113,10 @@ public class C1336_LDP_NoAcc_MustSee_ChatEnquiry extends Base_Test {
 					}
 				 
 				   System.out.println("#And the form will ask for my name, phone number, and email address"); 
-				   ldp.Cwa_InputName(CONFIG.getProperty("NoAcc_Name"));
-				   ldp.Cwa_InputPhone(CONFIG.getProperty("NoAcc_Phone"));
-				   ldp.Cwa_InputEmail(CONFIG.getProperty("NoAcc_Email"));
-	
+				   ldp.Cwa_InputName(CONFIG.getProperty("Ver_Name"));
+				   ldp.Cwa_InputPhone(CONFIG.getProperty("Ver_Phone"));
+				   ldp.Cwa_InputEmail(CONFIG.getProperty("Ver_Name"));
+				   
 				   System.out.println("#And I send enquiry"); 
 				   ldp.Click_CWA_BtEnquireNow();
 				   

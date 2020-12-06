@@ -20,6 +20,9 @@ public class AssertEqual_List extends Base_Test {
 	By ChatWithAgent = By.xpath("//*[@text='Chat with agent']");
 	By CWA_Success = By.xpath("//*[@text='Message sent!']");
 	
+	//SRP
+	By CallAgent = By.xpath("//*[@text='Call agent']");
+	
 	//Homepage text 
 	public boolean Verify_HomepageText() {
 		boolean verify=false;
@@ -51,7 +54,14 @@ public class AssertEqual_List extends Base_Test {
 					verify=driver.findElement(CWA_Success).isDisplayed();
 					return verify;
 				}
-		
+				
+		//SRP assert equal
+		//This method to verify call agent enquire form displayed
+		public boolean Verify_ModalCallAgent() {
+		boolean verify=false;
+		verify=driver.findElement(CallAgent).isDisplayed();
+		return verify;
+				}
 	
 }
 	
