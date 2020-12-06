@@ -1,4 +1,4 @@
-package android.ninetynine.enquiry;
+package android.ninetynine.ldp.enquiry;
 
 import static org.testng.Assert.assertEquals;
 
@@ -9,7 +9,7 @@ import android.ninetynine.util.Base_Test;
 import android.ninetynine.util.GeneralUtilities;
 import android.ninetynine.pageobjects.*;
 
-public class C1337_LDP_Unver_MustSee_ChatEnquiry extends Base_Test {
+public class C1338_LDP_Ver_MustSee_ChatEnquiry extends Base_Test {
 	
 	private Login login;
 	private AssertEqual_List asl;
@@ -19,7 +19,7 @@ public class C1337_LDP_Unver_MustSee_ChatEnquiry extends Base_Test {
 	private SearchResultPage srp;
 	
 	@Test
-	public void C1337_LDP_Unver_MustSee_Chat_Enquiry() throws Exception {
+	public void C1338_LDP_Ver_MustSee_Chat_Enquiry() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);
@@ -31,8 +31,8 @@ public class C1337_LDP_Unver_MustSee_ChatEnquiry extends Base_Test {
 		srp = new SearchResultPage(driver);
 			
 		
-		 System.out.println("TestCase : C1337");	
-		 System.out.println("Must See - Chat Enquiry for logged out, unverified user");	
+		 System.out.println("TestCase : C1338");	
+		 System.out.println("Must See - Chat Enquiry for logged out, verified user");	
 		 System.out.println("---------");		 
 		 System.out.println("#Given I am a logged-out, has no account user");
 		wait_Long();	
@@ -81,9 +81,9 @@ public class C1337_LDP_Unver_MustSee_ChatEnquiry extends Base_Test {
 				}
 			 
 			   System.out.println("#And the form will ask for my name, phone number, and email address"); 
-			   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
-			   ldp.Cwa_InputPhone(CONFIG.getProperty("NoAcc_Phone"));
-			   ldp.Cwa_InputEmail(CONFIG.getProperty("NoAcc_Email"));
+			   ldp.Cwa_InputName(CONFIG.getProperty("Ver_Name"));
+			   ldp.Cwa_InputPhone(CONFIG.getProperty("Ver_Phone"));
+			   ldp.Cwa_InputEmail(CONFIG.getProperty("Ver_Email"));
 			 
 			   System.out.println("#And I send enquiry"); 
 			   ldp.Click_CWA_BtEnquireNow();
@@ -128,9 +128,9 @@ public class C1337_LDP_Unver_MustSee_ChatEnquiry extends Base_Test {
 					}
 				 
 				   System.out.println("#And the form will ask for my name, phone number, and email address"); 
-				   ldp.Cwa_InputName(CONFIG.getProperty("NoAcc_Name"));
-				   ldp.Cwa_InputPhone(CONFIG.getProperty("NoAcc_Phone"));
-				   ldp.Cwa_InputEmail(CONFIG.getProperty("NoAcc_Email"));
+				   ldp.Cwa_InputName(CONFIG.getProperty("Ver_Name"));
+				   ldp.Cwa_InputPhone(CONFIG.getProperty("Ver_Phone"));
+				   ldp.Cwa_InputEmail(CONFIG.getProperty("Ver_Email"));
 	
 				   System.out.println("#And I send enquiry"); 
 				   ldp.Click_CWA_BtEnquireNow();

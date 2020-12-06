@@ -1,4 +1,4 @@
-package android.ninetynine.enquiry;
+package android.ninetynine.ldp.enquiry;
 
 import static org.testng.Assert.assertEquals;
 
@@ -34,7 +34,7 @@ public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 		 System.out.println("TestCase : C1340");	
 		 System.out.println("Must See - Chat Enquiry for logged in, verified user");	
 		 System.out.println("---------");		 
-		 System.out.println("#Given I am a logged-out, has no account user");
+		 System.out.println("#Given I am a logged-in, verified user");
 		wait_Long();	
 		login.Click_Home_Me();
 				
@@ -59,7 +59,6 @@ public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 		     wait_Long();
 	     
 		     //LDP search method in SRP
-//		     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
 		     hp.Click_HomeSale();
 		     wait_Med();			
 		     ldp.Click_LdpSaleResult();
@@ -127,7 +126,6 @@ public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 				
 			    //LDP search method in SRP
 //			     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
-			     hp.Click_HomeSale();
 			     wait_Med();
 				 ldp.Click_LdpSaleResult(); 
 				 
