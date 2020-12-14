@@ -73,7 +73,7 @@ public class C1045_SRP_Unver_MustSee_PhoneEnquiry extends Base_Test {
 			 
 			   System.out.println("#And the form will ask for my name, phone number, and email address"); 
 			   srp.Ca_InputName(CONFIG.getProperty("Unver_Name"));
-			   srp.Ca_InputPhone(CONFIG.getProperty("Unver_Phone"));
+			   srp.Ca_InputPhone(CONFIG.getProperty("EnqPhone_Unver_Phone"));
 			   srp.Ca_InputEmail(CONFIG.getProperty("Unver_Email"));
 			 
 			   System.out.println("#And I send enquiry"); 
@@ -115,7 +115,7 @@ public class C1045_SRP_Unver_MustSee_PhoneEnquiry extends Base_Test {
 				 
 				   System.out.println("#And the form will ask for my name, phone number, and email address"); 
 				   srp.Ca_InputName(CONFIG.getProperty("Unver_Name"));
-				   srp.Ca_InputPhone(CONFIG.getProperty("Unver_Phone"));
+				   srp.Ca_InputPhone(CONFIG.getProperty("EnqPhone_Unver_Phone"));
 				   srp.Ca_InputEmail(CONFIG.getProperty("Unver_Email"));
 					 
 				   System.out.println("#And I send enquiry"); 

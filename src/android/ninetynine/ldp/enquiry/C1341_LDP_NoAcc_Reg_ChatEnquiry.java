@@ -29,7 +29,7 @@ public class C1341_LDP_NoAcc_Reg_ChatEnquiry extends Base_Test {
 		util = new GeneralUtilities(driver);
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
-			
+		
 		
 		 System.out.println("TestCase : C1341");	
 		 System.out.println("Regular - Chat Enquiry for logged out and user has no account");	
@@ -60,15 +60,11 @@ public class C1341_LDP_NoAcc_Reg_ChatEnquiry extends Base_Test {
 			 srp.Click_Srp_Reg_List();
 			 System.out.println("#And I am on Regular listing detail page");
 			 
-			
 			ldp.Click_BtEnquireNow();
 			System.out.println("#When click enquire now button");	
 			 
-			 
-			 
 			 ldp.Click_BtChatWithAgent();
 			 System.out.println("#And I click Chat with agent");	
-			 
 			 
 			 try {
 					assertEquals(asl.Verify_ModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
@@ -89,7 +85,7 @@ public class C1341_LDP_NoAcc_Reg_ChatEnquiry extends Base_Test {
 			   ldp.Click_CWA_BtEnquireNow();
 			   
 			   System.out.println("#And I verify phone number"); 
-			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
+			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otpnoacc"));
 			   ldp.Click_BtCWABtConfirm();
 			   
 			   try {
@@ -144,7 +140,7 @@ public class C1341_LDP_NoAcc_Reg_ChatEnquiry extends Base_Test {
 				   ldp.Click_CWA_BtEnquireNow();
 				   
 				   System.out.println("#And I verify phone number"); 
-				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
+				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otpnoacc"));
 				   ldp.Click_BtCWABtConfirm();
 				   
 				   try {

@@ -72,7 +72,7 @@ public class C1046_SRP_Ver_MustSee_PhoneEnquiry extends Base_Test {
 				}
 			 
 			   System.out.println("#And the form will ask for my name, phone number, and email address"); 
-			   srp.Ca_InputName(CONFIG.getProperty("ver_Name"));
+			   srp.Ca_InputName(CONFIG.getProperty("Ver_Name"));
 			   srp.Ca_InputPhone(CONFIG.getProperty("Ver_Phone"));
 			   srp.Ca_InputEmail(CONFIG.getProperty("Ver_Email"));
 			 
@@ -114,7 +114,7 @@ public class C1046_SRP_Ver_MustSee_PhoneEnquiry extends Base_Test {
 					}
 				 
 				   System.out.println("#And the form will ask for my name, phone number, and email address"); 
-				   srp.Ca_InputName(CONFIG.getProperty("ver_Name"));
+				   srp.Ca_InputName(CONFIG.getProperty("Ver_Name"));
 				   srp.Ca_InputPhone(CONFIG.getProperty("Ver_Phone"));
 				   srp.Ca_InputEmail(CONFIG.getProperty("Ver_Email"));
 						 
@@ -123,13 +123,9 @@ public class C1046_SRP_Ver_MustSee_PhoneEnquiry extends Base_Test {
 				   
 //				   System.out.println("#And I verify phone number"); 
 //				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
-//			
-//				   
 //				   ldp.Click_BtCWABtConfirm();
-//				 
-			
+			 		
 		}
-		
 		 
 		wait_Med();
 		
