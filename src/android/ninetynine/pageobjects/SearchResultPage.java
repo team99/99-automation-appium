@@ -27,6 +27,12 @@ public class SearchResultPage extends Base_Test {
 		By CA_Phone = By.xpath("//*[@id='etPhone']");
 		By CA_Email = By.xpath("//*[@id='etConfirmEnquiryEmail']");
 		By CA_Button_Confirm = By.xpath("//*[@text='Verify & continue']");
+		By CA_ContinueToCall = By.xpath("//*[@text='Continue to Call']");
+		
+		//method below for click Continue To Call Agent button in SRP
+		public void Click_ContCallAgent() throws Exception{
+			function.click(CA_ContinueToCall);
+		}
 		
 		
 		//method below for click listing in SRP
