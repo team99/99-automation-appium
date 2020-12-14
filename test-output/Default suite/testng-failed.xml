@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="android.ninetynine.srp.enquiry.C742_SRP_NoAcc_MustSee_PhoneEnquiry">
+      <class name="android.ninetynine.createlisting.C1406_CreateListing_MustSee_Condo">
         <methods>
           <include name="tearDown"/>
-          <include name="C742_SRP_NoAcc_MustSee_Phone_Enquiry"/>
+          <include name="C1406_CreateListing_MustSeeCondo"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- android.ninetynine.srp.enquiry.C742_SRP_NoAcc_MustSee_PhoneEnquiry -->
+      </class> <!-- android.ninetynine.createlisting.C1406_CreateListing_MustSee_Condo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
