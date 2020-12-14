@@ -23,7 +23,14 @@ public class Landing_Page extends Base_Test {
 		
 		
 		//LDP Sale Search Must See
-		By Ldp_Seach_Sale = By.xpath("//*[@text='Pollen & Bleu' and @id='tvSearchTitle']");
+		By Ldp_Seach_Sale = By.xpath("//*[@text='Anywhere in Singapore']");
+		By Ldp_Input_Search = By.xpath("//*[@id='tvSearchResultPageSearchTitle']");
+		By Ldp_Search_Result = By.xpath("//*[@class='android.view.View' and ./parent::*[@id='flAutoComplete'] and (./preceding-sibling::* | ./following-sibling::*)[@text='Pollen & Bleu']]");
+		
+		//LDP Sale Search Regular
+		By Ldp_Search_Regular = By.xpath("//*[@class='android.widget.LinearLayout' and ./*[@text='Pollen & Bleu']]");
+	
+		
 		
 		//LDP Chat With Agent Modal
 		By CWA_Name = By.xpath("//*[@id='etName']");
@@ -38,6 +45,10 @@ public class Landing_Page extends Base_Test {
 				function.click(Ldp_Seach_Sale);
 			}
 			
+			//method below for click ldp search regular
+			public void Click_LdpSearchReg() throws Exception{
+				function.click(Ldp_Search_Regular);
+			}
 			
 			//method below for click enquire now button
 			public void Click_BtEnquireNow() throws Exception{
@@ -54,6 +65,10 @@ public class Landing_Page extends Base_Test {
 				function.click(CWA_Button_Confirm);
 			}
 			
+			//method below for click home
+			public void Click_LdpSearchResult() throws Exception{
+				function.click(Ldp_Search_Result);
+			}
 			
 
 
@@ -88,6 +103,14 @@ public class Landing_Page extends Base_Test {
 			public void Cwa_Input_Otp(String cwa_otp) throws Exception { 
 				function.input(CWA_Confirm_Phone, cwa_otp);
 			}
+			
+			
+			
+			//Input LDP search
+			public void Input_Ldp_Search(String input_search) throws Exception { 
+				function.input(Ldp_Input_Search, input_search);
+			}
+			
 			
 
 		

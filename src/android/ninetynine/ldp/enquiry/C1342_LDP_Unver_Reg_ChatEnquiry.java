@@ -50,12 +50,11 @@ public class C1342_LDP_Unver_Reg_ChatEnquiry extends Base_Test {
 		     wait_Long();		     
 		 	 hp.Click_HomeSale();		     
 		     wait_Med();
-		     
-		     
-		     //LDP search method in SRP
-//		     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
-			 ldp.Click_LdpSaleResult();
-//			 driver.swipe(130, -57, 84, 593, -57);
+		    
+			   ldp.Click_LdpSearchReg();			 
+			   driver.swipe(620, 1114, 604, 235, 2845);
+			   srp.Click_Srp_Reg_List();
+			 
 			 driver.swipe(620, 1114, 604, 235, 2845);
 			 srp.Click_Srp_Reg_List();
 			 System.out.println("#And I am on Regular listing detail page");
@@ -110,11 +109,10 @@ public class C1342_LDP_Unver_Reg_ChatEnquiry extends Base_Test {
 				hp.Click_HomeSale();
 				wait_Med();			
 				
-			    //LDP search method in SRP
-//			     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
-				 ldp.Click_LdpSaleResult(); 
-				 driver.swipe(620, 1114, 604, 235, 2845);
-				 srp.Click_Srp_Reg_List();
+
+				   ldp.Click_LdpSearchReg();			 
+				   driver.swipe(620, 1114, 604, 235, 2845);
+				   srp.Click_Srp_Reg_List();
 				 System.out.println("#And I am on Regular listing detail page");	
 				
 				 

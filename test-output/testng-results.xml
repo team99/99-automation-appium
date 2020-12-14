@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="101315" started-at="2020-12-06T20:15:45Z" finished-at="2020-12-06T20:17:26Z">
+  <suite name="Default suite" duration-ms="235325" started-at="2020-12-11T17:32:38Z" finished-at="2020-12-11T17:36:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="101315" started-at="2020-12-06T20:15:45Z" finished-at="2020-12-06T20:17:26Z">
-      <class name="android.ninetynine.srp.enquiry.C742_SRP_NoAcc_MustSee_PhoneEnquiry">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:android.ninetynine.srp.enquiry.C742_SRP_NoAcc_MustSee_PhoneEnquiry@1794d431]" name="setUp" is-config="true" duration-ms="9365" started-at="2020-12-07T04:15:45Z" finished-at="2020-12-07T04:15:54Z">
+    <test name="Default test" duration-ms="235325" started-at="2020-12-11T17:32:38Z" finished-at="2020-12-11T17:36:33Z">
+      <class name="android.ninetynine.createlisting.C1406_CreateListing_MustSee_Condo">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:android.ninetynine.createlisting.C1406_CreateListing_MustSee_Condo@96def03]" name="setUp" is-config="true" duration-ms="10043" started-at="2020-12-12T01:32:38Z" finished-at="2020-12-12T01:32:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="C742_SRP_NoAcc_MustSee_Phone_Enquiry()[pri:0, instance:android.ninetynine.srp.enquiry.C742_SRP_NoAcc_MustSee_PhoneEnquiry@1794d431]" name="C742_SRP_NoAcc_MustSee_Phone_Enquiry" duration-ms="82126" started-at="2020-12-07T04:15:54Z" finished-at="2020-12-07T04:17:16Z">
+        <test-method status="PASS" signature="C1406_CreateListing_MustSeeCondo()[pri:0, instance:android.ninetynine.createlisting.C1406_CreateListing_MustSee_Condo@96def03]" name="C1406_CreateListing_MustSeeCondo" duration-ms="215450" started-at="2020-12-12T01:32:48Z" finished-at="2020-12-12T01:36:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- C742_SRP_NoAcc_MustSee_Phone_Enquiry -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:android.ninetynine.srp.enquiry.C742_SRP_NoAcc_MustSee_PhoneEnquiry@1794d431]" name="tearDown" is-config="true" duration-ms="9804" started-at="2020-12-07T04:17:16Z" finished-at="2020-12-07T04:17:26Z">
+        </test-method> <!-- C1406_CreateListing_MustSeeCondo -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:android.ninetynine.createlisting.C1406_CreateListing_MustSee_Condo@96def03]" name="tearDown" is-config="true" duration-ms="9785" started-at="2020-12-12T01:36:23Z" finished-at="2020-12-12T01:36:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- android.ninetynine.srp.enquiry.C742_SRP_NoAcc_MustSee_PhoneEnquiry -->
+      </class> <!-- android.ninetynine.createlisting.C1406_CreateListing_MustSee_Condo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

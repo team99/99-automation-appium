@@ -16,6 +16,13 @@ public class Homepage extends Base_Test {
 
 	By Home_Sale = By.xpath("(//*[@id='rvHSWidgetsHorizontalGridView']/*/*[@id='ivAgentItemIcon'])[1]");
 	By Home_Page = By.xpath("//*[@id='llHomeScreenBottomBar']");
+	By Home_MyListings = By.xpath("//*[@id='llMyListingBottomBar']");
+	By NotNow = By.xpath("//*[@text='Not Now']");
+	
+	//method below for click not now in homepage
+			public void Click_NotNow() throws Exception{
+				function.click(NotNow);
+			}
 	
 	//method below for click sale in home
 		public void Click_HomeSale() throws Exception{
@@ -25,6 +32,11 @@ public class Homepage extends Base_Test {
 		//method below for click home
 		public void Click_Homepage() throws Exception{
 			function.click(Home_Page);
+		}
+		
+		//method below for click my listings
+		public void Click_MyListings() throws Exception{
+			function.click(Home_MyListings);
 		}
 		
 }

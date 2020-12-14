@@ -82,9 +82,9 @@ public class C1337_LDP_Unver_MustSee_ChatEnquiry extends Base_Test {
 			 
 			   System.out.println("#And the form will ask for my name, phone number, and email address"); 
 			   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
-			   ldp.Cwa_InputPhone(CONFIG.getProperty("NoAcc_Phone"));
-			   ldp.Cwa_InputEmail(CONFIG.getProperty("NoAcc_Email"));
-			 
+			   ldp.Cwa_InputPhone(CONFIG.getProperty("Unver_Phone"));
+			   ldp.Cwa_InputEmail(CONFIG.getProperty("Unver_Email"));
+			   
 			   System.out.println("#And I send enquiry"); 
 			   ldp.Click_CWA_BtEnquireNow();
 			   
@@ -128,9 +128,9 @@ public class C1337_LDP_Unver_MustSee_ChatEnquiry extends Base_Test {
 					}
 				 
 				   System.out.println("#And the form will ask for my name, phone number, and email address"); 
-				   ldp.Cwa_InputName(CONFIG.getProperty("NoAcc_Name"));
-				   ldp.Cwa_InputPhone(CONFIG.getProperty("NoAcc_Phone"));
-				   ldp.Cwa_InputEmail(CONFIG.getProperty("NoAcc_Email"));
+				   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
+				   ldp.Cwa_InputPhone(CONFIG.getProperty("Unver_Phone"));
+				   ldp.Cwa_InputEmail(CONFIG.getProperty("Unver_Email"));
 	
 				   System.out.println("#And I send enquiry"); 
 				   ldp.Click_CWA_BtEnquireNow();
