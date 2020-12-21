@@ -4,12 +4,14 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.FileInputStream;
 import java.util.Properties;
+
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import android.ninetynine.util.Base_Test;
 import android.ninetynine.util.GeneralUtilities;
 import android.ninetynine.pageobjects.*;
 
-public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
+public class C1350_Ldp_LoginVer_MustSee_PhoneEnquiry extends Base_Test {
 	
 	private Login login;
 	private AssertEqual_List asl;
@@ -19,7 +21,7 @@ public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 	private SearchResultPage srp;
 	
 	@Test
-	public void C1340_LDP_LoginVer_MustSee_Chat_Enquiry() throws Exception {
+	public void C1350_Ldp_LoginVer_MustSee_Phone_Enquiry() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);
@@ -31,8 +33,8 @@ public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 		srp = new SearchResultPage(driver);
 			
 		
-		 System.out.println("TestCase : C1340");	
-		 System.out.println("Must See - Chat Enquiry for logged in, verified user");	
+		 System.out.println("TestCase : C1350");	
+		 System.out.println("Must See - Phone Enquiry for logged in, verified user");	
 		 System.out.println("---------");		 
 		 System.out.println("#Given I am a logged-in, verified user");
 		wait_Long();	
@@ -64,43 +66,27 @@ public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 		     ldp.Click_LdpSaleResult();
 			 
 			 
-			 srp.Click_Srp_Ldp_List();
+			 srp.Click_Srp_Ldp_MustSeeList();
 			 System.out.println("#And I am on Must see listing detail page");
 			 
 			
-			ldp.Click_BtEnquireNow();
-			System.out.println("#When click enquire now button");	
-			 
-			 
-			 
-			 ldp.Click_BtChatWithAgent();
-			 System.out.println("#And I click Chat with agent");	
-			 
-			 
-			 try {
-					assertEquals(asl.Verify_ModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
-					System.out.println("State : Chat Enquiry Form displayed as expected");
+			ldp.Click_BtPhone();
+			System.out.println("#When click Call button in sticky bar");	
+			
+			try {
+					assertEquals(asl.Verify_ModalCallAgent(), true, "#And the Chat enquiry form should display as expected");
+					System.out.println("State : Call Enquiry Form displayed as expected");
 					
 				} catch (Exception e){
 							
-					System.out.println("State : Chat Enquiry For Not Shown as expected");
+					System.out.println("State : Call Enquiry For Not Shown as expected");
 					
 				}
 
 			 
 			   System.out.println("#And I send enquiry"); 
-			   ldp.Click_CWA_BtEnquireNow();
-			   
-			   
-			   try {
-					assertEquals(asl.Verify_SuccessModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
-					System.out.println("State : Send Enquiry success as expected");
-					
-				} catch (Exception e){
-							
-					System.out.println("State : Send Enquiry not success");
-					
-				}
+			   ldp.Click_Bt_ContToCall();
+
 
 		} else {
 			
@@ -121,42 +107,25 @@ public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 			     wait_Med();
 				 ldp.Click_LdpSaleResult(); 
 				 
-				 srp.Click_Srp_Ldp_List(); 
+				 srp.Click_Srp_Ldp_MustSeeList(); 
 				 System.out.println("#And I am on Must see listing detail page");	
 				
-				 
-				 ldp.Click_BtEnquireNow();
-				 System.out.println("#When click enquire now button");	
 					
-				 ldp.Click_BtChatWithAgent();
-				 System.out.println("#And I click Chat with agent");	
-					
-				 
+				ldp.Click_BtPhone();
+				System.out.println("#When click Call button in sticky bar");	
+			
 				 try {
-						assertEquals(asl.Verify_ModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
-						System.out.println("State : Chat Enquiry Form displayed as expected");
+						assertEquals(asl.Verify_ModalCallAgent(), true, "#And the Chat enquiry form should display as expected");
+						System.out.println("State : Call Enquiry Form displayed as expected");
 						
 					} catch (Exception e){
 								
-						System.out.println("State : Chat Enquiry For Not Shown as expected");
+						System.out.println("State : Call Enquiry For Not Shown as expected");
 						
-					}
-				 
+					}		 
 	
 				   System.out.println("#And I send enquiry"); 
-				   ldp.Click_CWA_BtEnquireNow();
-				   
-				   try {
-						assertEquals(asl.Verify_SuccessModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
-						System.out.println("State : Send Enquiry success as expected");
-						
-					} catch (Exception e){
-								
-						System.out.println("State : Send Enquiry not success");
-						
-					}
-
-				 
+				   ldp.Click_Bt_ContToCall();
 			
 		}
 		

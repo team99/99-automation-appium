@@ -82,14 +82,14 @@ public class C1337_LDP_Unver_MustSee_ChatEnquiry extends Base_Test {
 			 
 			   System.out.println("#And the form will ask for my name, phone number, and email address"); 
 			   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
-			   ldp.Cwa_InputPhone(CONFIG.getProperty("Unver_Phone"));
+			   ldp.Cwa_InputPhone(CONFIG.getProperty("UnverID_Phone"));
 			   ldp.Cwa_InputEmail(CONFIG.getProperty("Unver_Email"));
 			   
 			   System.out.println("#And I send enquiry"); 
 			   ldp.Click_CWA_BtEnquireNow();
 			   
 			   System.out.println("#And I verify phone number"); 
-			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
+			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp_unverID"));
 		
 			   
 			   ldp.Click_BtCWABtConfirm();
@@ -129,14 +129,14 @@ public class C1337_LDP_Unver_MustSee_ChatEnquiry extends Base_Test {
 				 
 				   System.out.println("#And the form will ask for my name, phone number, and email address"); 
 				   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
-				   ldp.Cwa_InputPhone(CONFIG.getProperty("Unver_Phone"));
+				   ldp.Cwa_InputPhone(CONFIG.getProperty("UnverID_Phone"));
 				   ldp.Cwa_InputEmail(CONFIG.getProperty("Unver_Email"));
 	
 				   System.out.println("#And I send enquiry"); 
 				   ldp.Click_CWA_BtEnquireNow();
 				   
 				   System.out.println("#And I verify phone number"); 
-				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
+				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp_unverID"));
 					
 				   ldp.Click_BtCWABtConfirm();
 				 

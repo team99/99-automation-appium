@@ -4,12 +4,14 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.FileInputStream;
 import java.util.Properties;
+
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import android.ninetynine.util.Base_Test;
 import android.ninetynine.util.GeneralUtilities;
 import android.ninetynine.pageobjects.*;
 
-public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
+public class C1349_Ldp_LoginUnver_MustSee_PhoneEnquiry extends Base_Test {
 	
 	private Login login;
 	private AssertEqual_List asl;
@@ -19,7 +21,7 @@ public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 	private SearchResultPage srp;
 	
 	@Test
-	public void C1340_LDP_LoginVer_MustSee_Chat_Enquiry() throws Exception {
+	public void C1349_Ldp_LoginUnver_MustSee_Phone_Enquiry() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);
@@ -31,10 +33,10 @@ public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 		srp = new SearchResultPage(driver);
 			
 		
-		 System.out.println("TestCase : C1340");	
-		 System.out.println("Must See - Chat Enquiry for logged in, verified user");	
+		 System.out.println("TestCase : C1349");	
+		 System.out.println("Must See - Phone Enquiry for logged in, unverified user");	
 		 System.out.println("---------");		 
-		 System.out.println("#Given I am a logged-in, verified user");
+		 System.out.println("#Given I am a logged-in, unverified user");
 		wait_Long();	
 		login.Click_Home_Me();
 				
@@ -53,8 +55,8 @@ public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 		     login.Click_Home_Me();
 			 login.Click_MeLogin();
 			 login.Click_Login();
-			 login.InputUsername(CONFIG.getProperty("Ver_Email"));
-			 login.InputPassword(CONFIG.getProperty("Ver_Pass"));
+			 login.InputUsername(CONFIG.getProperty("Unver_Email"));
+			 login.InputPassword(CONFIG.getProperty("Unver_Pass"));
 			 login.Click_ButtonLogin(); 
 		     wait_Long();
 	     
@@ -68,39 +70,27 @@ public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 			 System.out.println("#And I am on Must see listing detail page");
 			 
 			
-			ldp.Click_BtEnquireNow();
-			System.out.println("#When click enquire now button");	
-			 
-			 
-			 
-			 ldp.Click_BtChatWithAgent();
-			 System.out.println("#And I click Chat with agent");	
-			 
-			 
-			 try {
-					assertEquals(asl.Verify_ModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
-					System.out.println("State : Chat Enquiry Form displayed as expected");
+			ldp.Click_BtPhone();
+			System.out.println("#When click Call button in sticky bar");	
+			
+			try {
+					assertEquals(asl.Verify_ModalCallAgent(), true, "#And the Chat enquiry form should display as expected");
+					System.out.println("State : Call Enquiry Form displayed as expected");
 					
 				} catch (Exception e){
 							
-					System.out.println("State : Chat Enquiry For Not Shown as expected");
+					System.out.println("State : Call Enquiry For Not Shown as expected");
 					
 				}
 
 			 
 			   System.out.println("#And I send enquiry"); 
-			   ldp.Click_CWA_BtEnquireNow();
+			   srp.Click_CA_BtConfirm();
 			   
-			   
-			   try {
-					assertEquals(asl.Verify_SuccessModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
-					System.out.println("State : Send Enquiry success as expected");
-					
-				} catch (Exception e){
-							
-					System.out.println("State : Send Enquiry not success");
-					
-				}
+			   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys("191220");
+				
+				
+
 
 		} else {
 			
@@ -109,8 +99,8 @@ public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 				login.Click_Home_Me();
 				login.Click_MeLogin();
 				login.Click_Login();
-				login.InputUsername(CONFIG.getProperty("Ver_Email"));
-				login.InputPassword(CONFIG.getProperty("Ver_Pass"));
+				login.InputUsername(CONFIG.getProperty("Unver_Email"));
+				login.InputPassword(CONFIG.getProperty("Unver_Pass"));
 				login.Click_ButtonLogin();
 				
 				wait_Long();
@@ -124,38 +114,26 @@ public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 				 srp.Click_Srp_Ldp_List(); 
 				 System.out.println("#And I am on Must see listing detail page");	
 				
-				 
-				 ldp.Click_BtEnquireNow();
-				 System.out.println("#When click enquire now button");	
 					
-				 ldp.Click_BtChatWithAgent();
-				 System.out.println("#And I click Chat with agent");	
-					
-				 
+				ldp.Click_BtPhone();
+				System.out.println("#When click Call button in sticky bar");	
+			
 				 try {
-						assertEquals(asl.Verify_ModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
-						System.out.println("State : Chat Enquiry Form displayed as expected");
+						assertEquals(asl.Verify_ModalCallAgent(), true, "#And the Chat enquiry form should display as expected");
+						System.out.println("State : Call Enquiry Form displayed as expected");
 						
 					} catch (Exception e){
 								
-						System.out.println("State : Chat Enquiry For Not Shown as expected");
+						System.out.println("State : Call Enquiry For Not Shown as expected");
 						
-					}
-				 
+					}		 
 	
 				   System.out.println("#And I send enquiry"); 
-				   ldp.Click_CWA_BtEnquireNow();
+				   srp.Click_CA_BtConfirm();
 				   
-				   try {
-						assertEquals(asl.Verify_SuccessModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
-						System.out.println("State : Send Enquiry success as expected");
-						
-					} catch (Exception e){
-								
-						System.out.println("State : Send Enquiry not success");
-						
-					}
-
+				   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys("191220");
+					
+					
 				 
 			
 		}

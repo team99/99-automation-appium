@@ -4,6 +4,8 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.FileInputStream;
 import java.util.Properties;
+
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import android.ninetynine.util.Base_Test;
 import android.ninetynine.util.GeneralUtilities;
@@ -51,12 +53,13 @@ public class C1342_LDP_Unver_Reg_ChatEnquiry extends Base_Test {
 		 	 hp.Click_HomeSale();		     
 		     wait_Med();
 		    
-			   ldp.Click_LdpSearchReg();			 
+		     
+		     //LDP search method in SRP
+		     driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");  
+			 srp.Click_Srp_ResultPollen();		 
 			   driver.swipe(620, 1114, 604, 235, 2845);
 			   srp.Click_Srp_Reg_List();
-			 
-			 driver.swipe(620, 1114, 604, 235, 2845);
-			 srp.Click_Srp_Reg_List();
+
 			 System.out.println("#And I am on Regular listing detail page");
 			 
 			
@@ -81,14 +84,15 @@ public class C1342_LDP_Unver_Reg_ChatEnquiry extends Base_Test {
 			 
 			   System.out.println("#And the form will ask for my name, phone number, and email address"); 
 			   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
-			   ldp.Cwa_InputPhone(CONFIG.getProperty("Unver_Phone"));
+//			   ldp.Cwa_InputPhone(CONFIG.getProperty("Unver_Phone"));
+			   ldp.Cwa_InputPhone(CONFIG.getProperty("UnverID_Phone"));	
 			   ldp.Cwa_InputEmail(CONFIG.getProperty("Unver_Email"));
 			 
 			   System.out.println("#And I send enquiry"); 
 			   ldp.Click_CWA_BtEnquireNow();
 			   
 			   System.out.println("#And I verify phone number"); 
-			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
+			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp_unverID"));
 			   ldp.Click_BtCWABtConfirm();
 			   
 			   try {
@@ -110,7 +114,9 @@ public class C1342_LDP_Unver_Reg_ChatEnquiry extends Base_Test {
 				wait_Med();			
 				
 
-				   ldp.Click_LdpSearchReg();			 
+			     //LDP search method in SRP
+			     driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");  
+				 srp.Click_Srp_ResultPollen();			 
 				   driver.swipe(620, 1114, 604, 235, 2845);
 				   srp.Click_Srp_Reg_List();
 				 System.out.println("#And I am on Regular listing detail page");	
@@ -135,14 +141,15 @@ public class C1342_LDP_Unver_Reg_ChatEnquiry extends Base_Test {
 				 
 				   System.out.println("#And the form will ask for my name, phone number, and email address"); 
 				   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
-				   ldp.Cwa_InputPhone(CONFIG.getProperty("Unver_Phone"));
+				   //ldp.Cwa_InputPhone(CONFIG.getProperty("Unver_Phone"));
+				   ldp.Cwa_InputPhone(CONFIG.getProperty("UnverID_Phone"));		
 				   ldp.Cwa_InputEmail(CONFIG.getProperty("Unver_Email"));
 	
 				   System.out.println("#And I send enquiry"); 
 				   ldp.Click_CWA_BtEnquireNow();
 				   
 				   System.out.println("#And I verify phone number"); 
-				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
+				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp_unverID"));
 				   ldp.Click_BtCWABtConfirm();
 				   
 				   try {

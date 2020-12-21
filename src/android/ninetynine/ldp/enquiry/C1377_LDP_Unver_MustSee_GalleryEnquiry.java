@@ -4,12 +4,14 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.FileInputStream;
 import java.util.Properties;
+
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import android.ninetynine.util.Base_Test;
 import android.ninetynine.util.GeneralUtilities;
 import android.ninetynine.pageobjects.*;
 
-public class C1338_LDP_Ver_MustSee_ChatEnquiry extends Base_Test {
+public class C1377_LDP_Unver_MustSee_GalleryEnquiry extends Base_Test {
 	
 	private Login login;
 	private AssertEqual_List asl;
@@ -19,7 +21,7 @@ public class C1338_LDP_Ver_MustSee_ChatEnquiry extends Base_Test {
 	private SearchResultPage srp;
 	
 	@Test
-	public void C1338_LDP_Ver_MustSee_Chat_Enquiry() throws Exception {
+	public void C1377_LDP_Unver_MustSee_Gallery_Enquiry() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);
@@ -31,10 +33,10 @@ public class C1338_LDP_Ver_MustSee_ChatEnquiry extends Base_Test {
 		srp = new SearchResultPage(driver);
 			
 		
-		 System.out.println("TestCase : C1338");	
-		 System.out.println("Must See - Chat Enquiry for logged out, verified user");	
+		 System.out.println("TestCase : C1377");	
+		 System.out.println("Must See - Chat Enquiry for logged out, unverified user");	
 		 System.out.println("---------");		 
-		 System.out.println("#Given I am a logged-out, has no account user");
+		 System.out.println("#Given I am a logged-out, unverified user");
 		wait_Long();	
 		login.Click_Home_Me();
 				
@@ -53,23 +55,23 @@ public class C1338_LDP_Ver_MustSee_ChatEnquiry extends Base_Test {
 		     
 		     
 		     //LDP search method in SRP
-//		     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
 			 ldp.Click_LdpSaleResult();
 			 
 			 
-			 srp.Click_Srp_Ldp_List();
+			 srp.Click_Srp_Ldp_MustSeeList();
 			 System.out.println("#And I am on Must see listing detail page");
 			 
+			 
+			 ldp.Click_PhotoGallery();
+			 System.out.println("#When I open the Listing photo Gallery");
+				
+
+			ldp.CWA_Photo_BtEnquire();
+			System.out.println("#And I click enquire buttons");	
 			
-			ldp.Click_BtEnquireNow();
-			System.out.println("#When click enquire now button");	
-			 
-			 
-			 
 			 ldp.Click_BtChatWithAgent();
 			 System.out.println("#And I click Chat with agent");	
-			 
-			 
+			
 			 try {
 					assertEquals(asl.Verify_ModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
 					System.out.println("State : Chat Enquiry Form displayed as expected");
@@ -81,18 +83,26 @@ public class C1338_LDP_Ver_MustSee_ChatEnquiry extends Base_Test {
 				}
 			 
 			   System.out.println("#And the form will ask for my name, phone number, and email address"); 
-			   ldp.Cwa_InputName(CONFIG.getProperty("Ver_Name"));
-			   ldp.Cwa_InputPhone(CONFIG.getProperty("Ver_Phone"));
-			   ldp.Cwa_InputEmail(CONFIG.getProperty("Ver_Email"));
+			   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
+			   ldp.Cwa_InputPhone(CONFIG.getProperty("UnverID_Phone"));
+			   ldp.Cwa_InputEmail(CONFIG.getProperty("Unver_Email"));
 			 
 			   System.out.println("#And I send enquiry"); 
 			   ldp.Click_CWA_BtEnquireNow();
-			   
-			   System.out.println("#And I verify phone number"); 
-			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp_verID"));
 		
-			   
+			   System.out.println("#And I verify phone number"); 
+			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp_unverID"));
 			   ldp.Click_BtCWABtConfirm();
+			   
+			   try {
+					assertEquals(asl.Verify_SuccessModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
+					System.out.println("State : Send Enquiry success as expected");
+					
+				} catch (Exception e){
+							
+					System.out.println("State : Send Enquiry not success");
+					
+				}	
 
 		} else {
 			
@@ -106,17 +116,18 @@ public class C1338_LDP_Ver_MustSee_ChatEnquiry extends Base_Test {
 //			     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
 				 ldp.Click_LdpSaleResult(); 
 				 
-				 srp.Click_Srp_Ldp_List(); 
+				 srp.Click_Srp_Ldp_MustSeeList(); 
 				 System.out.println("#And I am on Must see listing detail page");	
-				
-				 
-				 ldp.Click_BtEnquireNow();
-				 System.out.println("#When click enquire now button");	
 					
+				 ldp.Click_PhotoGallery();
+				 System.out.println("#When I open the Listing photo Gallery");
+					
+				ldp.CWA_Photo_BtEnquire();
+				System.out.println("#And I click enquire buttons");	
+				
 				 ldp.Click_BtChatWithAgent();
 				 System.out.println("#And I click Chat with agent");	
-					
-				 
+								
 				 try {
 						assertEquals(asl.Verify_ModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
 						System.out.println("State : Chat Enquiry Form displayed as expected");
@@ -128,18 +139,26 @@ public class C1338_LDP_Ver_MustSee_ChatEnquiry extends Base_Test {
 					}
 				 
 				   System.out.println("#And the form will ask for my name, phone number, and email address"); 
-				   ldp.Cwa_InputName(CONFIG.getProperty("Ver_Name"));
-				   ldp.Cwa_InputPhone(CONFIG.getProperty("Ver_Phone"));
-				   ldp.Cwa_InputEmail(CONFIG.getProperty("Ver_Email"));
-	
+				   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
+				   ldp.Cwa_InputPhone(CONFIG.getProperty("UnverID_Phone"));
+				   ldp.Cwa_InputEmail(CONFIG.getProperty("Unver_Email"));
+				  
 				   System.out.println("#And I send enquiry"); 
 				   ldp.Click_CWA_BtEnquireNow();
 				   
 				   System.out.println("#And I verify phone number"); 
-				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp_verID"));
-					
+				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp_unverID"));
 				   ldp.Click_BtCWABtConfirm();
-				 
+				   
+				   try {
+						assertEquals(asl.Verify_SuccessModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
+						System.out.println("State : Send Enquiry success as expected");
+						
+					} catch (Exception e){
+								
+						System.out.println("State : Send Enquiry not success");
+						
+					}   
 			
 		}
 		

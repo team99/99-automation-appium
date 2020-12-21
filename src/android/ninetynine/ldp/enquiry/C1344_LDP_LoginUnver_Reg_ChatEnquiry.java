@@ -4,12 +4,14 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.FileInputStream;
 import java.util.Properties;
+
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import android.ninetynine.util.Base_Test;
 import android.ninetynine.util.GeneralUtilities;
 import android.ninetynine.pageobjects.*;
 
-public class C1338_LDP_Ver_MustSee_ChatEnquiry extends Base_Test {
+public class C1344_LDP_LoginUnver_Reg_ChatEnquiry extends Base_Test {
 	
 	private Login login;
 	private AssertEqual_List asl;
@@ -19,7 +21,7 @@ public class C1338_LDP_Ver_MustSee_ChatEnquiry extends Base_Test {
 	private SearchResultPage srp;
 	
 	@Test
-	public void C1338_LDP_Ver_MustSee_Chat_Enquiry() throws Exception {
+	public void  C1344_LDP_LoginUnver_Reg_Chat_Enquiry() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);
@@ -31,10 +33,10 @@ public class C1338_LDP_Ver_MustSee_ChatEnquiry extends Base_Test {
 		srp = new SearchResultPage(driver);
 			
 		
-		 System.out.println("TestCase : C1338");	
-		 System.out.println("Must See - Chat Enquiry for logged out, verified user");	
+		 System.out.println("TestCase : C1344");	
+		 System.out.println("Regular - Chat Enquiry for logged in, unverified user");	
 		 System.out.println("---------");		 
-		 System.out.println("#Given I am a logged-out, has no account user");
+		 System.out.println("#Given I am a logged-in, unverified user");
 		wait_Long();	
 		login.Click_Home_Me();
 				
@@ -48,24 +50,33 @@ public class C1338_LDP_Ver_MustSee_ChatEnquiry extends Base_Test {
 		     login.Click_MeLogout();
 		     login.Click_ConfLogout();		  
 		     wait_Long();		     
+		     
+		     login.Click_Home_Me();
+			 login.Click_MeLogin();
+			 login.Click_Login();
+			 login.InputUsername(CONFIG.getProperty("Unver_Email"));
+			 login.InputPassword(CONFIG.getProperty("Unver_Pass"));
+			 login.Click_ButtonLogin(); 
+		     wait_Long();
+		     
 		 	 hp.Click_HomeSale();		     
 		     wait_Med();
-		     
-		     
+		          
+		    
 		     //LDP search method in SRP
-//		     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
-			 ldp.Click_LdpSaleResult();
-			 
-			 
-			 srp.Click_Srp_Ldp_List();
-			 System.out.println("#And I am on Must see listing detail page");
+			 driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");
+			 srp.Click_Srp_ResultPollen();
+			 driver.swipe(620, 1114, 604, 235, 2845);
+			 driver.swipe(633, 1162, 612, 493, 3771);
+				
+			 srp.Click_Srp_Reg_List();
+			 System.out.println("#And I am on Regular listing detail page");
 			 
 			
 			ldp.Click_BtEnquireNow();
 			System.out.println("#When click enquire now button");	
-			 
-			 
-			 
+			
+			 			 
 			 ldp.Click_BtChatWithAgent();
 			 System.out.println("#And I click Chat with agent");	
 			 
@@ -80,34 +91,48 @@ public class C1338_LDP_Ver_MustSee_ChatEnquiry extends Base_Test {
 					
 				}
 			 
-			   System.out.println("#And the form will ask for my name, phone number, and email address"); 
-			   ldp.Cwa_InputName(CONFIG.getProperty("Ver_Name"));
-			   ldp.Cwa_InputPhone(CONFIG.getProperty("Ver_Phone"));
-			   ldp.Cwa_InputEmail(CONFIG.getProperty("Ver_Email"));
 			 
 			   System.out.println("#And I send enquiry"); 
 			   ldp.Click_CWA_BtEnquireNow();
 			   
 			   System.out.println("#And I verify phone number"); 
-			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp_verID"));
-		
-			   
+			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp_unverID"));
 			   ldp.Click_BtCWABtConfirm();
+			   		   
+			   try {
+					assertEquals(asl.Verify_SuccessModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
+					System.out.println("State : Send Enquiry success as expected");
+					
+				} catch (Exception e){
+							
+					System.out.println("State : Send Enquiry not success");
+					
+				}
 
 		} else {
 			
 				System.out.println("State : Logged out");
-				hp.Click_Homepage();
+
+				login.Click_Home_Me();
+				login.Click_MeLogin();
+				login.Click_Login();
+				login.InputUsername(CONFIG.getProperty("Unver_Email"));
+				login.InputPassword(CONFIG.getProperty("Unver_Pass"));
+				login.Click_ButtonLogin();
+				
 				wait_Long();
 				hp.Click_HomeSale();
-				wait_Med();			
+				wait_Med();		
+				
 				
 			    //LDP search method in SRP
-//			     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
-				 ldp.Click_LdpSaleResult(); 
-				 
-				 srp.Click_Srp_Ldp_List(); 
-				 System.out.println("#And I am on Must see listing detail page");	
+				 driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");
+				 srp.Click_Srp_ResultPollen();
+				 driver.swipe(620, 1114, 604, 235, 2845);
+				 driver.swipe(633, 1162, 612, 493, 3771);
+					
+				 srp.Click_Srp_Reg_List();
+				 System.out.println("#And I am on Regular listing detail page");	
 				
 				 
 				 ldp.Click_BtEnquireNow();
@@ -127,18 +152,23 @@ public class C1338_LDP_Ver_MustSee_ChatEnquiry extends Base_Test {
 						
 					}
 				 
-				   System.out.println("#And the form will ask for my name, phone number, and email address"); 
-				   ldp.Cwa_InputName(CONFIG.getProperty("Ver_Name"));
-				   ldp.Cwa_InputPhone(CONFIG.getProperty("Ver_Phone"));
-				   ldp.Cwa_InputEmail(CONFIG.getProperty("Ver_Email"));
-	
+			
 				   System.out.println("#And I send enquiry"); 
 				   ldp.Click_CWA_BtEnquireNow();
 				   
 				   System.out.println("#And I verify phone number"); 
-				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp_verID"));
-					
+				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp_unverID"));
 				   ldp.Click_BtCWABtConfirm();
+
+				   try {
+						assertEquals(asl.Verify_SuccessModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
+						System.out.println("State : Send Enquiry success as expected");
+						
+					} catch (Exception e){
+								
+						System.out.println("State : Send Enquiry not success");
+						
+					}
 				 
 			
 		}
