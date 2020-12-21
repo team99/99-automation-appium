@@ -20,7 +20,8 @@ public class Landing_Page extends Base_Test {
 		//LDP Element
 		By Button_EnquireNow = By.xpath("//*[@text='Enquire now']");
 		By Button_ChatWithAgent = By.xpath("(//*[@id='llChatActions']/*[@text])[1]");
-		
+		By Button_Phone = By.xpath("//*[@id='ivCallBtn']");
+		By Photo_Gallery = By.xpath("//*[@id='ivThumbNailImage']");
 		
 		//LDP Sale Search Must See
 		By Ldp_Seach_Sale = By.xpath("//*[@text='Anywhere in Singapore']");
@@ -29,9 +30,7 @@ public class Landing_Page extends Base_Test {
 		
 		//LDP Sale Search Regular
 		By Ldp_Search_Regular = By.xpath("//*[@class='android.widget.LinearLayout' and ./*[@text='Pollen & Bleu']]");
-	
-		
-		
+
 		//LDP Chat With Agent Modal
 		By CWA_Name = By.xpath("//*[@id='etName']");
 		By CWA_Phone = By.xpath("//*[@id='etPhone']");
@@ -40,9 +39,31 @@ public class Landing_Page extends Base_Test {
 		By CWA_Confirm_Phone = By.xpath("//*[@id='etOtp']");
 		By CWA_Button_Confirm = By.xpath("//*[@text='CONFIRM']");
 		
+		
+		//LDP Chat With Agent Modal (Photo Gallery)
+		By CWA_Photo_Button_Enquire = By.xpath("//*[@text='Enquire']");
+		
+		//LDP Phone 
+		By Bt_ContToCall = By.xpath("//*[@text='Continue to Call']");
+		
+		//method below for click continue to call in call agent modal
+		public void Click_Bt_ContToCall() throws Exception{
+			function.click(Bt_ContToCall);
+		}
+		
+		//method below for click photo gallery
+				public void Click_PhotoGallery() throws Exception{
+					function.click(Photo_Gallery);
+				}
+		
 		//method below for click home
 			public void Click_LdpSaleResult() throws Exception{
 				function.click(Ldp_Seach_Sale);
+			}
+			
+			//method below for click phone
+			public void Click_BtPhone() throws Exception{
+				function.click(Button_Phone);
 			}
 			
 			//method below for click ldp search regular
@@ -110,6 +131,13 @@ public class Landing_Page extends Base_Test {
 			public void Input_Ldp_Search(String input_search) throws Exception { 
 				function.input(Ldp_Input_Search, input_search);
 			}
+			
+			
+			//method below for click Enquire button in Photo Gallery
+			public void CWA_Photo_BtEnquire() throws Exception{
+				function.click(CWA_Photo_Button_Enquire);
+			}
+			
 			
 			
 

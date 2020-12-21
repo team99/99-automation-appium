@@ -17,6 +17,10 @@ public class SearchResultPage extends Base_Test {
 		//SRP
 		By Srp_Listing = By.xpath("//*[@id='cvSearchListingViewContent']");
 		By Srp_Reg_Listing = By.xpath("//*[@id='cvSearchListingViewContent' and ./*[./*[./*[@id='ivSearchResultPageForRegularListing'] and ./*[@id='llSearchResultPagePhotoInfo']]]]");
+		By Srp_MustSee_Listing = By.xpath("//*[@id='cvSearchListingViewContent' and ./*[./*[./*[@id='vpSearchResultPageGallery'] and ./*[@id='llSearchResultPagePhotoInfo']]]]");
+		
+		//SRP Pollen & Blue result
+		By Srp_Result_PollenBlue = By.xpath("//*[@class='android.view.View' and ./parent::*[@id='flAutoComplete'] and (./preceding-sibling::* | ./following-sibling::*)[@text='Pollen & Bleu']]");
 		
 		//Listing
 		By Srp_Button_Chat = By.xpath("//*[@text='Chat']");
@@ -29,6 +33,13 @@ public class SearchResultPage extends Base_Test {
 		By CA_Button_Confirm = By.xpath("//*[@text='Verify & continue']");
 		By CA_ContinueToCall = By.xpath("//*[@text='Continue to Call']");
 		
+		
+		//method below for click SRP result Pollen & Blue
+		public void Click_Srp_ResultPollen() throws Exception{
+			function.click(Srp_Result_PollenBlue);
+		}
+		
+		
 		//method below for click Continue To Call Agent button in SRP
 		public void Click_ContCallAgent() throws Exception{
 			function.click(CA_ContinueToCall);
@@ -38,6 +49,11 @@ public class SearchResultPage extends Base_Test {
 		//method below for click listing in SRP
 			public void Click_Srp_Ldp_List() throws Exception{
 				function.click(Srp_Listing);
+			}
+			
+			//method below for click listing in SRP ver user
+			public void Click_Srp_Ldp_MustSeeList() throws Exception{
+				function.click(Srp_MustSee_Listing);
 			}
 			
 			//method below for click reg listing in SRP
