@@ -4,6 +4,8 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.FileInputStream;
 import java.util.Properties;
+
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import android.ninetynine.util.Base_Test;
 import android.ninetynine.util.GeneralUtilities;
@@ -62,9 +64,10 @@ public class C1345_LDP_LoginVer_Reg_ChatEnquiry extends Base_Test {
 		          
 		    
 		     //LDP search method in SRP
-//		     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
-			 ldp.Click_LdpSaleResult();
+			 driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");
+			 srp.Click_Srp_ResultPollen();
 			 driver.swipe(620, 1114, 604, 235, 2845);
+			 driver.swipe(633, 1162, 612, 493, 3771);
 				
 			 srp.Click_Srp_Reg_List();
 			 System.out.println("#And I am on Regular listing detail page");
@@ -119,9 +122,10 @@ public class C1345_LDP_LoginVer_Reg_ChatEnquiry extends Base_Test {
 				
 				
 			    //LDP search method in SRP
-//			     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
-				 ldp.Click_LdpSaleResult(); 
+				 driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");
+				 srp.Click_Srp_ResultPollen();
 				 driver.swipe(620, 1114, 604, 235, 2845);
+				 driver.swipe(633, 1162, 612, 493, 3771);
 					
 				 srp.Click_Srp_Reg_List();
 				 System.out.println("#And I am on Regular listing detail page");	

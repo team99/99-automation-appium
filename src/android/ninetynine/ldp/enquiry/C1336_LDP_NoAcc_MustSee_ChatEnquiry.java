@@ -82,17 +82,29 @@ public class C1336_LDP_NoAcc_MustSee_ChatEnquiry extends Base_Test {
 			 
 			   System.out.println("#And the form will ask for my name, phone number, and email address"); 
 			   ldp.Cwa_InputName(CONFIG.getProperty("NoAcc_Name"));
-			   ldp.Cwa_InputPhone(CONFIG.getProperty("NoAcc_Phone"));
+			   ldp.Cwa_InputPhone(CONFIG.getProperty("Unver_Phone"));
 			   ldp.Cwa_InputEmail(CONFIG.getProperty("NoAcc_Email"));
 			 
 			   System.out.println("#And I send enquiry"); 
 			   ldp.Click_CWA_BtEnquireNow();
 			   
 			   System.out.println("#And I verify phone number"); 
-			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otpnoacc"));
+			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
 		
 			   
 			   ldp.Click_BtCWABtConfirm();
+			   
+			   
+			   try {
+					assertEquals(asl.Verify_SuccessModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
+					System.out.println("State : Send Enquiry success as expected");
+					
+				} catch (Exception e){
+							
+					System.out.println("State : Send Enquiry not success");
+					
+				}
+			   
 
 		} else {
 			
@@ -139,7 +151,17 @@ public class C1336_LDP_NoAcc_MustSee_ChatEnquiry extends Base_Test {
 				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otpnoacc"));
 					
 				   ldp.Click_BtCWABtConfirm();
-				 
+				   
+				   try {
+						assertEquals(asl.Verify_SuccessModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
+						System.out.println("State : Send Enquiry success as expected");
+						
+					} catch (Exception e){
+								
+						System.out.println("State : Send Enquiry not success");
+						
+					}
+				   
 			
 		}
 		

@@ -101,13 +101,6 @@ public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 					System.out.println("State : Send Enquiry not success");
 					
 				}
-			   
-//			   
-//			   System.out.println("#And I verify phone number"); 
-//			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
-//		
-//			   
-//			   ldp.Click_BtCWABtConfirm();
 
 		} else {
 			
@@ -125,7 +118,6 @@ public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 				wait_Med();			
 				
 			    //LDP search method in SRP
-//			     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
 			     wait_Med();
 				 ldp.Click_LdpSaleResult(); 
 				 
@@ -163,11 +155,7 @@ public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 						System.out.println("State : Send Enquiry not success");
 						
 					}
-//				   
-//				   System.out.println("#And I verify phone number"); 
-//				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
-//					
-//				   ldp.Click_BtCWABtConfirm();
+
 				 
 			
 		}

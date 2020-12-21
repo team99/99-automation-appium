@@ -89,7 +89,7 @@ public class C1338_LDP_Ver_MustSee_ChatEnquiry extends Base_Test {
 			   ldp.Click_CWA_BtEnquireNow();
 			   
 			   System.out.println("#And I verify phone number"); 
-			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
+			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp_verID"));
 		
 			   
 			   ldp.Click_BtCWABtConfirm();
@@ -136,7 +136,7 @@ public class C1338_LDP_Ver_MustSee_ChatEnquiry extends Base_Test {
 				   ldp.Click_CWA_BtEnquireNow();
 				   
 				   System.out.println("#And I verify phone number"); 
-				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
+				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp_verID"));
 					
 				   ldp.Click_BtCWABtConfirm();
 				 
