@@ -66,6 +66,11 @@ public class Base_Test {
 	 public void wait_Med()throws Exception {
 		  Thread.sleep(5000);
 	  }
+	 
+	 public void wait_Long()throws Exception {
+		  Thread.sleep(8000);
+	  }
+	  
 	  
 	  
 	  @BeforeMethod

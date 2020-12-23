@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="android.ninetynine.login.Regression_Login">
+      <class name="android.ninetynine.ldp.enquiry.C1384_Ldp_LoginUnver_Reg_GalleryEnquiry">
         <methods>
-          <include name="Regression_Login_Account"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="C1384_Ldp_LoginUnver_Reg_Gallery_Enquiry"/>
         </methods>
-      </class> <!-- android.ninetynine.login.Regression_Login -->
+      </class> <!-- android.ninetynine.ldp.enquiry.C1384_Ldp_LoginUnver_Reg_GalleryEnquiry -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

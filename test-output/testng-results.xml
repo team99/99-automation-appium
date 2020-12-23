@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="81774" started-at="2020-09-22T09:00:10Z" finished-at="2020-09-22T09:01:32Z">
+  <suite name="Default suite" duration-ms="184385" started-at="2020-12-19T18:23:03Z" finished-at="2020-12-19T18:26:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="81774" started-at="2020-09-22T09:00:10Z" finished-at="2020-09-22T09:01:32Z">
-      <class name="android.ninetynine.login.Regression_Login">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:android.ninetynine.login.Regression_Login@1794d431]" name="setUp" is-config="true" duration-ms="13612" started-at="2020-09-22T16:00:10Z" finished-at="2020-09-22T16:00:24Z">
+    <test name="Default test" duration-ms="184385" started-at="2020-12-19T18:23:03Z" finished-at="2020-12-19T18:26:07Z">
+      <class name="android.ninetynine.ldp.enquiry.C1385_Ldp_LoginVer_Reg_GalleryEnquiry">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:android.ninetynine.ldp.enquiry.C1385_Ldp_LoginVer_Reg_GalleryEnquiry@1794d431]" name="setUp" is-config="true" duration-ms="12396" started-at="2020-12-20T02:23:03Z" finished-at="2020-12-20T02:23:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="Regression_Login_Account()[pri:0, instance:android.ninetynine.login.Regression_Login@1794d431]" name="Regression_Login_Account" duration-ms="60416" started-at="2020-09-22T16:00:24Z" finished-at="2020-09-22T16:01:24Z">
+        <test-method status="PASS" signature="C1385_Ldp_LoginVer_Reg_Gallery_Enquiry()[pri:0, instance:android.ninetynine.ldp.enquiry.C1385_Ldp_LoginVer_Reg_GalleryEnquiry@1794d431]" name="C1385_Ldp_LoginVer_Reg_Gallery_Enquiry" duration-ms="156306" started-at="2020-12-20T02:23:15Z" finished-at="2020-12-20T02:25:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Regression_Login_Account -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:android.ninetynine.login.Regression_Login@1794d431]" name="tearDown" is-config="true" duration-ms="7711" started-at="2020-09-22T16:01:24Z" finished-at="2020-09-22T16:01:32Z">
+        </test-method> <!-- C1385_Ldp_LoginVer_Reg_Gallery_Enquiry -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:android.ninetynine.ldp.enquiry.C1385_Ldp_LoginVer_Reg_GalleryEnquiry@1794d431]" name="tearDown" is-config="true" duration-ms="15636" started-at="2020-12-20T02:25:52Z" finished-at="2020-12-20T02:26:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- android.ninetynine.login.Regression_Login -->
+      </class> <!-- android.ninetynine.ldp.enquiry.C1385_Ldp_LoginVer_Reg_GalleryEnquiry -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
