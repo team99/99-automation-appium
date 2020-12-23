@@ -82,3 +82,7 @@
 1. Open android.ninetynine.login (this package were we save the test case)
 2. Right click by one of the java file that we want to run
 3. Run As > TestNG
+
+
+## Appium Documentation on Confluence
+https://99dotco.atlassian.net/wiki/spaces/9GE/pages/1210646529/Appium+Documentation
