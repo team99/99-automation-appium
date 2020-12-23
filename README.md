@@ -2,9 +2,10 @@
 
 ## Requirements
 - AppiumStudio
-- Eclipse
-- JRE Library
+- IDE
+- JRE, JDK Library
 - TestNG
+- Device for testin
 
 ## Package Structure
 ```
@@ -13,6 +14,11 @@
 │   ├── android.ninetynine.config
 │      └──  AndroidTestData.properties
 │      └──  Config.properties
+│   ├── android.ninetynine.ldp.enquiry
+│   ├── android.ninetynine.srp.enquiry
+│   ├── android.ninetynine.auth
+│   ├── android.ninetynine.createlisting
+│   ├── android.ninetynine.pagerendering
 │   ├── android.ninetynine.login
 │      └──  Regression_Login.java
 │      └──  Regression_Logout.java
@@ -33,21 +39,26 @@
 **android.ninetynine.config** packages include :
   - *AndroidTestData.properties* is a file where we save the data that will we use in the automation. Such as username, password, URL, etc.
   - *Config.properties* is a file where we setup the app mobile setting from the appium to eclipse, such as APP_Package, APP_Activity, LocalHostURL and DeviceNumber.
+  
+  **android.ninetynine.pageobjects** This package where we placed our objects. It can be based on the feature, page, etc. The packages include :
+  -  *AssertEqual_List.java* is a file where we write all verify method.
+  -  *Login.java* is a file where we write objects in login flow. 
+  
+  **android.ninetynine.util** This package where we placed our objects. It can be based on the feature, page, etc. The package include :
+  -  *Base_Test.java* is a file where we setting the app_package, app_activity to connect it to appium. 
+  -  *GeneralUtilities.java* is a file where we write basic method that we will call it from page.objects package. Such a *click method*, *input method*, *verify method*, etc.
 
 **android.ninetynine.login** This package where we placed our test case. It can be based on the feature, regression, etc. The package include :
   -  *Regression_Login.java* is a file where we write login test case.
   -  *Regression_Logout.java* is a file where we write logout test case.
 
-**android.ninetynine.pageobjects** This package where we placed our objects. It can be based on the feature, page, etc. The packages include :
-
-  -  *AssertEqual_List.java* is a file where we write all verify method.
-  -  *Login.java* is a file where we write objects in login flow. 
+**android.ninetynine.createlisting** This package where we placed create listing testcase.
+**android.ninetynine.ldp.enquiry** This package where we placed LDP enquiry testcase.
+**android.ninetynine.srp.enquiry** This package where we placed SRP enquiry testcase.
+**android.ninetynine.ldp.pagerendering** This package where we placed page rendering enquiry testcase.
   
-**android.ninetynine.util** This package where we placed our objects. It can be based on the feature, page, etc. The package include :
-  -  *Base_Test.java* is a file where we setting the app_package, app_activity to connect it to appium. 
-  -  *GeneralUtilities.java* is a file where we write basic method that we will call it from page.objects package. Such a *click method*, *input method*, *verify method*, etc.
 
-## InstalLation
+## Installation
 1. Install all the requirements above.
 2. Clone the repo
 
@@ -58,8 +69,8 @@
 4. Search *app_package* that we want to test (in this case, the name is 'co.ninetynine.android.dev')
 5. Click 'Import'
 
-**Eclipse**
-1. Open the project in eclipse
+**IDE**
+1. Open the project in IDE
 
 ## How to Run
 **AppiumStudio**
@@ -67,7 +78,7 @@
 2. Open the phone that already connected with appium
 3. Make sure the emulator running 
 
-**Eclipse**
+**IDE**
 1. Open android.ninetynine.login (this package were we save the test case)
 2. Right click by one of the java file that we want to run
 3. Run As > TestNG
