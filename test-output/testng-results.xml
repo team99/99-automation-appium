@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="196375" started-at="2020-12-24T05:37:24Z" finished-at="2020-12-24T05:40:40Z">
+  <suite name="Default suite" duration-ms="169449" started-at="2020-12-24T14:32:58Z" finished-at="2020-12-24T14:35:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="196375" started-at="2020-12-24T05:37:24Z" finished-at="2020-12-24T05:40:40Z">
-      <class name="android.ninetynine.ldp.enquiry.C1385_Ldp_LoginVer_Reg_GalleryEnquiry">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:android.ninetynine.ldp.enquiry.C1385_Ldp_LoginVer_Reg_GalleryEnquiry@96def03]" name="setUp" is-config="true" duration-ms="13111" started-at="2020-12-24T13:37:24Z" finished-at="2020-12-24T13:37:37Z">
+    <test name="Default test" duration-ms="169449" started-at="2020-12-24T14:32:58Z" finished-at="2020-12-24T14:35:48Z">
+      <class name="android.ninetynine.srp.enquiry.C1134_SRP_LoginVer_Reg_PhoneEnquiry">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:android.ninetynine.srp.enquiry.C1134_SRP_LoginVer_Reg_PhoneEnquiry@96def03]" name="setUp" is-config="true" duration-ms="12397" started-at="2020-12-24T22:32:58Z" finished-at="2020-12-24T22:33:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="C1385_Ldp_LoginVer_Reg_Gallery_Enquiry()[pri:0, instance:android.ninetynine.ldp.enquiry.C1385_Ldp_LoginVer_Reg_GalleryEnquiry@96def03]" name="C1385_Ldp_LoginVer_Reg_Gallery_Enquiry" duration-ms="164104" started-at="2020-12-24T13:37:37Z" finished-at="2020-12-24T13:40:21Z">
+        <test-method status="PASS" signature="C1048_SRP_LoginVer_MustSee_Chat_Enquiry()[pri:0, instance:android.ninetynine.srp.enquiry.C1134_SRP_LoginVer_Reg_PhoneEnquiry@96def03]" name="C1048_SRP_LoginVer_MustSee_Chat_Enquiry" duration-ms="139527" started-at="2020-12-24T22:33:11Z" finished-at="2020-12-24T22:35:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- C1385_Ldp_LoginVer_Reg_Gallery_Enquiry -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:android.ninetynine.ldp.enquiry.C1385_Ldp_LoginVer_Reg_GalleryEnquiry@96def03]" name="tearDown" is-config="true" duration-ms="19115" started-at="2020-12-24T13:40:21Z" finished-at="2020-12-24T13:40:40Z">
+        </test-method> <!-- C1048_SRP_LoginVer_MustSee_Chat_Enquiry -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:android.ninetynine.srp.enquiry.C1134_SRP_LoginVer_Reg_PhoneEnquiry@96def03]" name="tearDown" is-config="true" duration-ms="17482" started-at="2020-12-24T22:35:30Z" finished-at="2020-12-24T22:35:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- android.ninetynine.ldp.enquiry.C1385_Ldp_LoginVer_Reg_GalleryEnquiry -->
+      </class> <!-- android.ninetynine.srp.enquiry.C1134_SRP_LoginVer_Reg_PhoneEnquiry -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

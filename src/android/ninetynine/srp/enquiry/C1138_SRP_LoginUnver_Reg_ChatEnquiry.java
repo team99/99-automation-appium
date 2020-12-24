@@ -4,6 +4,8 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.FileInputStream;
 import java.util.Properties;
+
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import android.ninetynine.util.Base_Test;
 import android.ninetynine.util.GeneralUtilities;
@@ -30,7 +32,7 @@ public class C1138_SRP_LoginUnver_Reg_ChatEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		 System.out.println("=========");
 		 System.out.println("TestCase : C1138");	
 		 System.out.println("MRegular - Chat Enquiry for logged in, unverified user");	
 		 System.out.println("---------");		 
@@ -40,7 +42,6 @@ public class C1138_SRP_LoginUnver_Reg_ChatEnquiry extends Base_Test {
 				
 		if (util.verifyLogin()) {
 			
-		
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
 			 driver.swipe(633, 1162, 612, 493, 3771);
@@ -58,16 +59,14 @@ public class C1138_SRP_LoginUnver_Reg_ChatEnquiry extends Base_Test {
 			 login.Click_ButtonLogin(); 
 		     wait_Long();
 	     
+		 	hp.Click_HomeSale();
+			wait_Med();			
+		     
 		     //LDP search method in SRP
-		     hp.Click_HomeSale();
-		     wait_Med();			
-		     System.out.println("#And I am on search page");
-//		     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
-			 ldp.Click_LdpSaleResult();
-			
+		     driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");  
+			 srp.Click_Srp_ResultPollen();
 			 driver.swipe(620, 1114, 604, 235, 2845);
-				
-		
+			
 			srp.Click_Srp_BtChat();
 			System.out.println("#When click chat button");	
 			  
@@ -81,17 +80,17 @@ public class C1138_SRP_LoginUnver_Reg_ChatEnquiry extends Base_Test {
 					System.out.println("State : Chat Enquiry For Not Shown as expected");
 					
 				}
-			 
-			   System.out.println("#And the form will ask for my name, phone number, and email address"); 
-			   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
-			   ldp.Cwa_InputPhone(CONFIG.getProperty("Unver_Phone"));
-			   ldp.Cwa_InputEmail(CONFIG.getProperty("Unver_Name"));
+//			 
+//			   System.out.println("#And the form will ask for my name, phone number, and email address"); 
+//			   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
+//			   ldp.Cwa_InputPhone(CONFIG.getProperty("Unver_Phone"));
+//			   ldp.Cwa_InputEmail(CONFIG.getProperty("Unver_Name"));
 			 
 			   System.out.println("#And I send enquiry"); 
 			   ldp.Click_CWA_BtEnquireNow();
 			   
 			   System.out.println("#And I verify phone number"); 
-			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
+			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp_unverID"));
 		
 			   
 			   ldp.Click_BtCWABtConfirm();
@@ -111,10 +110,9 @@ public class C1138_SRP_LoginUnver_Reg_ChatEnquiry extends Base_Test {
 				hp.Click_HomeSale();
 				wait_Med();			
 				
-				 System.out.println("#And I am on search page");
-//			     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
-				 ldp.Click_LdpSaleResult();
-				 
+			     //LDP search method in SRP
+			     driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");  
+				 srp.Click_Srp_ResultPollen();
 				 driver.swipe(620, 1114, 604, 235, 2845);
 				 
 			
@@ -132,25 +130,24 @@ public class C1138_SRP_LoginUnver_Reg_ChatEnquiry extends Base_Test {
 						
 					}
 				 
-				   System.out.println("#And the form will ask for my name, phone number, and email address"); 
-				   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
-				   ldp.Cwa_InputPhone(CONFIG.getProperty("Unver_Phone"));
-				   ldp.Cwa_InputEmail(CONFIG.getProperty("Unver_Name"));
-				 
+//				   System.out.println("#And the form will ask for my name, phone number, and email address"); 
+//				   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
+//				   ldp.Cwa_InputPhone(CONFIG.getProperty("Unver_Phone"));
+//				   ldp.Cwa_InputEmail(CONFIG.getProperty("Unver_Name"));
+//				 
 				   System.out.println("#And I send enquiry"); 
 				   ldp.Click_CWA_BtEnquireNow();
 				   
 				   System.out.println("#And I verify phone number"); 
-				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
+				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp_unverID"));
 					
 				   ldp.Click_BtCWABtConfirm();
 			
 		}
 		
-		 
-		wait_Med();
-		
-		
+		 wait_Med();
+		 System.out.println("=========");
+		 System.out.println("=========");
 	}
 
 }

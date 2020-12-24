@@ -30,17 +30,16 @@ public class C1039_SRP_Unver_MustSee_ChatEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		 System.out.println("=========");
 		 System.out.println("TestCase : C1039");	
 		 System.out.println("Must See - Chat Enquiry for logged out, unverified user");	
 		 System.out.println("---------");		 
-		 System.out.println("#Given I am a logged-out, has no account user");
+		 System.out.println("#Given I am a logged-out, has unverified user");
 		wait_Long();	
 		login.Click_Home_Me();
 				
 		if (util.verifyLogin()) {
 			
-		
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
 			 driver.swipe(633, 1162, 612, 493, 3771);
@@ -53,10 +52,8 @@ public class C1039_SRP_Unver_MustSee_ChatEnquiry extends Base_Test {
 		     
 		     
 		     System.out.println("#And I am on search page");
-//		     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
 			 ldp.Click_LdpSaleResult();
 			 
-		
 			srp.Click_Srp_BtChat();
 			System.out.println("#When click chat button");	
 			  
@@ -73,14 +70,14 @@ public class C1039_SRP_Unver_MustSee_ChatEnquiry extends Base_Test {
 			 
 			   System.out.println("#And the form will ask for my name, phone number, and email address"); 
 			   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
-			   ldp.Cwa_InputPhone(CONFIG.getProperty("Unver_Phone"));
+			   ldp.Cwa_InputPhone(CONFIG.getProperty("UnverID_Phone"));
 			   ldp.Cwa_InputEmail(CONFIG.getProperty("Unver_Name"));
 			 
 			   System.out.println("#And I send enquiry"); 
 			   ldp.Click_CWA_BtEnquireNow();
 			   
 			   System.out.println("#And I verify phone number"); 
-			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
+			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp_unverID"));
 		
 			   
 			   ldp.Click_BtCWABtConfirm();
@@ -114,24 +111,23 @@ public class C1039_SRP_Unver_MustSee_ChatEnquiry extends Base_Test {
 				 
 				   System.out.println("#And the form will ask for my name, phone number, and email address"); 
 				   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
-				   ldp.Cwa_InputPhone(CONFIG.getProperty("Unver_Phone"));
+				   ldp.Cwa_InputPhone(CONFIG.getProperty("UnverID_Phone"));
 				   ldp.Cwa_InputEmail(CONFIG.getProperty("Unver_Name"));
 				 
 				   System.out.println("#And I send enquiry"); 
 				   ldp.Click_CWA_BtEnquireNow();
 				   
 				   System.out.println("#And I verify phone number"); 
-				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
+				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp_unverID"));
 					
 				   ldp.Click_BtCWABtConfirm();
 				 
 			
 		}
 		
-		 
 		wait_Med();
-		
-		
+		 System.out.println("=========");
+		 System.out.println("=========");
 	}
 
 }

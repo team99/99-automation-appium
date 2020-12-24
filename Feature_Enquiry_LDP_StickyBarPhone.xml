@@ -3,16 +3,16 @@
 <suite name="LDP Enquiry Phone Suite">
   <test thread-count="5" name="LDP Sticky Bar Phone">
     <classes>
-    	<class name="android.ninetynine.ldp.enquiry.C1346_LDP_NoAcc_MustSee_PhoneEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1347_LDP_Unver_MustSee_PhoneEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1348_LDP_Ver_MustSee_PhoneEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1349_Ldp_LoginUnver_MustSee_PhoneEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1350_Ldp_LoginVer_MustSee_PhoneEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1351_LDP_NoAcc_Reg_PhoneEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1352_LDP_Unver_Reg_PhoneEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1353_LDP_Ver_Reg_PhoneEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1354_Ldp_LoginUnver_Reg_PhoneEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1355_Ldp_LoginVer_Reg_PhoneEnquiry.java"/>
+    	<class name="android.ninetynine.ldp.enquiry.C1346_LDP_NoAcc_MustSee_PhoneEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1347_LDP_Unver_MustSee_PhoneEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1348_LDP_Ver_MustSee_PhoneEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1349_Ldp_LoginUnver_MustSee_PhoneEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1350_Ldp_LoginVer_MustSee_PhoneEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1351_LDP_NoAcc_Reg_PhoneEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1352_LDP_Unver_Reg_PhoneEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1353_LDP_Ver_Reg_PhoneEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1354_Ldp_LoginUnver_Reg_PhoneEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1355_Ldp_LoginVer_Reg_PhoneEnquiry"/>
 	</classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -30,7 +30,7 @@ public class C740_SRP_NoAcc_MustSee_ChatEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		 System.out.println("=========");
 		 System.out.println("TestCase : C740");	
 		 System.out.println("Must See - Chat Enquiry for logged out and user has no account");	
 		 System.out.println("---------");		 
@@ -53,7 +53,6 @@ public class C740_SRP_NoAcc_MustSee_ChatEnquiry extends Base_Test {
 		     
 		     
 		     System.out.println("#And I am on search page");
-//		     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
 			 ldp.Click_LdpSaleResult();
 			 
 		
@@ -80,7 +79,7 @@ public class C740_SRP_NoAcc_MustSee_ChatEnquiry extends Base_Test {
 			   ldp.Click_CWA_BtEnquireNow();
 			   
 			   System.out.println("#And I verify phone number"); 
-			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
+			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otpnoacc"));
 		
 			   
 			   ldp.Click_BtCWABtConfirm();
@@ -121,7 +120,7 @@ public class C740_SRP_NoAcc_MustSee_ChatEnquiry extends Base_Test {
 				   ldp.Click_CWA_BtEnquireNow();
 				   
 				   System.out.println("#And I verify phone number"); 
-				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
+				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otpnoacc"));
 					
 				   ldp.Click_BtCWABtConfirm();
 				 
@@ -130,7 +129,8 @@ public class C740_SRP_NoAcc_MustSee_ChatEnquiry extends Base_Test {
 		
 		 
 		wait_Med();
-		
+		 System.out.println("=========");
+		 System.out.println("=========");
 		
 	}
 

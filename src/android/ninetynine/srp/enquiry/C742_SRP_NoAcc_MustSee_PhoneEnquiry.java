@@ -4,6 +4,8 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.FileInputStream;
 import java.util.Properties;
+
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import android.ninetynine.util.Base_Test;
 import android.ninetynine.util.GeneralUtilities;
@@ -30,7 +32,7 @@ public class C742_SRP_NoAcc_MustSee_PhoneEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		 System.out.println("=========");
 		 System.out.println("TestCase : C742");	
 		 System.out.println("Must see -Phone Enquiry for logged out, user has no account");	
 		 System.out.println("---------");		 
@@ -39,7 +41,6 @@ public class C742_SRP_NoAcc_MustSee_PhoneEnquiry extends Base_Test {
 		login.Click_Home_Me();
 				
 		if (util.verifyLogin()) {
-			
 		
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
@@ -53,7 +54,6 @@ public class C742_SRP_NoAcc_MustSee_PhoneEnquiry extends Base_Test {
 		     
 		     
 		     System.out.println("#And I am on search page");
-//		     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
 			 ldp.Click_LdpSaleResult();
 			 
 		
@@ -79,11 +79,7 @@ public class C742_SRP_NoAcc_MustSee_PhoneEnquiry extends Base_Test {
 			   System.out.println("#And I send enquiry"); 
 			   srp.Click_CA_BtConfirm();
 			   
-//			   System.out.println("#And I verify phone number"); 
-//			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
-//		
-//			   
-//			   ldp.Click_BtCWABtConfirm();
+			   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otpnoacc"));
 
 		} else {
 			
@@ -92,17 +88,13 @@ public class C742_SRP_NoAcc_MustSee_PhoneEnquiry extends Base_Test {
 				wait_Long();
 			 	 hp.Click_HomeSale();		     
 			     wait_Med();
-			     
-			     
+			         
 			     System.out.println("#And I am on search page");
-//			     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
 				 ldp.Click_LdpSaleResult();
 				 
-			
 				srp.Click_Srp_BtPhone();
 				System.out.println("#When click call button");	
-				  
-				 
+				  	 
 				 try {
 						assertEquals(asl.Verify_ModalCallAgent(), true, "#And the Chat enquiry form should display as expected");
 						System.out.println("State : Call Enquiry Form displayed as expected");
@@ -121,18 +113,13 @@ public class C742_SRP_NoAcc_MustSee_PhoneEnquiry extends Base_Test {
 				   System.out.println("#And I send enquiry"); 
 				   srp.Click_CA_BtConfirm();
 				   
-//				   System.out.println("#And I verify phone number"); 
-//				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
-//			
-//				   
-//				   ldp.Click_BtCWABtConfirm();
-//				 
+				   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otpnoacc"));
+
 			
 		}
-		
-		 
 		wait_Med();
-		
+		 System.out.println("=========");
+		 System.out.println("=========");
 		
 	}
 

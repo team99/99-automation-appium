@@ -30,7 +30,7 @@ public class C1048_SRP_LoginVer_MustSee_PhoneEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		 System.out.println("=========");
 		 System.out.println("TestCase : C1048");	
 		 System.out.println("Must See - Phone Enquiry for logged in, verified user");	
 		 System.out.println("---------");		 
@@ -39,7 +39,6 @@ public class C1048_SRP_LoginVer_MustSee_PhoneEnquiry extends Base_Test {
 		login.Click_Home_Me();
 				
 		if (util.verifyLogin()) {
-			
 		
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
@@ -62,14 +61,11 @@ public class C1048_SRP_LoginVer_MustSee_PhoneEnquiry extends Base_Test {
 		     hp.Click_HomeSale();
 		     wait_Med();			
 		     System.out.println("#And I am on search page");
-//		     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
 			 ldp.Click_LdpSaleResult();
-			 
-		
+
 				srp.Click_Srp_BtPhone();
 				System.out.println("#When click call button");		
 			  
-			 
 				 try {
 						assertEquals(asl.Verify_ModalCallAgent(), true, "#And the Chat enquiry form should display as expected");
 						System.out.println("State : Call Enquiry Form displayed as expected");
@@ -80,19 +76,8 @@ public class C1048_SRP_LoginVer_MustSee_PhoneEnquiry extends Base_Test {
 						
 					}
 			 
-			   System.out.println("#And the form will ask for my name, phone number, and email address"); 
-//			   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
-//			   ldp.Cwa_InputPhone(CONFIG.getProperty("Unver_Phone"));
-//			   ldp.Cwa_InputEmail(CONFIG.getProperty("Unver_Name"));
-//			 
-			   System.out.println("#And I click Continue To Call Agent button"); 
-			   srp.Click_ContCallAgent();
-			   
-//			   System.out.println("#And I verify phone number"); 
-//			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
-//		
-//			   
-//			   ldp.Click_BtCWABtConfirm();
+				   System.out.println("#And I send enquiry"); 
+				   ldp.Click_Bt_ContToCall();
 
 		} else {
 			
@@ -110,7 +95,6 @@ public class C1048_SRP_LoginVer_MustSee_PhoneEnquiry extends Base_Test {
 				wait_Med();			
 				
 				 System.out.println("#And I am on search page");
-//			     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
 				 ldp.Click_LdpSaleResult();
 				 
 			
@@ -130,23 +114,15 @@ public class C1048_SRP_LoginVer_MustSee_PhoneEnquiry extends Base_Test {
 						}
 				 
 				   System.out.println("#And the form will ask for my name, phone number, and email address"); 
-//				   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
-//				   ldp.Cwa_InputPhone(CONFIG.getProperty("Unver_Phone"));
-//				   ldp.Cwa_InputEmail(CONFIG.getProperty("Unver_Name"));
-//				 
-				   System.out.println("#And I click Continue To Call Agent button");  
-				   srp.Click_ContCallAgent();
-				   
-//				   System.out.println("#And I verify phone number"); 
-//				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
-//					
-//				   ldp.Click_BtCWABtConfirm();
-			
+		 
+				   System.out.println("#And I send enquiry"); 
+				   ldp.Click_Bt_ContToCall();
 		}
 		
 		 
 		wait_Med();
-		
+		 System.out.println("=========");
+		 System.out.println("=========");
 		
 	}
 

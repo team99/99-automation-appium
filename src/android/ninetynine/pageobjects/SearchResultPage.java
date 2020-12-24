@@ -23,7 +23,7 @@ public class SearchResultPage extends Base_Test {
 		By Srp_Result_PollenBlue = By.xpath("//*[@class='android.view.View' and ./parent::*[@id='flAutoComplete'] and (./preceding-sibling::* | ./following-sibling::*)[@text='Pollen & Bleu']]");
 		
 		//Listing
-		By Srp_Button_Chat = By.xpath("//*[@text='Chat']");
+		By Srp_Button_Chat = By.xpath("//*[@id='tvSearchResultPageChatWithAgent']");
 		By Srp_Button_Phone = By.xpath("//*[@id='ivSearchResultPageCall']");
 
 		//Call Agent Modal

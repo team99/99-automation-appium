@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SRP Enquiry Chat Suite">
+  <test thread-count="5" name="SRP Enquiry Chat">
+    <classes>
+		<class name="android.ninetynine.srp.enquiry.C1037_SRP_LoginUnver_MustSee_ChatEnquiry"/>
+		<class name="android.ninetynine.srp.enquiry.C1038_SRP_LoginVer_MustSee_ChatEnquiry"/>
+		<class name="android.ninetynine.srp.enquiry.C1039_SRP_Unver_MustSee_ChatEnquiry"/>
+		<class name="android.ninetynine.srp.enquiry.C1040_SRP_Ver_MustSee_ChatEnquiry"/>
+		<class name="android.ninetynine.srp.enquiry.C1135_SRP_NoAcc_Reg_ChatEnquiry"/>
+		<class name="android.ninetynine.srp.enquiry.C1136_SRP_Unver_Reg_ChatEnquiry"/>
+		<class name="android.ninetynine.srp.enquiry.C1137_SRP_Ver_Reg_ChatEnquiry"/>
+		<class name="android.ninetynine.srp.enquiry.C1138_SRP_LoginUnver_Reg_ChatEnquiry"/>
+		<class name="android.ninetynine.srp.enquiry.C1139_SRP_LoginVer_Reg_ChatEnquiry"/>
+		<class name="android.ninetynine.srp.enquiry.C740_SRP_NoAcc_MustSee_ChatEnquiry"/>
+	</classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,38 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="LDP Enquiry Suite">
-  <test thread-count="5" name="LDP">
+  <test thread-count="5" name="LDP Enquiry">
     <classes>
-      	<class name="android.ninetynine.ldp.enquiry.C1336_LDP_NoAcc_MustSee_ChatEnquiry"/>
+ 		<class name="android.ninetynine.ldp.enquiry.C1336_LDP_NoAcc_MustSee_ChatEnquiry"/>
       	<class name="android.ninetynine.ldp.enquiry.C1337_LDP_Unver_MustSee_ChatEnquiry"/>
       	<class name="android.ninetynine.ldp.enquiry.C1338_LDP_Ver_MustSee_ChatEnquiry"/>
-	  	<class name="android.ninetynine.ldp.enquiry C1339_Ldp_LoginUnver_MustSee_ChatEnquiry.java"/>
-	  	<class name="android.ninetynine.ldp.enquiry.C1340_Ldp_LoginVer_MustSee_ChatEnquiry.java"/>
-	  	<class name="android.ninetynine.ldp.enquiry.C1341_LDP_NoAcc_Reg_ChatEnquiry.java"/>
-	  	<class name="android.ninetynine.ldp.enquiry.C1342_LDP_Unver_Reg_ChatEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1343_LDP_Ver_Reg_ChatEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1344_LDP_LoginUnver_Reg_ChatEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1345_LDP_LoginVer_Reg_ChatEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1346_LDP_NoAcc_MustSee_PhoneEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1347_LDP_Unver_MustSee_PhoneEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1348_LDP_Ver_MustSee_PhoneEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1349_Ldp_LoginUnver_MustSee_PhoneEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1350_Ldp_LoginVer_MustSee_PhoneEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1351_LDP_NoAcc_Reg_PhoneEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1352_LDP_Unver_Reg_PhoneEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1353_LDP_Ver_Reg_PhoneEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1354_Ldp_LoginUnver_Reg_PhoneEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1355_Ldp_LoginVer_Reg_PhoneEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1376_LDP_NoAcc_MustSee_GalleryEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1377_LDP_Unver_MustSee_GalleryEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1378_LDP_Ver_MustSee_GalleryEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1379_Ldp_LoginUnver_MustSee_GalleryEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1380_Ldp_LoginVer_MustSee_GalleryEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1381_LDP_NoAcc_Reg_GalleryEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1382_LDP_Unver_Reg_GalleryEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1383_LDP_Ver_Reg_GalleryEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1384_Ldp_LoginUnver_Reg_GalleryEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1385_Ldp_LoginVer_Reg_GalleryEnquiry.java"/>
+	  	<class name="android.ninetynine.ldp.enquiry C1339_Ldp_LoginUnver_MustSee_ChatEnquiry"/>
+	  	<class name="android.ninetynine.ldp.enquiry.C1340_Ldp_LoginVer_MustSee_ChatEnquiry"/>
+	  	<class name="android.ninetynine.ldp.enquiry.C1341_LDP_NoAcc_Reg_ChatEnquiry"/>
+	  	<class name="android.ninetynine.ldp.enquiry.C1342_LDP_Unver_Reg_ChatEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1343_LDP_Ver_Reg_ChatEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1344_LDP_LoginUnver_Reg_ChatEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1345_LDP_LoginVer_Reg_ChatEnquiry"/>
+
+		<class name="android.ninetynine.ldp.enquiry.C1346_LDP_NoAcc_MustSee_PhoneEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1347_LDP_Unver_MustSee_PhoneEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1348_LDP_Ver_MustSee_PhoneEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1349_Ldp_LoginUnver_MustSee_PhoneEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1350_Ldp_LoginVer_MustSee_PhoneEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1351_LDP_NoAcc_Reg_PhoneEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1352_LDP_Unver_Reg_PhoneEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1353_LDP_Ver_Reg_PhoneEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1354_Ldp_LoginUnver_Reg_PhoneEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1355_Ldp_LoginVer_Reg_PhoneEnquiry"/>
+
+		<class name="android.ninetynine.ldp.enquiry.C1376_LDP_NoAcc_MustSee_GalleryEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1377_LDP_Unver_MustSee_GalleryEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1378_LDP_Ver_MustSee_GalleryEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1379_Ldp_LoginUnver_MustSee_GalleryEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1380_Ldp_LoginVer_MustSee_GalleryEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1381_LDP_NoAcc_Reg_GalleryEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1382_LDP_Unver_Reg_GalleryEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1383_LDP_Ver_Reg_GalleryEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1384_Ldp_LoginUnver_Reg_GalleryEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1385_Ldp_LoginVer_Reg_GalleryEnquiry"/>
+	
+
 	</classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

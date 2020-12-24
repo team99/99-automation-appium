@@ -30,7 +30,7 @@ public class C1040_SRP_Ver_MustSee_ChatEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		 System.out.println("=========");
 		 System.out.println("TestCase : C1040");	
 		 System.out.println("Must See - Chat Enquiry for logged out, verified user");	
 		 System.out.println("---------");		 
@@ -38,9 +38,7 @@ public class C1040_SRP_Ver_MustSee_ChatEnquiry extends Base_Test {
 		wait_Long();	
 		login.Click_Home_Me();
 				
-		if (util.verifyLogin()) {
-			
-		
+		if (util.verifyLogin()) {		
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
 			 driver.swipe(633, 1162, 612, 493, 3771);
@@ -50,13 +48,10 @@ public class C1040_SRP_Ver_MustSee_ChatEnquiry extends Base_Test {
 		     wait_Long();		     
 		 	 hp.Click_HomeSale();		     
 		     wait_Med();
-		     
-		     
+		     		     
 		     System.out.println("#And I am on search page");
-//		     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
 			 ldp.Click_LdpSaleResult();
-			 
-		
+			 	
 			srp.Click_Srp_BtChat();
 			System.out.println("#When click chat button");	
 			  
@@ -80,7 +75,7 @@ public class C1040_SRP_Ver_MustSee_ChatEnquiry extends Base_Test {
 			   ldp.Click_CWA_BtEnquireNow();
 			   
 			   System.out.println("#And I verify phone number"); 
-			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
+			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp_verID"));
 		
 			   
 			   ldp.Click_BtCWABtConfirm();
@@ -94,10 +89,8 @@ public class C1040_SRP_Ver_MustSee_ChatEnquiry extends Base_Test {
 				wait_Med();			
 				
 			     System.out.println("#And I am on search page");
-//			     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
 				 ldp.Click_LdpSaleResult();
-				 
-			
+				 	
 				srp.Click_Srp_BtChat();
 				System.out.println("#When click chat button");	
 
@@ -121,7 +114,7 @@ public class C1040_SRP_Ver_MustSee_ChatEnquiry extends Base_Test {
 				   ldp.Click_CWA_BtEnquireNow();
 				   
 				   System.out.println("#And I verify phone number"); 
-				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
+				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp_verID"));
 					
 				   ldp.Click_BtCWABtConfirm();
 				 
@@ -130,7 +123,8 @@ public class C1040_SRP_Ver_MustSee_ChatEnquiry extends Base_Test {
 		
 		 
 		wait_Med();
-		
+		 System.out.println("=========");
+		 System.out.println("=========");
 		
 	}
 

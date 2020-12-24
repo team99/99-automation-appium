@@ -4,6 +4,8 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.FileInputStream;
 import java.util.Properties;
+
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import android.ninetynine.util.Base_Test;
 import android.ninetynine.util.GeneralUtilities;
@@ -30,7 +32,7 @@ public class C1139_SRP_LoginVer_Reg_ChatEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		 System.out.println("=========");
 		 System.out.println("TestCase : C1139");	
 		 System.out.println("Regular - Chat Enquiry for logged in, verified user");	
 		 System.out.println("---------");		 
@@ -39,7 +41,6 @@ public class C1139_SRP_LoginVer_Reg_ChatEnquiry extends Base_Test {
 		login.Click_Home_Me();
 				
 		if (util.verifyLogin()) {
-			
 		
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
@@ -49,25 +50,20 @@ public class C1139_SRP_LoginVer_Reg_ChatEnquiry extends Base_Test {
 		     login.Click_ConfLogout();		  
 		     wait_Long();		    
 		     
-		     
 		     login.Click_Home_Me();
 			 login.Click_MeLogin();
 			 login.Click_Login();
-			 login.InputUsername(CONFIG.getProperty("Unver_Email"));
-			 login.InputPassword(CONFIG.getProperty("Unver_Pass"));
+			 login.InputUsername(CONFIG.getProperty("Ver_Email"));
+			 login.InputPassword(CONFIG.getProperty("Ver_Pass"));
 			 login.Click_ButtonLogin(); 
 		     wait_Long();
-	     
-		     //LDP search method in SRP
 		     hp.Click_HomeSale();
-		     wait_Med();			
-		     System.out.println("#And I am on search page");
-//		     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
-			 ldp.Click_LdpSaleResult();
-			
+		     
+		     //LDP search method in SRP
+		     driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");  
+			 srp.Click_Srp_ResultPollen();
 			 driver.swipe(620, 1114, 604, 235, 2845);
-				
-		
+	
 			srp.Click_Srp_BtChat();
 			System.out.println("#When click chat button");	
 			  
@@ -85,9 +81,7 @@ public class C1139_SRP_LoginVer_Reg_ChatEnquiry extends Base_Test {
 			 
 			   System.out.println("#And I send enquiry"); 
 			   ldp.Click_CWA_BtEnquireNow();
-			   
-
-			   
+			     
 			   ldp.Click_BtCWABtConfirm();
 
 		} else {
@@ -97,8 +91,8 @@ public class C1139_SRP_LoginVer_Reg_ChatEnquiry extends Base_Test {
 				login.Click_Home_Me();
 				login.Click_MeLogin();
 				login.Click_Login();
-				login.InputUsername(CONFIG.getProperty("Unver_Email"));
-				login.InputPassword(CONFIG.getProperty("Unver_Pass"));
+				login.InputUsername(CONFIG.getProperty("Ver_Email"));
+				login.InputPassword(CONFIG.getProperty("Ver_Pass"));
 				login.Click_ButtonLogin();
 				
 				wait_Long();
@@ -106,11 +100,10 @@ public class C1139_SRP_LoginVer_Reg_ChatEnquiry extends Base_Test {
 				wait_Med();			
 				
 				 System.out.println("#And I am on search page");
-//			     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
-				 ldp.Click_LdpSaleResult();
-				 
+			     //LDP search method in SRP
+			     driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");  
+				 srp.Click_Srp_ResultPollen();
 				 driver.swipe(620, 1114, 604, 235, 2845);
-				 
 			
 				srp.Click_Srp_BtChat();
 				System.out.println("#When click chat button");	
@@ -134,10 +127,10 @@ public class C1139_SRP_LoginVer_Reg_ChatEnquiry extends Base_Test {
 			
 		}
 		
-		 
-		wait_Med();
-		
-		
+		 wait_Med();
+		 System.out.println("=========");
+		 System.out.println("=========");
+	
 	}
 
 }
