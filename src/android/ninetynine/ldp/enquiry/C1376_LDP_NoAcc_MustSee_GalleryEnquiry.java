@@ -32,7 +32,7 @@ public class C1376_LDP_NoAcc_MustSee_GalleryEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		System.out.println("=========");
 		 System.out.println("TestCase : C1376");	
 		 System.out.println("Must See - Chat Enquiry for logged out and user has no account");	
 		 System.out.println("---------");		 
@@ -42,7 +42,6 @@ public class C1376_LDP_NoAcc_MustSee_GalleryEnquiry extends Base_Test {
 				
 		if (util.verifyLogin()) {
 			
-		
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
 			 driver.swipe(633, 1162, 612, 493, 3771);
@@ -65,7 +64,6 @@ public class C1376_LDP_NoAcc_MustSee_GalleryEnquiry extends Base_Test {
 			 ldp.Click_PhotoGallery();
 			 System.out.println("#When I open the Listing photo Gallery");
 				
-			 
 			 
 			ldp.CWA_Photo_BtEnquire();
 			System.out.println("#And I click enquire buttons");	
@@ -114,7 +112,6 @@ public class C1376_LDP_NoAcc_MustSee_GalleryEnquiry extends Base_Test {
 				wait_Med();			
 				
 			    //LDP search method in SRP
-//			     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
 				 ldp.Click_LdpSaleResult(); 
 				 
 				 srp.Click_Srp_Ldp_MustSeeList(); 
@@ -162,9 +159,10 @@ public class C1376_LDP_NoAcc_MustSee_GalleryEnquiry extends Base_Test {
 					}   
 			
 		}
-		
-		 
+
 		wait_Med();
+		System.out.println("=========");
+		System.out.println("=========");
 		
 		
 	}

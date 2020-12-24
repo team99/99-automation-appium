@@ -32,7 +32,7 @@ public class C1384_Ldp_LoginUnver_Reg_GalleryEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		System.out.println("=========");
 		 System.out.println("TestCase : C1384");	
 		 System.out.println("Regular - Chat Enquiry for logged in, unverified user");	
 		 System.out.println("---------");		 
@@ -41,8 +41,6 @@ public class C1384_Ldp_LoginUnver_Reg_GalleryEnquiry extends Base_Test {
 		login.Click_Home_Me();
 				
 		if (util.verifyLogin()) {
-			
-		
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
 			 driver.swipe(633, 1162, 612, 493, 3771);
@@ -61,26 +59,25 @@ public class C1384_Ldp_LoginUnver_Reg_GalleryEnquiry extends Base_Test {
 		     wait_Long();
 		     
 			
-				hp.Click_HomeSale();
-				wait_Med();			
+			hp.Click_HomeSale();
+			wait_Med();			
 	     
 		     //LDP search method in SRP
-				driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");
-				srp.Click_Srp_ResultPollen();
-				driver.swipe(620, 1114, 604, 235, 2845);
-				 driver.swipe(633, 1162, 612, 493, 3771);
-				srp.Click_Srp_Reg_List();
-				System.out.println("#And I am on Regular listing detail page");
-		
+			driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");
+			srp.Click_Srp_ResultPollen();
+			driver.swipe(620, 1114, 604, 235, 2845);
+			driver.swipe(633, 1162, 612, 493, 3771);
+			srp.Click_Srp_Reg_List();
+			System.out.println("#And I am on Regular listing detail page");
 			
-			 ldp.Click_PhotoGallery();
-			 System.out.println("#When I open the Listing photo Gallery");
+			ldp.Click_PhotoGallery();
+			System.out.println("#When I open the Listing photo Gallery");
 				
 			ldp.CWA_Photo_BtEnquire();
 			System.out.println("#And I click enquire buttons");	
 			
-			 ldp.Click_BtChatWithAgent();
-			 System.out.println("#And I click Chat with agent");	
+			ldp.Click_BtChatWithAgent();
+			System.out.println("#And I click Chat with agent");	
 			
 			 try {
 					assertEquals(asl.Verify_ModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
@@ -91,12 +88,7 @@ public class C1384_Ldp_LoginUnver_Reg_GalleryEnquiry extends Base_Test {
 					System.out.println("State : Chat Enquiry For Not Shown as expected");
 					
 				}
-			 
-//			   System.out.println("#And the form will ask for my name, phone number, and email address"); 
-//			   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
-//			   ldp.Cwa_InputPhone(CONFIG.getProperty("UnverID_Phone"));
-//			   ldp.Cwa_InputEmail(CONFIG.getProperty("Unver_Email"));
-			 
+			 	 
 			   System.out.println("#And I send enquiry"); 
 			   ldp.Click_CWA_BtEnquireNow();
 		
@@ -114,9 +106,6 @@ public class C1384_Ldp_LoginUnver_Reg_GalleryEnquiry extends Base_Test {
 					
 				}	
 
-				
-
-
 		} else {
 			
 				System.out.println("State : Logged out");
@@ -126,30 +115,28 @@ public class C1384_Ldp_LoginUnver_Reg_GalleryEnquiry extends Base_Test {
 				login.Click_Login();
 				login.InputUsername(CONFIG.getProperty("Unver_Email"));
 				login.InputPassword(CONFIG.getProperty("Unver_Pass"));
-				login.Click_ButtonLogin();
-				
-				
+				login.Click_ButtonLogin();		
 				
 				wait_Long();
 				hp.Click_HomeSale();
 				wait_Med();			
 				
-				  //LDP search method in SRP
+				//LDP search method in SRP
 				driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");
 				srp.Click_Srp_ResultPollen();
 				driver.swipe(620, 1114, 604, 235, 2845);
-				 driver.swipe(633, 1162, 612, 493, 3771);
+				driver.swipe(633, 1162, 612, 493, 3771);
 				srp.Click_Srp_Reg_List();
 				System.out.println("#And I am on Regular listing detail page");
 		
-				 ldp.Click_PhotoGallery();
-				 System.out.println("#When I open the Listing photo Gallery");
+				ldp.Click_PhotoGallery();
+				System.out.println("#When I open the Listing photo Gallery");
 					
 				ldp.CWA_Photo_BtEnquire();
 				System.out.println("#And I click enquire buttons");	
 				
-				 ldp.Click_BtChatWithAgent();
-				 System.out.println("#And I click Chat with agent");	
+				ldp.Click_BtChatWithAgent();
+				System.out.println("#And I click Chat with agent");	
 				 
 				 try {
 						assertEquals(asl.Verify_ModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
@@ -160,12 +147,7 @@ public class C1384_Ldp_LoginUnver_Reg_GalleryEnquiry extends Base_Test {
 						System.out.println("State : Chat Enquiry For Not Shown as expected");
 						
 					}
-				 
-//				   System.out.println("#And the form will ask for my name, phone number, and email address"); 
-//				   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
-//				   ldp.Cwa_InputPhone(CONFIG.getProperty("UnverID_Phone"));
-//				   ldp.Cwa_InputEmail(CONFIG.getProperty("Unver_Email"));
-//				  
+				 	  
 				   System.out.println("#And I send enquiry"); 
 				   ldp.Click_CWA_BtEnquireNow();
 				   
@@ -184,10 +166,9 @@ public class C1384_Ldp_LoginUnver_Reg_GalleryEnquiry extends Base_Test {
 					}   
 			
 		}
-		
-		 
 		wait_Med();
-		
+		System.out.println("=========");
+		System.out.println("=========");
 		
 	}
 

@@ -32,7 +32,7 @@ public class C1352_LDP_Unver_Reg_PhoneEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		System.out.println("=========");
 		 System.out.println("TestCase : C1352");	
 		 System.out.println("Regular - Phone Enquiry for logged out, unverified user");	
 		 System.out.println("---------");		 
@@ -83,8 +83,8 @@ public class C1352_LDP_Unver_Reg_PhoneEnquiry extends Base_Test {
 			   System.out.println("#And I send enquiry"); 
 			   srp.Click_CA_BtConfirm();
 		
-			   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys("191220");
-				
+			   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otp_unverID"));
+					
 
 		} else {
 			
@@ -102,9 +102,7 @@ public class C1352_LDP_Unver_Reg_PhoneEnquiry extends Base_Test {
 				 System.out.println("#And I am on Regular listing detail page");
 								
 				ldp.Click_BtPhone();
-				System.out.println("#When click Call button in sticky bar");	
-								
-				
+				System.out.println("#When click Call button in sticky bar");			
 								
 				 try {
 						assertEquals(asl.Verify_ModalCallAgent(), true, "#And the Chat enquiry form should display as expected");
@@ -124,15 +122,13 @@ public class C1352_LDP_Unver_Reg_PhoneEnquiry extends Base_Test {
 				   System.out.println("#And I send enquiry"); 
 				   srp.Click_CA_BtConfirm();
 				   
-				   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys("191220");
-					
-				   
-			
-		}
-		
+				   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otp_unverID"));
+						
+		}	
 		 
 		wait_Med();
-		
+		System.out.println("=========");
+		System.out.println("=========");
 		
 	}
 

@@ -30,7 +30,7 @@ public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		 System.out.println("=========");
 		 System.out.println("TestCase : C1340");	
 		 System.out.println("Must See - Chat Enquiry for logged in, verified user");	
 		 System.out.println("---------");		 
@@ -39,8 +39,6 @@ public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 		login.Click_Home_Me();
 				
 		if (util.verifyLogin()) {
-			
-		
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
 			 driver.swipe(633, 1162, 612, 493, 3771);
@@ -64,15 +62,13 @@ public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 		     ldp.Click_LdpSaleResult();
 			 
 			 
-			 srp.Click_Srp_Ldp_List();
+		     srp.Click_Srp_Ldp_MustSeeList();
 			 System.out.println("#And I am on Must see listing detail page");
 			 
 			
 			ldp.Click_BtEnquireNow();
 			System.out.println("#When click enquire now button");	
-			 
-			 
-			 
+			  
 			 ldp.Click_BtChatWithAgent();
 			 System.out.println("#And I click Chat with agent");	
 			 
@@ -121,7 +117,7 @@ public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 			     wait_Med();
 				 ldp.Click_LdpSaleResult(); 
 				 
-				 srp.Click_Srp_Ldp_List(); 
+				 srp.Click_Srp_Ldp_MustSeeList();
 				 System.out.println("#And I am on Must see listing detail page");	
 				
 				 
@@ -162,7 +158,8 @@ public class C1340_Ldp_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 		
 		 
 		wait_Med();
-		
+		System.out.println("=========");
+		System.out.println("=========");
 		
 	}
 

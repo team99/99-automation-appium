@@ -33,6 +33,7 @@ public class C1351_LDP_NoAcc_Reg_PhoneEnquiry extends Base_Test {
 		srp = new SearchResultPage(driver);
 			
 		
+		System.out.println("=========");
 		 System.out.println("TestCase : C1351");	
 		 System.out.println("Regular - Phone Enquiry for logged out, user has no account");	
 		 System.out.println("---------");		 
@@ -41,7 +42,6 @@ public class C1351_LDP_NoAcc_Reg_PhoneEnquiry extends Base_Test {
 		login.Click_Home_Me();
 				
 		if (util.verifyLogin()) {
-			
 		
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
@@ -83,8 +83,8 @@ public class C1351_LDP_NoAcc_Reg_PhoneEnquiry extends Base_Test {
 			   System.out.println("#And I send enquiry"); 
 			   srp.Click_CA_BtConfirm();
 		
-			   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys("191220");
-				
+			   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otpnoacc"));
+					
 
 		} else {
 			
@@ -124,15 +124,16 @@ public class C1351_LDP_NoAcc_Reg_PhoneEnquiry extends Base_Test {
 				   System.out.println("#And I send enquiry"); 
 				   srp.Click_CA_BtConfirm();
 				   
-				   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys("191220");
-					
+				   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otpnoacc"));
+						
 				   
 			
 		}
 		
 		 
 		wait_Med();
-		
+		System.out.println("=========");
+		System.out.println("=========");
 		
 	}
 

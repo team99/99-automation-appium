@@ -32,7 +32,7 @@ public class C1347_LDP_Unver_MustSee_PhoneEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		System.out.println("=========");
 		 System.out.println("TestCase : C1347");	
 		 System.out.println("Must See - Phone Enquiry for logged out, unverified");	
 		 System.out.println("---------");		 
@@ -42,7 +42,6 @@ public class C1347_LDP_Unver_MustSee_PhoneEnquiry extends Base_Test {
 				
 		if (util.verifyLogin()) {
 			
-		
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
 			 driver.swipe(633, 1162, 612, 493, 3771);
@@ -58,7 +57,7 @@ public class C1347_LDP_Unver_MustSee_PhoneEnquiry extends Base_Test {
 			 ldp.Click_LdpSaleResult();
 			 
 			 
-			 srp.Click_Srp_Ldp_List();
+			 srp.Click_Srp_Ldp_MustSeeList();
 			 System.out.println("#And I am on Must see listing detail page");
 			 
 			 
@@ -83,7 +82,7 @@ public class C1347_LDP_Unver_MustSee_PhoneEnquiry extends Base_Test {
 			   System.out.println("#And I send enquiry"); 
 			   srp.Click_CA_BtConfirm();
 		
-			   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys("191220");
+			   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otp_unverID"));
 				
 
 		} else {
@@ -95,10 +94,9 @@ public class C1347_LDP_Unver_MustSee_PhoneEnquiry extends Base_Test {
 				wait_Med();			
 				
 			    //LDP search method in SRP
-//			     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
-				 ldp.Click_LdpSaleResult(); 
+				ldp.Click_LdpSaleResult(); 
 				 
-				 srp.Click_Srp_Ldp_List(); 
+				 srp.Click_Srp_Ldp_MustSeeList(); 
 				 System.out.println("#And I am on Must see listing detail page");	
 					
 				ldp.Click_BtPhone();
@@ -124,15 +122,13 @@ public class C1347_LDP_Unver_MustSee_PhoneEnquiry extends Base_Test {
 				   System.out.println("#And I send enquiry"); 
 				   srp.Click_CA_BtConfirm();
 				   
-				   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys("191220");
-					
-				   
+				   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otp_unverID"));
 			
 		}
-		
-		 
+			 
 		wait_Med();
-		
+		System.out.println("=========");
+		System.out.println("=========");
 		
 	}
 

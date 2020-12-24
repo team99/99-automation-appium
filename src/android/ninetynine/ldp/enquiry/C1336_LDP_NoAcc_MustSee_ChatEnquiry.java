@@ -30,7 +30,7 @@ public class C1336_LDP_NoAcc_MustSee_ChatEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		 System.out.println("=========");
 		 System.out.println("TestCase : C1336");	
 		 System.out.println("Must See - Chat Enquiry for logged out and user has no account");	
 		 System.out.println("---------");		 
@@ -38,9 +38,7 @@ public class C1336_LDP_NoAcc_MustSee_ChatEnquiry extends Base_Test {
 		wait_Long();	
 		login.Click_Home_Me();
 				
-		if (util.verifyLogin()) {
-			
-		
+		if (util.verifyLogin()) {	
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
 			 driver.swipe(633, 1162, 612, 493, 3771);
@@ -53,19 +51,14 @@ public class C1336_LDP_NoAcc_MustSee_ChatEnquiry extends Base_Test {
 		     
 		     
 		     //LDP search method in SRP
-//		     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
-			 ldp.Click_LdpSaleResult();
-			 
-			 
-			 srp.Click_Srp_Ldp_List();
+			 ldp.Click_LdpSaleResult();			 		 
+			 srp.Click_Srp_Ldp_MustSeeList();
 			 System.out.println("#And I am on Must see listing detail page");
 			 
-			
 			ldp.Click_BtEnquireNow();
 			System.out.println("#When click enquire now button");	
 			 
-			 
-			 
+
 			 ldp.Click_BtChatWithAgent();
 			 System.out.println("#And I click Chat with agent");	
 			 
@@ -82,19 +75,17 @@ public class C1336_LDP_NoAcc_MustSee_ChatEnquiry extends Base_Test {
 			 
 			   System.out.println("#And the form will ask for my name, phone number, and email address"); 
 			   ldp.Cwa_InputName(CONFIG.getProperty("NoAcc_Name"));
-			   ldp.Cwa_InputPhone(CONFIG.getProperty("Unver_Phone"));
+			   ldp.Cwa_InputPhone(CONFIG.getProperty("NoAcc_Phone"));
 			   ldp.Cwa_InputEmail(CONFIG.getProperty("NoAcc_Email"));
 			 
 			   System.out.println("#And I send enquiry"); 
 			   ldp.Click_CWA_BtEnquireNow();
 			   
 			   System.out.println("#And I verify phone number"); 
-			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
-		
+			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otpnoacc"));
 			   
 			   ldp.Click_BtCWABtConfirm();
-			   
-			   
+			    
 			   try {
 					assertEquals(asl.Verify_SuccessModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
 					System.out.println("State : Send Enquiry success as expected");
@@ -104,7 +95,6 @@ public class C1336_LDP_NoAcc_MustSee_ChatEnquiry extends Base_Test {
 					System.out.println("State : Send Enquiry not success");
 					
 				}
-			   
 
 		} else {
 			
@@ -115,12 +105,10 @@ public class C1336_LDP_NoAcc_MustSee_ChatEnquiry extends Base_Test {
 				wait_Med();			
 				
 			    //LDP search method in SRP
-//			     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
 				 ldp.Click_LdpSaleResult(); 
 				 
-				 srp.Click_Srp_Ldp_List(); 
-				 System.out.println("#And I am on Must see listing detail page");	
-				
+				 srp.Click_Srp_Ldp_MustSeeList(); 
+				 System.out.println("#And I am on Must see listing detail page");				
 				 
 				 ldp.Click_BtEnquireNow();
 				 System.out.println("#When click enquire now button");	
@@ -162,12 +150,12 @@ public class C1336_LDP_NoAcc_MustSee_ChatEnquiry extends Base_Test {
 						
 					}
 				   
-			
 		}
 		
 		 
 		wait_Med();
-		
+		 System.out.println("=========");
+		 System.out.println("=========");
 		
 	}
 

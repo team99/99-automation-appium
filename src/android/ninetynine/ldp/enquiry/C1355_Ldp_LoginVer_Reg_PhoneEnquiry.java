@@ -32,7 +32,7 @@ public class C1355_Ldp_LoginVer_Reg_PhoneEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		System.out.println("=========");
 		 System.out.println("TestCase : C1355");	
 		 System.out.println("Regular - Phone Enquiry for logged in, verified user");	
 		 System.out.println("---------");		 
@@ -41,8 +41,6 @@ public class C1355_Ldp_LoginVer_Reg_PhoneEnquiry extends Base_Test {
 		login.Click_Home_Me();
 				
 		if (util.verifyLogin()) {
-			
-		
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
 			 driver.swipe(633, 1162, 612, 493, 3771);
@@ -89,8 +87,6 @@ public class C1355_Ldp_LoginVer_Reg_PhoneEnquiry extends Base_Test {
 			   System.out.println("#And I send enquiry"); 
 			   ldp.Click_Bt_ContToCall();
 			
-
-
 		} else {
 			
 				System.out.println("State : Logged out");
@@ -98,8 +94,8 @@ public class C1355_Ldp_LoginVer_Reg_PhoneEnquiry extends Base_Test {
 				login.Click_Home_Me();
 				login.Click_MeLogin();
 				login.Click_Login();
-				login.InputUsername(CONFIG.getProperty("Unver_Email"));
-				login.InputPassword(CONFIG.getProperty("Unver_Pass"));
+				login.InputUsername(CONFIG.getProperty("Ver_Email"));
+				login.InputPassword(CONFIG.getProperty("Ver_Pass"));
 				login.Click_ButtonLogin();
 				
 				wait_Long();
@@ -127,18 +123,14 @@ public class C1355_Ldp_LoginVer_Reg_PhoneEnquiry extends Base_Test {
 						System.out.println("State : Call Enquiry For Not Shown as expected");
 						
 					}		 
-	
 				 
 				   System.out.println("#And I send enquiry"); 
 				   ldp.Click_Bt_ContToCall();
 				 
-			
-		}
-		
-		 
+		} 
 		wait_Med();
-		
+		System.out.println("=========");
+		System.out.println("=========");
 		
 	}
-
 }

@@ -32,7 +32,7 @@ public class C1344_LDP_LoginUnver_Reg_ChatEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		System.out.println("=========");
 		 System.out.println("TestCase : C1344");	
 		 System.out.println("Regular - Chat Enquiry for logged in, unverified user");	
 		 System.out.println("---------");		 
@@ -42,7 +42,6 @@ public class C1344_LDP_LoginUnver_Reg_ChatEnquiry extends Base_Test {
 				
 		if (util.verifyLogin()) {
 			
-		
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
 			 driver.swipe(633, 1162, 612, 493, 3771);
@@ -175,7 +174,8 @@ public class C1344_LDP_LoginUnver_Reg_ChatEnquiry extends Base_Test {
 		
 		 
 		wait_Med();
-		
+		System.out.println("=========");
+		System.out.println("=========");
 		
 	}
 

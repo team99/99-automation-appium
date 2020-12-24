@@ -32,7 +32,7 @@ public class C1342_LDP_Unver_Reg_ChatEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		System.out.println("=========");
 		 System.out.println("TestCase : C1342");	
 		 System.out.println("Regular - Chat Enquiry for logged out, unverified user");	
 		 System.out.println("---------");		 
@@ -42,7 +42,6 @@ public class C1342_LDP_Unver_Reg_ChatEnquiry extends Base_Test {
 				
 		if (util.verifyLogin()) {
 			
-		
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
 			 driver.swipe(633, 1162, 612, 493, 3771);
@@ -62,11 +61,8 @@ public class C1342_LDP_Unver_Reg_ChatEnquiry extends Base_Test {
 
 			 System.out.println("#And I am on Regular listing detail page");
 			 
-			
 			ldp.Click_BtEnquireNow();
 			System.out.println("#When click enquire now button");	
-			 
-			 
 			 
 			 ldp.Click_BtChatWithAgent();
 			 System.out.println("#And I click Chat with agent");	
@@ -84,7 +80,6 @@ public class C1342_LDP_Unver_Reg_ChatEnquiry extends Base_Test {
 			 
 			   System.out.println("#And the form will ask for my name, phone number, and email address"); 
 			   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
-//			   ldp.Cwa_InputPhone(CONFIG.getProperty("Unver_Phone"));
 			   ldp.Cwa_InputPhone(CONFIG.getProperty("UnverID_Phone"));	
 			   ldp.Cwa_InputEmail(CONFIG.getProperty("Unver_Email"));
 			 
@@ -141,7 +136,6 @@ public class C1342_LDP_Unver_Reg_ChatEnquiry extends Base_Test {
 				 
 				   System.out.println("#And the form will ask for my name, phone number, and email address"); 
 				   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
-				   //ldp.Cwa_InputPhone(CONFIG.getProperty("Unver_Phone"));
 				   ldp.Cwa_InputPhone(CONFIG.getProperty("UnverID_Phone"));		
 				   ldp.Cwa_InputEmail(CONFIG.getProperty("Unver_Email"));
 	
@@ -164,10 +158,10 @@ public class C1342_LDP_Unver_Reg_ChatEnquiry extends Base_Test {
 				 
 			
 		}
-		
 		 
 		wait_Med();
-		
+		System.out.println("=========");
+		System.out.println("=========");
 		
 	}
 

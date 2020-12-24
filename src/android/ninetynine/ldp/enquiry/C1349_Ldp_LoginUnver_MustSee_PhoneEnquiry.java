@@ -32,7 +32,7 @@ public class C1349_Ldp_LoginUnver_MustSee_PhoneEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		System.out.println("=========");
 		 System.out.println("TestCase : C1349");	
 		 System.out.println("Must See - Phone Enquiry for logged in, unverified user");	
 		 System.out.println("---------");		 
@@ -42,7 +42,6 @@ public class C1349_Ldp_LoginUnver_MustSee_PhoneEnquiry extends Base_Test {
 				
 		if (util.verifyLogin()) {
 			
-		
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
 			 driver.swipe(633, 1162, 612, 493, 3771);
@@ -66,7 +65,7 @@ public class C1349_Ldp_LoginUnver_MustSee_PhoneEnquiry extends Base_Test {
 		     ldp.Click_LdpSaleResult();
 			 
 			 
-			 srp.Click_Srp_Ldp_List();
+		     srp.Click_Srp_Ldp_MustSeeList(); 
 			 System.out.println("#And I am on Must see listing detail page");
 			 
 			
@@ -87,8 +86,8 @@ public class C1349_Ldp_LoginUnver_MustSee_PhoneEnquiry extends Base_Test {
 			   System.out.println("#And I send enquiry"); 
 			   srp.Click_CA_BtConfirm();
 			   
-			   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys("191220");
-				
+			   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otp_unverID"));
+					
 				
 
 
@@ -111,7 +110,7 @@ public class C1349_Ldp_LoginUnver_MustSee_PhoneEnquiry extends Base_Test {
 			     wait_Med();
 				 ldp.Click_LdpSaleResult(); 
 				 
-				 srp.Click_Srp_Ldp_List(); 
+				 srp.Click_Srp_Ldp_MustSeeList(); 
 				 System.out.println("#And I am on Must see listing detail page");	
 				
 					
@@ -131,8 +130,8 @@ public class C1349_Ldp_LoginUnver_MustSee_PhoneEnquiry extends Base_Test {
 				   System.out.println("#And I send enquiry"); 
 				   srp.Click_CA_BtConfirm();
 				   
-				   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys("191220");
-					
+				   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otp_unverID"));
+						
 					
 				 
 			
@@ -140,7 +139,8 @@ public class C1349_Ldp_LoginUnver_MustSee_PhoneEnquiry extends Base_Test {
 		
 		 
 		wait_Med();
-		
+		System.out.println("=========");
+		System.out.println("=========");
 		
 	}
 

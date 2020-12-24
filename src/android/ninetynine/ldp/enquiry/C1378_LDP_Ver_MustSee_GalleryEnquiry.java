@@ -32,7 +32,7 @@ public class C1378_LDP_Ver_MustSee_GalleryEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		System.out.println("=========");
 		 System.out.println("TestCase : C1378");	
 		 System.out.println("Must See - Chat Enquiry for logged out, verified user");	
 		 System.out.println("---------");		 
@@ -41,8 +41,7 @@ public class C1378_LDP_Ver_MustSee_GalleryEnquiry extends Base_Test {
 		login.Click_Home_Me();
 				
 		if (util.verifyLogin()) {
-			
-		
+
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
 			 driver.swipe(633, 1162, 612, 493, 3771);
@@ -53,22 +52,17 @@ public class C1378_LDP_Ver_MustSee_GalleryEnquiry extends Base_Test {
 		 	 hp.Click_HomeSale();		     
 		     wait_Med();
 		     
-		     
 		     //LDP search method in SRP
 			 ldp.Click_LdpSaleResult();
-			 
-			 
+			
 			 srp.Click_Srp_Ldp_MustSeeList();
 			 System.out.println("#And I am on Must see listing detail page");
-			 
 			 
 			 ldp.Click_PhotoGallery();
 			 System.out.println("#When I open the Listing photo Gallery");
 				
-			 
-			 
-			ldp.CWA_Photo_BtEnquire();
-			System.out.println("#And I click enquire buttons");	
+			 ldp.CWA_Photo_BtEnquire();
+			 System.out.println("#And I click enquire buttons");	
 			
 			 ldp.Click_BtChatWithAgent();
 			 System.out.println("#And I click Chat with agent");	
@@ -114,20 +108,19 @@ public class C1378_LDP_Ver_MustSee_GalleryEnquiry extends Base_Test {
 				wait_Med();			
 				
 			    //LDP search method in SRP
-//			     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
-				 ldp.Click_LdpSaleResult(); 
+				ldp.Click_LdpSaleResult(); 
 				 
-				 srp.Click_Srp_Ldp_MustSeeList(); 
-				 System.out.println("#And I am on Must see listing detail page");	
+				srp.Click_Srp_Ldp_MustSeeList(); 
+				System.out.println("#And I am on Must see listing detail page");	
 					
-				 ldp.Click_PhotoGallery();
-				 System.out.println("#When I open the Listing photo Gallery");
+				ldp.Click_PhotoGallery();
+				System.out.println("#When I open the Listing photo Gallery");
 					
 				ldp.CWA_Photo_BtEnquire();
 				System.out.println("#And I click enquire buttons");	
 				
-				 ldp.Click_BtChatWithAgent();
-				 System.out.println("#And I click Chat with agent");	
+				ldp.Click_BtChatWithAgent();
+				System.out.println("#And I click Chat with agent");	
 								
 				 try {
 						assertEquals(asl.Verify_ModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
@@ -162,10 +155,10 @@ public class C1378_LDP_Ver_MustSee_GalleryEnquiry extends Base_Test {
 					}   
 			
 		}
-		
 		 
 		wait_Med();
-		
+		System.out.println("=========");
+		System.out.println("=========");
 		
 	}
 

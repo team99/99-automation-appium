@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [LDP Enquiry Suite]">
+  <test name="LDP(failed)">
+    <classes>
+      <class name="android.ninetynine.ldp.enquiry.C1337_LDP_Unver_MustSee_ChatEnquiry">
+        <methods>
+          <include name="C1337_LDP_Unver_MustSee_Chat_Enquiry"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1337_LDP_Unver_MustSee_ChatEnquiry -->
+      <class name="android.ninetynine.ldp.enquiry.C1336_LDP_NoAcc_MustSee_ChatEnquiry">
+        <methods>
+          <include name="C1336_LDP_NoAcc_MustSee_Chat_Enquiry"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1336_LDP_NoAcc_MustSee_ChatEnquiry -->
+      <class name="android.ninetynine.ldp.enquiry.C1338_LDP_Ver_MustSee_ChatEnquiry">
+        <methods>
+          <include name="C1338_LDP_Ver_MustSee_Chat_Enquiry"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1338_LDP_Ver_MustSee_ChatEnquiry -->
+    </classes>
+  </test> <!-- LDP(failed) -->
+</suite> <!-- Failed suite [LDP Enquiry Suite] -->
