@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="SRP Enquiry Suite">
-  <test thread-count="5" name="SRP Enquiry">
+<suite name="SRP Enquiry Phone Suite">
+  <test thread-count="5" name="SRP Enquiry Phone">
     <classes>
-	<class name="android.ninetynine.srp.enquiry.C1037_SRP_LoginUnver_MustSee_ChatEnquiry"/>
-		<class name="android.ninetynine.srp.enquiry.C1038_SRP_LoginVer_MustSee_ChatEnquiry"/>
-		<class name="android.ninetynine.srp.enquiry.C1039_SRP_Unver_MustSee_ChatEnquiry"/>
-		<class name="android.ninetynine.srp.enquiry.C1040_SRP_Ver_MustSee_ChatEnquiry"/>
-		<class name="android.ninetynine.srp.enquiry.C1135_SRP_NoAcc_Reg_ChatEnquiry"/>
-		<class name="android.ninetynine.srp.enquiry.C1136_SRP_Unver_Reg_ChatEnquiry"/>
-		<class name="android.ninetynine.srp.enquiry.C1137_SRP_Ver_Reg_ChatEnquiry"/>
-		<class name="android.ninetynine.srp.enquiry.C1138_SRP_LoginUnver_Reg_ChatEnquiry"/>
-		<class name="android.ninetynine.srp.enquiry.C1139_SRP_LoginVer_Reg_ChatEnquiry"/>
-		<class name="android.ninetynine.srp.enquiry.C740_SRP_NoAcc_MustSee_ChatEnquiry"/>
-		
 		<class name="android.ninetynine.srp.enquiry.C1045_SRP_Unver_MustSee_PhoneEnquiry"/>
 		<class name="android.ninetynine.srp.enquiry.C1046_SRP_Ver_MustSee_PhoneEnquiry"/>
 		<class name="android.ninetynine.srp.enquiry.C1047_SRP_LoginUnver_MustSee_PhoneEnquiry"/>
@@ -24,7 +13,6 @@
 		<class name="android.ninetynine.srp.enquiry.C1133_SRP_LoginUnver_Reg_PhoneEnquiry"/>
 		<class name="android.ninetynine.srp.enquiry.C1134_SRP_LoginVer_Reg_PhoneEnquiry"/>
 		<class name="android.ninetynine.srp.enquiry.C742_SRP_NoAcc_MustSee_PhoneEnquiry"/>
-
 	</classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

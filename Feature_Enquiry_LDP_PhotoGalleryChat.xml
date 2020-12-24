@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="LDP Enquiry Suite">
+<suite name="LDP Enquiry Chat Suite">
   <test thread-count="5" name="LDP Photo Gallery Chat">
     <classes>
-		<class name="android.ninetynine.ldp.enquiry.C1376_LDP_NoAcc_MustSee_GalleryEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1377_LDP_Unver_MustSee_GalleryEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1378_LDP_Ver_MustSee_GalleryEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1379_Ldp_LoginUnver_MustSee_GalleryEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1380_Ldp_LoginVer_MustSee_GalleryEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1381_LDP_NoAcc_Reg_GalleryEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1382_LDP_Unver_Reg_GalleryEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1383_LDP_Ver_Reg_GalleryEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1384_Ldp_LoginUnver_Reg_GalleryEnquiry.java"/>
-		<class name="android.ninetynine.ldp.enquiry.C1385_Ldp_LoginVer_Reg_GalleryEnquiry.java"/>
+		<class name="android.ninetynine.ldp.enquiry.C1376_LDP_NoAcc_MustSee_GalleryEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1377_LDP_Unver_MustSee_GalleryEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1378_LDP_Ver_MustSee_GalleryEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1379_Ldp_LoginUnver_MustSee_GalleryEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1380_Ldp_LoginVer_MustSee_GalleryEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1381_LDP_NoAcc_Reg_GalleryEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1382_LDP_Unver_Reg_GalleryEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1383_LDP_Ver_Reg_GalleryEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1384_Ldp_LoginUnver_Reg_GalleryEnquiry"/>
+		<class name="android.ninetynine.ldp.enquiry.C1385_Ldp_LoginVer_Reg_GalleryEnquiry"/>
 	</classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
