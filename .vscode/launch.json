@@ -27,6 +27,30 @@
       "port": 9298,
       "webRoot": "${workspaceFolder}",
       "url": "http://127.0.0.1:54666/p/SG_Automation/test-output/index.html?_cmAuth\u003dsplbsoxoxs"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (3)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9284,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:54666/p/SG_Automation/test-output/Suite/Test.html?_cmAuth\u003dsplbsoxoxs"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (4)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9268,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:54666/p/SG_Automation/test-output/old/index.html?_cmAuth\u003dsplbsoxoxs"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (5)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9283,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:54666/p/SG_Automation/test-output/old/LDP%20Enquiry%20Suite/index.html?_cmAuth\u003dsplbsoxoxs"
     }
   ]
 }
