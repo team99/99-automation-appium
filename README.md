@@ -5,7 +5,7 @@
 - IDE
 - JRE, JDK Library
 - TestNG
-- Device for testin
+- Device for testing
 
 ## Package Structure
 ```
