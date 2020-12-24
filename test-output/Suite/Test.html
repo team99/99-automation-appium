@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/5/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Oct 11 19:00:03 ICT 2019</td>
+<td>Started on:</td><td>Wed Dec 23 23:44:14 SGT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>207 seconds (207048 ms)</td>
+<tr><td>Total time:</td><td>280 seconds (280253 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,288 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_TnC.tearDown()'><b>tearDown</b><br>Test class: com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_TnC</td>
-<td><div><pre>org.openqa.selenium.remote.SessionNotFoundException: invalid session id (A session is either terminated or not started (3fc57345-4594-441d-8a31-cff7d49e754d), A session could be terminated due to the end of timeout specified by newCommandTimeout https://docs.experitest.com/display/AS/Timeout+Capabilities)  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 22 milliseconds
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;L-156182171&apos;, ip: &apos;10.47.214.141&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=com.maxstream, device.majorVersion=9, dontGoHomeOnQuit=false, device.os=Android, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, deviceName=5200fb1fee84c45d, fullReset=false, platform=ANY, deviceUDID=5200fb1fee84c45d, install.only.for.update=false, desired={appPackage=com.maxstream, appActivity=.MainActivity, VERSION=9.0.0, automationName=uiautomator, reportDirectory=C:Usersdw37172tappiumstudio-reportsVMP_(Maxstream)#============CONFIG Manufacture===========, platformName=Android, deviceName=5200fb1fee84c45d}, device.serialNumber=5200fb1fee84c45d, locationServicesAuthorized=false, device.version=9, automationName=uiautomator, reportDirectory=C:Usersdw37172tappiumstudio-reportsVMP_(Maxstream)#============CONFIG Manufacture===========, autoWebview=false, platformName=Android, udid=5200fb1fee84c45d, testName=mobile test 10/11/19 07:00 PM, device.screenSize=1080x2220, useKeystore=false, test.type=Mobile, device.manufacture=samsung, instrumentApp=false, appiumVersion=1.8.0, device.category=PHONE, autoDismissAlerts=false, reportUrl=C:\Users\dw37172t\appiumstudio-reports\test235, newSessionWaitTimeout=300, keystorePath=~/.android/debug.keystore, appActivity=.MainActivity, waitForDeviceTimeout=120000, device.model=SM-A530F, device.name=SM-A530F, VERSION=9.0.0, autoGrantPermissions=false, takeScreenshots=true, projectName=, autoAcceptAlerts=false}]
-Session ID: 3fc57345-4594-441d-8a31-cff7d49e754d
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:235)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:526)
-	at com.telkomsel.android.vmp.utilities.BaseTest.tearDown(BaseTest.java:246)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1894369629", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1894369629'><pre>org.openqa.selenium.remote.SessionNotFoundException: invalid session id (A session is either terminated or not started (3fc57345-4594-441d-8a31-cff7d49e754d), A session could be terminated due to the end of timeout specified by newCommandTimeout https://docs.experitest.com/display/AS/Timeout+Capabilities)  (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 22 milliseconds
-Build info: version: &apos;2.53.1&apos;, revision: &apos;a36b8b1cd5757287168e54b817830adce9b0158d&apos;, time: &apos;2016-06-30 19:26:09&apos;
-System info: host: &apos;L-156182171&apos;, ip: &apos;10.47.214.141&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities [{appPackage=com.maxstream, device.majorVersion=9, dontGoHomeOnQuit=false, device.os=Android, noReset=false, dontStopAppOnReset=false, reservationDuration=240, reportFormat=xml, deviceName=5200fb1fee84c45d, fullReset=false, platform=ANY, deviceUDID=5200fb1fee84c45d, install.only.for.update=false, desired={appPackage=com.maxstream, appActivity=.MainActivity, VERSION=9.0.0, automationName=uiautomator, reportDirectory=C:Usersdw37172tappiumstudio-reportsVMP_(Maxstream)#============CONFIG Manufacture===========, platformName=Android, deviceName=5200fb1fee84c45d}, device.serialNumber=5200fb1fee84c45d, locationServicesAuthorized=false, device.version=9, automationName=uiautomator, reportDirectory=C:Usersdw37172tappiumstudio-reportsVMP_(Maxstream)#============CONFIG Manufacture===========, autoWebview=false, platformName=Android, udid=5200fb1fee84c45d, testName=mobile test 10/11/19 07:00 PM, device.screenSize=1080x2220, useKeystore=false, test.type=Mobile, device.manufacture=samsung, instrumentApp=false, appiumVersion=1.8.0, device.category=PHONE, autoDismissAlerts=false, reportUrl=C:\Users\dw37172t\appiumstudio-reports\test235, newSessionWaitTimeout=300, keystorePath=~/.android/debug.keystore, appActivity=.MainActivity, waitForDeviceTimeout=120000, device.model=SM-A530F, device.name=SM-A530F, VERSION=9.0.0, autoGrantPermissions=false, takeScreenshots=true, projectName=, autoAcceptAlerts=false}]
-Session ID: 3fc57345-4594-441d-8a31-cff7d49e754d
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:235)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:526)
-	at com.telkomsel.android.vmp.utilities.BaseTest.tearDown(BaseTest.java:246)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
-	at org.testng.TestRunner.afterRun(TestRunner.java:983)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>null</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.telkomsel.android.vmp.test.Group1_Regression_PreLoginBrowseFlow_Nickelodeon.Test_Group1_Regression_PreBrowse_Nickelodeon()'><b>Test_Group1_Regression_PreBrowse_Nickelodeon</b><br>Test class: com.telkomsel.android.vmp.test.Group1_Regression_PreLoginBrowseFlow_Nickelodeon</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.telkomsel.android.vmp.utilities.GeneralUtilities.verifyelemen(GeneralUtilities.java:49)
-	at com.telkomsel.android.vmp.utilities.GeneralUtilities.click(GeneralUtilities.java:95)
-	at com.telkomsel.android.vmp.pageobjects.LandingPage.clickMenuBar(LandingPage.java:70)
-	at com.telkomsel.android.vmp.test.Group1_Regression_PreLoginBrowseFlow_Nickelodeon.Test_Group1_Regression_PreBrowse_Nickelodeon(Group1_Regression_PreLoginBrowseFlow_Nickelodeon.java:23)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace656479172", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace656479172'><pre>java.lang.NullPointerException
-	at com.telkomsel.android.vmp.utilities.GeneralUtilities.verifyelemen(GeneralUtilities.java:49)
-	at com.telkomsel.android.vmp.utilities.GeneralUtilities.click(GeneralUtilities.java:95)
-	at com.telkomsel.android.vmp.pageobjects.LandingPage.clickMenuBar(LandingPage.java:70)
-	at com.telkomsel.android.vmp.test.Group1_Regression_PreLoginBrowseFlow_Nickelodeon.Test_Group1_Regression_PreBrowse_Nickelodeon(Group1_Regression_PreLoginBrowseFlow_Nickelodeon.java:23)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>33</td>
-<td>com.telkomsel.android.vmp.test.Group1_Regression_PreLoginBrowseFlow_Nickelodeon@73846619</td></tr>
-<tr>
-<td title='com.telkomsel.android.vmp.test.Group2_Regression_PostLoginBrowseFlow_GenrePreference.Test_Regression_PostLoginBrowseFlow_GenrePreference()'><b>Test_Regression_PostLoginBrowseFlow_GenrePreference</b><br>Test class: com.telkomsel.android.vmp.test.Group2_Regression_PostLoginBrowseFlow_GenrePreference</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.telkomsel.android.vmp.utilities.GeneralUtilities.verifyelemen(GeneralUtilities.java:49)
-	at com.telkomsel.android.vmp.utilities.GeneralUtilities.click(GeneralUtilities.java:95)
-	at com.telkomsel.android.vmp.pageobjects.HooqPage.clickOKServerBusy(HooqPage.java:74)
-	at com.telkomsel.android.vmp.test.Group2_Regression_PostLoginBrowseFlow_GenrePreference.Test_Regression_PostLoginBrowseFlow_GenrePreference(Group2_Regression_PostLoginBrowseFlow_GenrePreference.java:25)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1349182676", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1349182676'><pre>java.lang.NullPointerException
-	at com.telkomsel.android.vmp.utilities.GeneralUtilities.verifyelemen(GeneralUtilities.java:49)
-	at com.telkomsel.android.vmp.utilities.GeneralUtilities.click(GeneralUtilities.java:95)
-	at com.telkomsel.android.vmp.pageobjects.HooqPage.clickOKServerBusy(HooqPage.java:74)
-	at com.telkomsel.android.vmp.test.Group2_Regression_PostLoginBrowseFlow_GenrePreference.Test_Regression_PostLoginBrowseFlow_GenrePreference(Group2_Regression_PostLoginBrowseFlow_GenrePreference.java:25)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>33</td>
-<td>com.telkomsel.android.vmp.test.Group2_Regression_PostLoginBrowseFlow_GenrePreference@69ea3742</td></tr>
-<tr>
-<td title='com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_Search.Test_Regression_Pre_TestCases_Search()'><b>Test_Regression_Pre_TestCases_Search</b><br>Test class: com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_Search</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.telkomsel.android.vmp.utilities.GeneralUtilities.verifyelemen(GeneralUtilities.java:49)
-	at com.telkomsel.android.vmp.utilities.GeneralUtilities.click(GeneralUtilities.java:95)
-	at com.telkomsel.android.vmp.pageobjects.AutosuggestForSearchPage.ClickSearchIcon(AutosuggestForSearchPage.java:35)
-	at com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_Search.Test_Regression_Pre_TestCases_Search(Group1_Regression_Pre_TestCases_Search.java:26)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1424082571", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1424082571'><pre>java.lang.NullPointerException
-	at com.telkomsel.android.vmp.utilities.GeneralUtilities.verifyelemen(GeneralUtilities.java:49)
-	at com.telkomsel.android.vmp.utilities.GeneralUtilities.click(GeneralUtilities.java:95)
-	at com.telkomsel.android.vmp.pageobjects.AutosuggestForSearchPage.ClickSearchIcon(AutosuggestForSearchPage.java:35)
-	at com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_Search.Test_Regression_Pre_TestCases_Search(Group1_Regression_Pre_TestCases_Search.java:26)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>13</td>
-<td>com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_Search@4b952a2d</td></tr>
-<tr>
-<td title='com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_Support.Test_Regression_Pre_TestCases_Support()'><b>Test_Regression_Pre_TestCases_Support</b><br>Test class: com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_Support</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.telkomsel.android.vmp.utilities.GeneralUtilities.verifyelemen(GeneralUtilities.java:49)
-	at com.telkomsel.android.vmp.utilities.GeneralUtilities.click(GeneralUtilities.java:95)
-	at com.telkomsel.android.vmp.pageobjects.LandingPage.clickMenuBar(LandingPage.java:70)
-	at com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_Support.Test_Regression_Pre_TestCases_Support(Group1_Regression_Pre_TestCases_Support.java:26)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace658404420", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace658404420'><pre>java.lang.NullPointerException
-	at com.telkomsel.android.vmp.utilities.GeneralUtilities.verifyelemen(GeneralUtilities.java:49)
-	at com.telkomsel.android.vmp.utilities.GeneralUtilities.click(GeneralUtilities.java:95)
-	at com.telkomsel.android.vmp.pageobjects.LandingPage.clickMenuBar(LandingPage.java:70)
-	at com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_Support.Test_Regression_Pre_TestCases_Support(Group1_Regression_Pre_TestCases_Support.java:26)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>13</td>
-<td>com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_Support@3159c4b8</td></tr>
-<tr>
-<td title='com.telkomsel.android.vmp.test.Group2_Regression_PostLoginBrowseFlow_ContentPlayback.test_Group2_Regression_PostLoginBrowseFlow_ContentPlayback()'><b>test_Group2_Regression_PostLoginBrowseFlow_ContentPlayback</b><br>Test class: com.telkomsel.android.vmp.test.Group2_Regression_PostLoginBrowseFlow_ContentPlayback</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.telkomsel.android.vmp.utilities.GeneralUtilities.verifyelemen(GeneralUtilities.java:49)
-	at com.telkomsel.android.vmp.utilities.GeneralUtilities.click(GeneralUtilities.java:95)
-	at com.telkomsel.android.vmp.pageobjects.HooqPage.clickOKServerBusy(HooqPage.java:74)
-	at com.telkomsel.android.vmp.test.Group2_Regression_PostLoginBrowseFlow_ContentPlayback.test_Group2_Regression_PostLoginBrowseFlow_ContentPlayback(Group2_Regression_PostLoginBrowseFlow_ContentPlayback.java:31)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace760357227", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace760357227'><pre>java.lang.NullPointerException
-	at com.telkomsel.android.vmp.utilities.GeneralUtilities.verifyelemen(GeneralUtilities.java:49)
-	at com.telkomsel.android.vmp.utilities.GeneralUtilities.click(GeneralUtilities.java:95)
-	at com.telkomsel.android.vmp.pageobjects.HooqPage.clickOKServerBusy(HooqPage.java:74)
-	at com.telkomsel.android.vmp.test.Group2_Regression_PostLoginBrowseFlow_ContentPlayback.test_Group2_Regression_PostLoginBrowseFlow_ContentPlayback(Group2_Regression_PostLoginBrowseFlow_ContentPlayback.java:31)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>23</td>
-<td>com.telkomsel.android.vmp.test.Group2_Regression_PostLoginBrowseFlow_ContentPlayback@4bec1f0c</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -357,10 +75,15 @@ Session ID: 3fc57345-4594-441d-8a31-cff7d49e754d
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_TnC.Test_Regression_Pre_TestCases_TnC()'><b>Test_Regression_Pre_TestCases_TnC</b><br>Test class: com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_TnC</td>
+<td title='android.ninetynine.ldp.enquiry.C1336_LDP_NoAcc_MustSee_ChatEnquiry.C1336_LDP_NoAcc_MustSee_Chat_Enquiry()'><b>C1336_LDP_NoAcc_MustSee_Chat_Enquiry</b><br>Test class: android.ninetynine.ldp.enquiry.C1336_LDP_NoAcc_MustSee_ChatEnquiry</td>
 <td></td>
-<td>81</td>
-<td>com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_TnC@5702b3b1</td></tr>
+<td>114</td>
+<td>android.ninetynine.ldp.enquiry.C1336_LDP_NoAcc_MustSee_ChatEnquiry@42e26948</td></tr>
+<tr>
+<td title='android.ninetynine.ldp.enquiry.C1338_LDP_Ver_MustSee_ChatEnquiry.C1338_LDP_Ver_MustSee_Chat_Enquiry()'><b>C1338_LDP_Ver_MustSee_Chat_Enquiry</b><br>Test class: android.ninetynine.ldp.enquiry.C1338_LDP_Ver_MustSee_ChatEnquiry</td>
+<td></td>
+<td>115</td>
+<td>android.ninetynine.ldp.enquiry.C1338_LDP_Ver_MustSee_ChatEnquiry@57baeedf</td></tr>
 </table><p>
 </body>
 </html>

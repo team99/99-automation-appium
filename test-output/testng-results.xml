@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="184385" started-at="2020-12-19T18:23:03Z" finished-at="2020-12-19T18:26:07Z">
+  <suite name="Default suite" duration-ms="196375" started-at="2020-12-24T05:37:24Z" finished-at="2020-12-24T05:40:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="184385" started-at="2020-12-19T18:23:03Z" finished-at="2020-12-19T18:26:07Z">
+    <test name="Default test" duration-ms="196375" started-at="2020-12-24T05:37:24Z" finished-at="2020-12-24T05:40:40Z">
       <class name="android.ninetynine.ldp.enquiry.C1385_Ldp_LoginVer_Reg_GalleryEnquiry">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:android.ninetynine.ldp.enquiry.C1385_Ldp_LoginVer_Reg_GalleryEnquiry@1794d431]" name="setUp" is-config="true" duration-ms="12396" started-at="2020-12-20T02:23:03Z" finished-at="2020-12-20T02:23:15Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:android.ninetynine.ldp.enquiry.C1385_Ldp_LoginVer_Reg_GalleryEnquiry@96def03]" name="setUp" is-config="true" duration-ms="13111" started-at="2020-12-24T13:37:24Z" finished-at="2020-12-24T13:37:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="C1385_Ldp_LoginVer_Reg_Gallery_Enquiry()[pri:0, instance:android.ninetynine.ldp.enquiry.C1385_Ldp_LoginVer_Reg_GalleryEnquiry@1794d431]" name="C1385_Ldp_LoginVer_Reg_Gallery_Enquiry" duration-ms="156306" started-at="2020-12-20T02:23:15Z" finished-at="2020-12-20T02:25:52Z">
+        <test-method status="PASS" signature="C1385_Ldp_LoginVer_Reg_Gallery_Enquiry()[pri:0, instance:android.ninetynine.ldp.enquiry.C1385_Ldp_LoginVer_Reg_GalleryEnquiry@96def03]" name="C1385_Ldp_LoginVer_Reg_Gallery_Enquiry" duration-ms="164104" started-at="2020-12-24T13:37:37Z" finished-at="2020-12-24T13:40:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- C1385_Ldp_LoginVer_Reg_Gallery_Enquiry -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:android.ninetynine.ldp.enquiry.C1385_Ldp_LoginVer_Reg_GalleryEnquiry@1794d431]" name="tearDown" is-config="true" duration-ms="15636" started-at="2020-12-20T02:25:52Z" finished-at="2020-12-20T02:26:07Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:android.ninetynine.ldp.enquiry.C1385_Ldp_LoginVer_Reg_GalleryEnquiry@96def03]" name="tearDown" is-config="true" duration-ms="19115" started-at="2020-12-24T13:40:21Z" finished-at="2020-12-24T13:40:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
