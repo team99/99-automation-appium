@@ -53,10 +53,12 @@
   -  *Regression_Logout.java* is a file where we write logout test case.
 
 **android.ninetynine.createlisting** This package where we placed create listing testcase.
+
 **android.ninetynine.ldp.enquiry** This package where we placed LDP enquiry testcase.
+
 **android.ninetynine.srp.enquiry** This package where we placed SRP enquiry testcase.
+
 **android.ninetynine.ldp.pagerendering** This package where we placed page rendering enquiry testcase.
-  
 
 ## Installation
 1. Install all the requirements above.
