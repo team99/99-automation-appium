@@ -30,7 +30,7 @@ public class C1337_LDP_Unver_MustSee_ChatEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		 System.out.println("=========");
 		 System.out.println("TestCase : C1337");	
 		 System.out.println("Must See - Chat Enquiry for logged out, unverified user");	
 		 System.out.println("---------");		 
@@ -40,7 +40,6 @@ public class C1337_LDP_Unver_MustSee_ChatEnquiry extends Base_Test {
 				
 		if (util.verifyLogin()) {
 			
-		
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
 			 driver.swipe(633, 1162, 612, 493, 3771);
@@ -53,22 +52,15 @@ public class C1337_LDP_Unver_MustSee_ChatEnquiry extends Base_Test {
 		     
 		     
 		     //LDP search method in SRP
-//		     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
-			 ldp.Click_LdpSaleResult();
-			 
-			 
-			 srp.Click_Srp_Ldp_List();
+			 ldp.Click_LdpSaleResult();	 
+			 srp.Click_Srp_Ldp_MustSeeList();
 			 System.out.println("#And I am on Must see listing detail page");
-			 
-			
+			 	
 			ldp.Click_BtEnquireNow();
 			System.out.println("#When click enquire now button");	
-			 
-			 
-			 
+			 		 
 			 ldp.Click_BtChatWithAgent();
 			 System.out.println("#And I click Chat with agent");	
-			 
 			 
 			 try {
 					assertEquals(asl.Verify_ModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
@@ -94,6 +86,16 @@ public class C1337_LDP_Unver_MustSee_ChatEnquiry extends Base_Test {
 			   
 			   ldp.Click_BtCWABtConfirm();
 
+			   try {
+					assertEquals(asl.Verify_SuccessModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
+					System.out.println("State : Send Enquiry success as expected");
+					
+				} catch (Exception e){
+							
+					System.out.println("State : Send Enquiry not success");
+					
+				}	
+			   
 		} else {
 			
 				System.out.println("State : Logged out");
@@ -103,13 +105,10 @@ public class C1337_LDP_Unver_MustSee_ChatEnquiry extends Base_Test {
 				wait_Med();			
 				
 			    //LDP search method in SRP
-//			     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
-				 ldp.Click_LdpSaleResult(); 
-				 
-				 srp.Click_Srp_Ldp_List(); 
+				ldp.Click_LdpSaleResult(); 	 
+				 srp.Click_Srp_Ldp_MustSeeList();
 				 System.out.println("#And I am on Must see listing detail page");	
-				
-				 
+					 
 				 ldp.Click_BtEnquireNow();
 				 System.out.println("#When click enquire now button");	
 					
@@ -140,12 +139,22 @@ public class C1337_LDP_Unver_MustSee_ChatEnquiry extends Base_Test {
 					
 				   ldp.Click_BtCWABtConfirm();
 				 
+				   try {
+						assertEquals(asl.Verify_SuccessModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
+						System.out.println("State : Send Enquiry success as expected");
+						
+					} catch (Exception e){
+								
+						System.out.println("State : Send Enquiry not success");
+						
+					}	
 			
 		}
 		
 		 
-		wait_Med();
-		
+			wait_Med();
+			System.out.println("=========");
+			System.out.println("=========");
 		
 	}
 

@@ -32,7 +32,7 @@ public class C1353_LDP_Ver_Reg_PhoneEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		 System.out.println("=========");
 		 System.out.println("TestCase : C1353");	
 		 System.out.println("Regular - Phone Enquiry for logged out, verified user");	
 		 System.out.println("---------");		 
@@ -40,8 +40,7 @@ public class C1353_LDP_Ver_Reg_PhoneEnquiry extends Base_Test {
 		wait_Long();	
 		login.Click_Home_Me();
 				
-		if (util.verifyLogin()) {
-			
+		if (util.verifyLogin()) {	
 		
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
@@ -83,8 +82,8 @@ public class C1353_LDP_Ver_Reg_PhoneEnquiry extends Base_Test {
 			   System.out.println("#And I send enquiry"); 
 			   srp.Click_CA_BtConfirm();
 		
-			   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys("191220");
-				
+			   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otp_verID"));
+					
 
 		} else {
 			
@@ -124,15 +123,14 @@ public class C1353_LDP_Ver_Reg_PhoneEnquiry extends Base_Test {
 				   System.out.println("#And I send enquiry"); 
 				   srp.Click_CA_BtConfirm();
 				   
-				   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys("191220");
-					
-				   
-			
+				   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otp_verID"));
+									
 		}
 		
 		 
 		wait_Med();
-		
+		System.out.println("=========");
+		System.out.println("=========");
 		
 	}
 

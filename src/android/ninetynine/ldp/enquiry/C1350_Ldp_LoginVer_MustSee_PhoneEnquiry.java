@@ -32,7 +32,7 @@ public class C1350_Ldp_LoginVer_MustSee_PhoneEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		System.out.println("=========");
 		 System.out.println("TestCase : C1350");	
 		 System.out.println("Must See - Phone Enquiry for logged in, verified user");	
 		 System.out.println("---------");		 
@@ -41,7 +41,6 @@ public class C1350_Ldp_LoginVer_MustSee_PhoneEnquiry extends Base_Test {
 		login.Click_Home_Me();
 				
 		if (util.verifyLogin()) {
-			
 		
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
@@ -131,7 +130,8 @@ public class C1350_Ldp_LoginVer_MustSee_PhoneEnquiry extends Base_Test {
 		
 		 
 		wait_Med();
-		
+		System.out.println("=========");
+		System.out.println("=========");
 		
 	}
 

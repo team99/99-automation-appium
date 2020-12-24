@@ -32,7 +32,7 @@ public class C1343_LDP_Ver_Reg_ChatEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		System.out.println("=========");
 		 System.out.println("TestCase : C1343");	
 		 System.out.println("Regular - Chat Enquiry for logged out, verified user");	
 		 System.out.println("---------");		 
@@ -42,7 +42,6 @@ public class C1343_LDP_Ver_Reg_ChatEnquiry extends Base_Test {
 				
 		if (util.verifyLogin()) {
 			
-		
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
 			 driver.swipe(633, 1162, 612, 493, 3771);
@@ -53,18 +52,15 @@ public class C1343_LDP_Ver_Reg_ChatEnquiry extends Base_Test {
 		 	 hp.Click_HomeSale();		     
 		     wait_Med();
 		     
-		     
 		     //LDP search method in SRP
 			 driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");
 			 srp.Click_Srp_ResultPollen();
 			 driver.swipe(620, 1114, 604, 235, 2845);
 			 srp.Click_Srp_Reg_List();
 			 System.out.println("#And I am on Regular listing detail page");
-			 
 			
 			ldp.Click_BtEnquireNow();
 			System.out.println("#When click enquire now button");	
-			 
 			 
 			 
 			 ldp.Click_BtChatWithAgent();
@@ -164,8 +160,8 @@ public class C1343_LDP_Ver_Reg_ChatEnquiry extends Base_Test {
 		
 		 
 		wait_Med();
-		
-		
+		System.out.println("=========");
+		System.out.println("=========");
 	}
 
 }

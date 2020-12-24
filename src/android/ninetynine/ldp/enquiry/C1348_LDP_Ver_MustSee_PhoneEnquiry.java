@@ -32,7 +32,7 @@ public class C1348_LDP_Ver_MustSee_PhoneEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		System.out.println("=========");
 		 System.out.println("TestCase : C1348");	
 		 System.out.println("Must See - Phone Enquiry for logged out, verified");	
 		 System.out.println("---------");		 
@@ -58,7 +58,7 @@ public class C1348_LDP_Ver_MustSee_PhoneEnquiry extends Base_Test {
 			 ldp.Click_LdpSaleResult();
 			 
 			 
-			 srp.Click_Srp_Ldp_List();
+			 srp.Click_Srp_Ldp_MustSeeList(); 
 			 System.out.println("#And I am on Must see listing detail page");
 			 
 			 
@@ -83,7 +83,7 @@ public class C1348_LDP_Ver_MustSee_PhoneEnquiry extends Base_Test {
 			   System.out.println("#And I send enquiry"); 
 			   srp.Click_CA_BtConfirm();
 		
-			   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys("191220");
+			   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otp_verID"));
 				
 
 		} else {
@@ -95,10 +95,9 @@ public class C1348_LDP_Ver_MustSee_PhoneEnquiry extends Base_Test {
 				wait_Med();			
 				
 			    //LDP search method in SRP
-//			     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
 				 ldp.Click_LdpSaleResult(); 
 				 
-				 srp.Click_Srp_Ldp_List(); 
+				 srp.Click_Srp_Ldp_MustSeeList(); 
 				 System.out.println("#And I am on Must see listing detail page");	
 					
 				ldp.Click_BtPhone();
@@ -124,15 +123,16 @@ public class C1348_LDP_Ver_MustSee_PhoneEnquiry extends Base_Test {
 				   System.out.println("#And I send enquiry"); 
 				   srp.Click_CA_BtConfirm();
 				   
-				   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys("191220");
-					
+				   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otp_unverID"));
+						
 				   
 			
 		}
 		
 		 
 		wait_Med();
-		
+		System.out.println("=========");
+		System.out.println("=========");
 		
 	}
 

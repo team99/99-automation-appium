@@ -32,7 +32,7 @@ public class C1345_LDP_LoginVer_Reg_ChatEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		System.out.println("=========");
 		 System.out.println("TestCase : C1345");	
 		 System.out.println("Regular - Chat Enquiry for logged in, verified user");	
 		 System.out.println("---------");		 
@@ -41,7 +41,6 @@ public class C1345_LDP_LoginVer_Reg_ChatEnquiry extends Base_Test {
 		login.Click_Home_Me();
 				
 		if (util.verifyLogin()) {
-			
 		
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
@@ -72,11 +71,9 @@ public class C1345_LDP_LoginVer_Reg_ChatEnquiry extends Base_Test {
 			 srp.Click_Srp_Reg_List();
 			 System.out.println("#And I am on Regular listing detail page");
 			 
-			
 			ldp.Click_BtEnquireNow();
 			System.out.println("#When click enquire now button");	
 			
-			 			 
 			 ldp.Click_BtChatWithAgent();
 			 System.out.println("#And I click Chat with agent");	
 			 
@@ -120,7 +117,6 @@ public class C1345_LDP_LoginVer_Reg_ChatEnquiry extends Base_Test {
 				hp.Click_HomeSale();
 				wait_Med();		
 				
-				
 			    //LDP search method in SRP
 				 driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");
 				 srp.Click_Srp_ResultPollen();
@@ -130,14 +126,12 @@ public class C1345_LDP_LoginVer_Reg_ChatEnquiry extends Base_Test {
 				 srp.Click_Srp_Reg_List();
 				 System.out.println("#And I am on Regular listing detail page");	
 				
-				 
 				 ldp.Click_BtEnquireNow();
 				 System.out.println("#When click enquire now button");	
 					
 				 ldp.Click_BtChatWithAgent();
 				 System.out.println("#And I click Chat with agent");	
-					
-				 
+					 
 				 try {
 						assertEquals(asl.Verify_ModalChatWithAgent(), true, "#And the Chat enquiry form should display as expected");
 						System.out.println("State : Chat Enquiry Form displayed as expected");
@@ -148,7 +142,6 @@ public class C1345_LDP_LoginVer_Reg_ChatEnquiry extends Base_Test {
 						
 					}
 				 
-			
 				   System.out.println("#And I send enquiry"); 
 				   ldp.Click_CWA_BtEnquireNow();
 
@@ -167,7 +160,8 @@ public class C1345_LDP_LoginVer_Reg_ChatEnquiry extends Base_Test {
 		
 		 
 		wait_Med();
-		
+		System.out.println("=========");
+		System.out.println("=========");
 		
 	}
 

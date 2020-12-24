@@ -32,7 +32,7 @@ public class C1380_Ldp_LoginVer_MustSee_GalleryEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		System.out.println("=========");
 		 System.out.println("TestCase : C1380");	
 		 System.out.println("Must See - Chat Enquiry for logged in, verified user");	
 		 System.out.println("---------");		 
@@ -41,8 +41,6 @@ public class C1380_Ldp_LoginVer_MustSee_GalleryEnquiry extends Base_Test {
 		login.Click_Home_Me();
 				
 		if (util.verifyLogin()) {
-			
-		
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
 			 driver.swipe(633, 1162, 612, 493, 3771);
@@ -107,8 +105,7 @@ public class C1380_Ldp_LoginVer_MustSee_GalleryEnquiry extends Base_Test {
 
 		} else {
 			
-				System.out.println("State : Logged out");
-				
+				System.out.println("State : Logged out");	
 				login.Click_Home_Me();
 				login.Click_MeLogin();
 				login.Click_Login();
@@ -160,11 +157,10 @@ public class C1380_Ldp_LoginVer_MustSee_GalleryEnquiry extends Base_Test {
 						
 					}   
 			
-		}
-		
-		 
+		} 
 		wait_Med();
-		
+		System.out.println("=========");
+		System.out.println("=========");
 		
 	}
 

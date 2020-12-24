@@ -32,7 +32,7 @@ public class C1379_Ldp_LoginUnver_MustSee_GalleryEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		System.out.println("=========");
 		 System.out.println("TestCase : C1379");	
 		 System.out.println("Must See - Chat Enquiry for logged in, unverified user");	
 		 System.out.println("---------");		 
@@ -41,8 +41,6 @@ public class C1379_Ldp_LoginUnver_MustSee_GalleryEnquiry extends Base_Test {
 		login.Click_Home_Me();
 				
 		if (util.verifyLogin()) {
-			
-		
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
 			 driver.swipe(633, 1162, 612, 493, 3771);
@@ -88,11 +86,6 @@ public class C1379_Ldp_LoginUnver_MustSee_GalleryEnquiry extends Base_Test {
 					
 				}
 			 
-//			   System.out.println("#And the form will ask for my name, phone number, and email address"); 
-//			   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
-//			   ldp.Cwa_InputPhone(CONFIG.getProperty("UnverID_Phone"));
-//			   ldp.Cwa_InputEmail(CONFIG.getProperty("Unver_Email"));
-			 
 			   System.out.println("#And I send enquiry"); 
 			   ldp.Click_CWA_BtEnquireNow();
 		
@@ -111,8 +104,6 @@ public class C1379_Ldp_LoginUnver_MustSee_GalleryEnquiry extends Base_Test {
 				}	
 
 				
-
-
 		} else {
 			
 				System.out.println("State : Logged out");
@@ -153,12 +144,7 @@ public class C1379_Ldp_LoginUnver_MustSee_GalleryEnquiry extends Base_Test {
 						System.out.println("State : Chat Enquiry For Not Shown as expected");
 						
 					}
-				 
-//				   System.out.println("#And the form will ask for my name, phone number, and email address"); 
-//				   ldp.Cwa_InputName(CONFIG.getProperty("Unver_Name"));
-//				   ldp.Cwa_InputPhone(CONFIG.getProperty("UnverID_Phone"));
-//				   ldp.Cwa_InputEmail(CONFIG.getProperty("Unver_Email"));
-//				  
+	  
 				   System.out.println("#And I send enquiry"); 
 				   ldp.Click_CWA_BtEnquireNow();
 				   
@@ -177,10 +163,10 @@ public class C1379_Ldp_LoginUnver_MustSee_GalleryEnquiry extends Base_Test {
 					}   
 			
 		}
-		
-		 
+			 
 		wait_Med();
-		
+		System.out.println("=========");
+		System.out.println("=========");
 		
 	}
 

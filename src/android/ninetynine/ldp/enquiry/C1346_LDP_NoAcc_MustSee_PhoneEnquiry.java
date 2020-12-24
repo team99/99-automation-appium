@@ -32,7 +32,7 @@ public class C1346_LDP_NoAcc_MustSee_PhoneEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		System.out.println("=========");
 		 System.out.println("TestCase : C1346");	
 		 System.out.println("Must See - Phone Enquiry for logged out, user has no account");	
 		 System.out.println("---------");		 
@@ -41,8 +41,7 @@ public class C1346_LDP_NoAcc_MustSee_PhoneEnquiry extends Base_Test {
 		login.Click_Home_Me();
 				
 		if (util.verifyLogin()) {
-			
-		
+
 			 System.out.println("State : Logged in");			
 			 driver.swipe(620, 1114, 604, 235, 2845);
 			 driver.swipe(633, 1162, 612, 493, 3771);
@@ -52,15 +51,12 @@ public class C1346_LDP_NoAcc_MustSee_PhoneEnquiry extends Base_Test {
 		     wait_Long();		     
 		 	 hp.Click_HomeSale();		     
 		     wait_Med();
-		     
-		     
+		     		     
 		     //LDP search method in SRP
 			 ldp.Click_LdpSaleResult();
-			 
-			 
-			 srp.Click_Srp_Ldp_List();
+			 		 
+			 srp.Click_Srp_Ldp_MustSeeList();
 			 System.out.println("#And I am on Must see listing detail page");
-			 
 			 
 			ldp.Click_BtPhone();
 			System.out.println("#When click Call button in sticky bar");	
@@ -83,8 +79,7 @@ public class C1346_LDP_NoAcc_MustSee_PhoneEnquiry extends Base_Test {
 			   System.out.println("#And I send enquiry"); 
 			   srp.Click_CA_BtConfirm();
 		
-			   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys("191220");
-				
+			   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otpnoacc"));		
 
 		} else {
 			
@@ -95,17 +90,15 @@ public class C1346_LDP_NoAcc_MustSee_PhoneEnquiry extends Base_Test {
 				wait_Med();			
 				
 			    //LDP search method in SRP
-//			     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
-				 ldp.Click_LdpSaleResult(); 
+				ldp.Click_LdpSaleResult(); 
 				 
-				 srp.Click_Srp_Ldp_List(); 
+				srp.Click_Srp_Ldp_MustSeeList();
 				 System.out.println("#And I am on Must see listing detail page");	
 					
 				ldp.Click_BtPhone();
 				System.out.println("#When click Call button in sticky bar");	
 								
-				
-								
+					
 				 try {
 						assertEquals(asl.Verify_ModalCallAgent(), true, "#And the Chat enquiry form should display as expected");
 						System.out.println("State : Call Enquiry Form displayed as expected");
@@ -124,15 +117,14 @@ public class C1346_LDP_NoAcc_MustSee_PhoneEnquiry extends Base_Test {
 				   System.out.println("#And I send enquiry"); 
 				   srp.Click_CA_BtConfirm();
 				   
-				   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys("191220");
-					
-				   
-			
+				   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otpnoacc"));
+						
 		}
 		
 		 
 		wait_Med();
-		
+		System.out.println("=========");
+		System.out.println("=========");
 		
 	}
 
