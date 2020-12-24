@@ -11,7 +11,7 @@ import android.ninetynine.util.Base_Test;
 import android.ninetynine.util.GeneralUtilities;
 import android.ninetynine.pageobjects.*;
 
-public class C742_SRP_NoAcc_MustSee_PhoneEnquiry extends Base_Test {
+public class C1132_SRP_Ver_Reg_PhoneEnquiry extends Base_Test {
 	
 	private Login login;
 	private AssertEqual_List asl;
@@ -21,7 +21,7 @@ public class C742_SRP_NoAcc_MustSee_PhoneEnquiry extends Base_Test {
 	private SearchResultPage srp;
 	
 	@Test
-	public void C742_SRP_NoAcc_MustSee_Phone_Enquiry() throws Exception {
+	public void C1132_SRP_Ver_Reg_Phone_Enquiry() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);
@@ -33,10 +33,10 @@ public class C742_SRP_NoAcc_MustSee_PhoneEnquiry extends Base_Test {
 		srp = new SearchResultPage(driver);
 			
 		 System.out.println("=========");
-		 System.out.println("TestCase : C742");	
-		 System.out.println("Must see -Phone Enquiry for logged out, user has no account");	
+		 System.out.println("TestCase : C1132");	
+		 System.out.println("Regular - Phone Enquiry for logged out, verified user");	
 		 System.out.println("---------");		 
-		 System.out.println("#Given I am a logged-out, has no account user");
+		 System.out.println("#Given I am a logged-out, verified user");
 		wait_Long();	
 		login.Click_Home_Me();
 				
@@ -52,10 +52,11 @@ public class C742_SRP_NoAcc_MustSee_PhoneEnquiry extends Base_Test {
 		 	 hp.Click_HomeSale();		     
 		     wait_Med();
 		     
-		     
 		     System.out.println("#And I am on search page");
-			 ldp.Click_LdpSaleResult();
-			 
+		 	driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");
+			srp.Click_Srp_ResultPollen();
+			driver.swipe(620, 1114, 604, 235, 2845);
+			 driver.swipe(633, 1162, 612, 493, 3771);
 		
 			srp.Click_Srp_BtPhone();
 			System.out.println("#When click call button");	
@@ -72,14 +73,14 @@ public class C742_SRP_NoAcc_MustSee_PhoneEnquiry extends Base_Test {
 				}
 			 
 			   System.out.println("#And the form will ask for my name, phone number, and email address"); 
-			   srp.Ca_InputName(CONFIG.getProperty("NoAcc_Name"));
-			   srp.Ca_InputPhone(CONFIG.getProperty("NoAcc_Phone"));
-			   srp.Ca_InputEmail(CONFIG.getProperty("NoAcc_Email"));
+			   srp.Ca_InputName(CONFIG.getProperty("Ver_Name"));
+			   srp.Ca_InputPhone(CONFIG.getProperty("Ver_Phone"));
+			   srp.Ca_InputEmail(CONFIG.getProperty("Ver_Email"));
 			 
 			   System.out.println("#And I send enquiry"); 
 			   srp.Click_CA_BtConfirm();
 			   
-			   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otpnoacc"));
+			   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otp_verID"));
 
 		} else {
 			
@@ -90,7 +91,11 @@ public class C742_SRP_NoAcc_MustSee_PhoneEnquiry extends Base_Test {
 			     wait_Med();
 			         
 			     System.out.println("#And I am on search page");
-				 ldp.Click_LdpSaleResult();
+			 	driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");
+				srp.Click_Srp_ResultPollen();
+				driver.swipe(620, 1114, 604, 235, 2845);
+				 driver.swipe(633, 1162, 612, 493, 3771);
+		
 				 
 				srp.Click_Srp_BtPhone();
 				System.out.println("#When click call button");	
@@ -106,14 +111,14 @@ public class C742_SRP_NoAcc_MustSee_PhoneEnquiry extends Base_Test {
 					}
 				 
 				   System.out.println("#And the form will ask for my name, phone number, and email address"); 
-				   srp.Ca_InputName(CONFIG.getProperty("NoAcc_Name"));
-				   srp.Ca_InputPhone(CONFIG.getProperty("NoAcc_Phone"));
-				   srp.Ca_InputEmail(CONFIG.getProperty("NoAcc_Email"));
-				 
+				   srp.Ca_InputName(CONFIG.getProperty("Ver_Name"));
+				   srp.Ca_InputPhone(CONFIG.getProperty("Ver_Phone"));
+				   srp.Ca_InputEmail(CONFIG.getProperty("Ver_Email"));
+				   
 				   System.out.println("#And I send enquiry"); 
 				   srp.Click_CA_BtConfirm();
 				   
-				   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otpnoacc"));
+				   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otp_verID"));
 
 			
 		}

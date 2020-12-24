@@ -11,7 +11,7 @@ import android.ninetynine.util.Base_Test;
 import android.ninetynine.util.GeneralUtilities;
 import android.ninetynine.pageobjects.*;
 
-public class C1047_SRP_LoginUnver_MustSee_PhoneEnquiry extends Base_Test {
+public class C1133_SRP_LoginUnver_Reg_PhoneEnquiry extends Base_Test {
 	
 	private Login login;
 	private AssertEqual_List asl;
@@ -21,7 +21,7 @@ public class C1047_SRP_LoginUnver_MustSee_PhoneEnquiry extends Base_Test {
 	private SearchResultPage srp;
 	
 	@Test
-	public void C1047_SRP_LoginUnver_MustSee_Phone_Enquiry() throws Exception {
+	public void C1133_SRP_LoginUnver_Reg_Phone_Enquiry() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);
@@ -33,8 +33,8 @@ public class C1047_SRP_LoginUnver_MustSee_PhoneEnquiry extends Base_Test {
 		srp = new SearchResultPage(driver);
 			
 		 System.out.println("=========");
-		 System.out.println("TestCase : C1047");	
-		 System.out.println("Must See - Phone Enquiry for logged in, unverified user");	
+		 System.out.println("TestCase : C1133");	
+		 System.out.println("Regular - Phone Enquiry for logged out, unverified user");	
 		 System.out.println("---------");		 
 		 System.out.println("#Given I am a logged-in, unverified user");
 		wait_Long();	
@@ -58,11 +58,15 @@ public class C1047_SRP_LoginUnver_MustSee_PhoneEnquiry extends Base_Test {
 			 login.Click_ButtonLogin(); 
 		     wait_Long();
 	     
-		     //LDP search method in SRP
+		     
 		     hp.Click_HomeSale();
-		     wait_Med();			
-		     System.out.println("#And I am on search page");
-		     ldp.Click_LdpSaleResult();
+		     wait_Med();
+		     //LDP search method in SRP
+		 	driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");
+			srp.Click_Srp_ResultPollen();
+			driver.swipe(620, 1114, 604, 235, 2845);
+			 driver.swipe(633, 1162, 612, 493, 3771);
+	
 			 	
 				srp.Click_Srp_BtPhone();
 				System.out.println("#When click call button");		
@@ -95,13 +99,16 @@ public class C1047_SRP_LoginUnver_MustSee_PhoneEnquiry extends Base_Test {
 				login.InputUsername(CONFIG.getProperty("Unver_Email"));
 				login.InputPassword(CONFIG.getProperty("Unver_Pass"));
 				login.Click_ButtonLogin();
-				
 				wait_Long();
-				hp.Click_HomeSale();
-				wait_Med();			
 				
-				 System.out.println("#And I am on search page");
-				 ldp.Click_LdpSaleResult();
+			     hp.Click_HomeSale();
+			     wait_Med();
+			     //LDP search method in SRP
+			 	driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");
+				srp.Click_Srp_ResultPollen();
+				driver.swipe(620, 1114, 604, 235, 2845);
+				 driver.swipe(633, 1162, 612, 493, 3771);
+		
 
 					srp.Click_Srp_BtPhone();
 					System.out.println("#When click call button");	

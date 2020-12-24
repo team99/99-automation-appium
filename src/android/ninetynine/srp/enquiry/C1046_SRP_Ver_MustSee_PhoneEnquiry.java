@@ -4,6 +4,8 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.FileInputStream;
 import java.util.Properties;
+
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import android.ninetynine.util.Base_Test;
 import android.ninetynine.util.GeneralUtilities;
@@ -30,7 +32,7 @@ public class C1046_SRP_Ver_MustSee_PhoneEnquiry extends Base_Test {
 		ldp = new Landing_Page(driver); 
 		srp = new SearchResultPage(driver);
 			
-		
+		 System.out.println("=========");
 		 System.out.println("TestCase : C1046");	
 		 System.out.println("Must See - Phone Enquiry for logged out, verified user");	
 		 System.out.println("---------");		 
@@ -53,14 +55,11 @@ public class C1046_SRP_Ver_MustSee_PhoneEnquiry extends Base_Test {
 		     
 		     
 		     System.out.println("#And I am on search page");
-//		     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
 			 ldp.Click_LdpSaleResult();
 			 
-		
 			srp.Click_Srp_BtPhone();
 			System.out.println("#When click call button");	
-			  
-			 
+			  		 
 			 try {
 					assertEquals(asl.Verify_ModalCallAgent(), true, "#And the Chat enquiry form should display as expected");
 					System.out.println("State : Call Enquiry Form displayed as expected");
@@ -79,11 +78,8 @@ public class C1046_SRP_Ver_MustSee_PhoneEnquiry extends Base_Test {
 			   System.out.println("#And I send enquiry"); 
 			   srp.Click_CA_BtConfirm();
 			   
-//			   System.out.println("#And I verify phone number"); 
-//			   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
-//		
-//			   
-//			   ldp.Click_BtCWABtConfirm();
+			   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otp_verID"));
+
 
 		} else {
 			
@@ -95,8 +91,7 @@ public class C1046_SRP_Ver_MustSee_PhoneEnquiry extends Base_Test {
 			     
 			     
 			     System.out.println("#And I am on search page");
-//			     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
-				 ldp.Click_LdpSaleResult();
+			     ldp.Click_LdpSaleResult();
 				 
 			
 				srp.Click_Srp_BtPhone();
@@ -121,14 +116,12 @@ public class C1046_SRP_Ver_MustSee_PhoneEnquiry extends Base_Test {
 				   System.out.println("#And I send enquiry"); 
 				   srp.Click_CA_BtConfirm();
 				   
-//				   System.out.println("#And I verify phone number"); 
-//				   ldp.Cwa_Input_Otp(CONFIG.getProperty("otp"));
-//				   ldp.Click_BtCWABtConfirm();
-			 		
+				   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otp_verID"));
 		}
 		 
 		wait_Med();
-		
+		 System.out.println("=========");
+		 System.out.println("=========");
 		
 	}
 
