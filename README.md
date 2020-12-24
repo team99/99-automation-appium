@@ -32,8 +32,14 @@
 ├──  libs
 ├──  test-output
 └──  testng.xml
+└──  Feature_Enquiry_LDP.xml
+└──  Feature_Enquiry_LDP_PhotoGalleryChat.xml
+└──  Feature_Enquiry_LDP_StickyBarChat.xml
+└──  Feature_Enquiry_LDP_StickyBarPhone.xml
+└──  Feature_Enquiry_SRP.xml
+└──  Feature_Enquiry_SRP_Chat.xml
+└──  Feature_Enquiry_SRP_Phone.xml
 ```
-
 
 
 **android.ninetynine.config** packages include :
@@ -59,6 +65,20 @@
 **android.ninetynine.srp.enquiry** This package where we placed SRP enquiry testcase.
 
 **android.ninetynine.ldp.pagerendering** This package where we placed page rendering enquiry testcase.
+
+**Feature_Enquiry_LDP_PhotoGalleryChat.xml** this file is a suite TestNG for running all of LDP Enquiry PhotoGallery-Chat test cases.
+
+**Feature_Enquiry_LDP_StickyBarChat.xml** this file is a suite TestNG for running all of LDP Enquiry StickyBar-Chat test cases.
+
+**Feature_Enquiry_LDP_StickyBarPhone.xml** this file is a suite TestNG for running all of LDP Enquiry StickyBar-Phone test cases.
+
+**Feature_Enquiry_LDP.xml** this file is a suite TestNG for running all of LDP Enquiry test cases.
+
+**Feature_Enquiry_SRP.xml** this file is a suite TestNG for running all of SRP Enquiry test cases.
+
+**Feature_Enquiry_SRP_Chat.xml** this file is a suite TestNG for running all of SRP Enquiry from Chat test cases.
+
+**Feature_Enquiry_SRP_Chat.xml** this file is a suite TestNG for running all of SRP Enquiry from Phone test cases.
 
 ## Installation
 1. Install all the requirements above.
