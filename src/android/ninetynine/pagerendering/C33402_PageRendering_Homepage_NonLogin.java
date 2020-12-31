@@ -9,31 +9,25 @@ import android.ninetynine.util.Base_Test;
 import android.ninetynine.util.GeneralUtilities;
 import android.ninetynine.pageobjects.*;
 
-public class C1_PageRendering_Homepage_NonLogin extends Base_Test {
+public class C33402_PageRendering_Homepage_NonLogin extends Base_Test {
 	
 	private Login login;
-	private AssertEqual_List asl;
 	private Homepage hp;
 	private GeneralUtilities util;
-	private Landing_Page ldp;
-	private SearchResultPage srp;
 	private Homepage_AssertEqual hpae;
 	
 	@Test
-	public void C1_PageRendering_Home_page_NonLogin() throws Exception {
+	public void C33402_PageRendering_Homepage_Non_Login() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);
 		login = new Login(driver);
-		asl = new AssertEqual_List(driver);
 		hp = new Homepage(driver);
 		util = new GeneralUtilities(driver);
-		ldp = new Landing_Page(driver); 
-		srp = new SearchResultPage(driver);
 		hpae = new Homepage_AssertEqual(driver);
 			
 		 System.out.println("=========");
-		 System.out.println("TestCase : C1");	
+		 System.out.println("TestCase : C33042");	
 		 System.out.println("Page Rendering Homepage - Non login");	
 		 System.out.println("---------");		 
 		 System.out.println("#Given I am a logged-out, has no account user");

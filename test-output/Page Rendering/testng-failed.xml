@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Page Rendering]">
+  <test name="Page Rendering(failed)">
+    <classes>
+      <class name="android.ninetynine.pagerendering.C33416_PageRendering_LDP_Reg_LoginAgent">
+        <methods>
+          <include name="C15_PageRendering_LDP_Reg_Login_Agent"/>
+        </methods>
+      </class> <!-- android.ninetynine.pagerendering.C33416_PageRendering_LDP_Reg_LoginAgent -->
+      <class name="android.ninetynine.pagerendering.C33405_PageRendering_Homepage_AgentLogin">
+        <methods>
+          <include name="C4_PageRendering_Homepage_Agent_Login"/>
+        </methods>
+      </class> <!-- android.ninetynine.pagerendering.C33405_PageRendering_Homepage_AgentLogin -->
+      <class name="android.ninetynine.pagerendering.C33402_PageRendering_Homepage_NonLogin">
+        <methods>
+          <include name="setUp"/>
+          <include name="C1_PageRendering_Home_page_NonLogin"/>
+        </methods>
+      </class> <!-- android.ninetynine.pagerendering.C33402_PageRendering_Homepage_NonLogin -->
+      <class name="android.ninetynine.pagerendering.C33421_PageRendering_CreateListing_MustSee">
+        <methods>
+          <include name="C20_PageRendering_CreateListing_MustSee"/>
+        </methods>
+      </class> <!-- android.ninetynine.pagerendering.C33421_PageRendering_CreateListing_MustSee -->
+      <class name="android.ninetynine.pagerendering.C33409_PageRendering_LDP_MustSee_NonLogin">
+        <methods>
+          <include name="C8_PageRendering_LDP_Must_See_NonLogin"/>
+        </methods>
+      </class> <!-- android.ninetynine.pagerendering.C33409_PageRendering_LDP_MustSee_NonLogin -->
+      <class name="android.ninetynine.pagerendering.C33410_PageRendering_LDP_MustSee_LoginUnver">
+        <methods>
+          <include name="C9_PageRendering_LDP_MustSee_Login_Unver"/>
+        </methods>
+      </class> <!-- android.ninetynine.pagerendering.C33410_PageRendering_LDP_MustSee_LoginUnver -->
+      <class name="android.ninetynine.pagerendering.C33408_PageRendering_User_VerLogin">
+        <methods>
+          <include name="C7_PageRendering_User_Ver_Login"/>
+        </methods>
+      </class> <!-- android.ninetynine.pagerendering.C33408_PageRendering_User_VerLogin -->
+      <class name="android.ninetynine.pagerendering.C33415_PageRendering_LDP_Reg_LoginVer">
+        <methods>
+          <include name="C14_PageRendering_LDP_Reg_Login_Ver"/>
+        </methods>
+      </class> <!-- android.ninetynine.pagerendering.C33415_PageRendering_LDP_Reg_LoginVer -->
+      <class name="android.ninetynine.pagerendering.C33404_PageRendering_Homepage_VerLogin">
+        <methods>
+          <include name="C3_PageRendering_Homepage_Ver_Login"/>
+        </methods>
+      </class> <!-- android.ninetynine.pagerendering.C33404_PageRendering_Homepage_VerLogin -->
+      <class name="android.ninetynine.pagerendering.C33407_PageRendering_User_UnverLogin">
+        <methods>
+          <include name="C6_PageRendering_User_Unver_Login"/>
+        </methods>
+      </class> <!-- android.ninetynine.pagerendering.C33407_PageRendering_User_UnverLogin -->
+      <class name="android.ninetynine.pagerendering.C33412_PageRendering_LDP_MustSee_LoginAgent">
+        <methods>
+          <include name="C11_PageRendering_LDP_MustSee_Login_Agent"/>
+        </methods>
+      </class> <!-- android.ninetynine.pagerendering.C33412_PageRendering_LDP_MustSee_LoginAgent -->
+      <class name="android.ninetynine.pagerendering.C33403_PageRendering_Homepage_UnverLogin">
+        <methods>
+          <include name="C2_PageRendering_Home_page_UnverLogin"/>
+        </methods>
+      </class> <!-- android.ninetynine.pagerendering.C33403_PageRendering_Homepage_UnverLogin -->
+      <class name="android.ninetynine.pagerendering.C33418_PageRendering_SRP_LoginUnver">
+        <methods>
+          <include name="C17_PageRendering_SRP_Login_Unver"/>
+        </methods>
+      </class> <!-- android.ninetynine.pagerendering.C33418_PageRendering_SRP_LoginUnver -->
+      <class name="android.ninetynine.pagerendering.C33419_PageRendering_SRP_LoginVer">
+        <methods>
+          <include name="C18_PageRendering_SRP_Login_Ver"/>
+        </methods>
+      </class> <!-- android.ninetynine.pagerendering.C33419_PageRendering_SRP_LoginVer -->
+      <class name="android.ninetynine.pagerendering.C33422_PageRendering_CreateListing_Reg">
+        <methods>
+          <include name="C21_PageRendering_Create_Listing_Reg"/>
+        </methods>
+      </class> <!-- android.ninetynine.pagerendering.C33422_PageRendering_CreateListing_Reg -->
+      <class name="android.ninetynine.pagerendering.C33411_PageRendering_LDP_MustSee_LoginVer">
+        <methods>
+          <include name="C10_PageRendering_LDP_Must_See_LoginVer"/>
+        </methods>
+      </class> <!-- android.ninetynine.pagerendering.C33411_PageRendering_LDP_MustSee_LoginVer -->
+      <class name="android.ninetynine.pagerendering.C33414_PageRendering_LDP_Reg_LoginUnver">
+        <methods>
+          <include name="C13_PageRendering_LDP_Reg_Login_Unver"/>
+        </methods>
+      </class> <!-- android.ninetynine.pagerendering.C33414_PageRendering_LDP_Reg_LoginUnver -->
+      <class name="android.ninetynine.pagerendering.C33420_PageRendering_SRP_LoginAgent">
+        <methods>
+          <include name="C19_PageRendering_SRP_Login_Agent"/>
+        </methods>
+      </class> <!-- android.ninetynine.pagerendering.C33420_PageRendering_SRP_LoginAgent -->
+      <class name="android.ninetynine.pagerendering.C33417_PageRendering_SRP_NonLogin">
+        <methods>
+          <include name="C16_PageRendering_SRP_Non_Login"/>
+        </methods>
+      </class> <!-- android.ninetynine.pagerendering.C33417_PageRendering_SRP_NonLogin -->
+      <class name="android.ninetynine.pagerendering.C33413_PageRendering_LDP_Reg_NonLogin">
+        <methods>
+          <include name="C12_PageRendering_LDP_Reg_Non_Login"/>
+        </methods>
+      </class> <!-- android.ninetynine.pagerendering.C33413_PageRendering_LDP_Reg_NonLogin -->
+      <class name="android.ninetynine.pagerendering.C33406_PageRendering_User_AgentLogin">
+        <methods>
+          <include name="C5_PageRendering_User_Agent_Login"/>
+        </methods>
+      </class> <!-- android.ninetynine.pagerendering.C33406_PageRendering_User_AgentLogin -->
+    </classes>
+  </test> <!-- Page Rendering(failed) -->
+</suite> <!-- Failed suite [Page Rendering] -->

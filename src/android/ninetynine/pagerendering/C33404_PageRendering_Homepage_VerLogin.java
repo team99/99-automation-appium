@@ -9,34 +9,26 @@ import android.ninetynine.util.Base_Test;
 import android.ninetynine.util.GeneralUtilities;
 import android.ninetynine.pageobjects.*;
 
-public class C4_PageRendering_Homepage_AgentLogin extends Base_Test {
+public class C33404_PageRendering_Homepage_VerLogin extends Base_Test {
 	
 	private Login login;
-	private AssertEqual_List asl;
-	private Homepage hp;
 	private GeneralUtilities util;
-	private Landing_Page ldp;
-	private SearchResultPage srp;
 	private Homepage_AssertEqual hpae;
 	
 	@Test
-	public void C4_PageRendering_Homepage_Agent_Login() throws Exception {
+	public void C3_PageRendering_Homepage_Ver_Login() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);
 		login = new Login(driver);
-		asl = new AssertEqual_List(driver);
-		hp = new Homepage(driver);
 		util = new GeneralUtilities(driver);
-		ldp = new Landing_Page(driver); 
-		srp = new SearchResultPage(driver);
 		hpae = new Homepage_AssertEqual(driver);
 			
 		 System.out.println("=========");
-		 System.out.println("TestCase : C2");	
-		 System.out.println("Page Rendering Homepage - Agent User");	
+		 System.out.println("TestCase : C33404");	
+		 System.out.println("Page Rendering Homepage - Verified User");	
 		 System.out.println("---------");		 
-		 System.out.println("#Given I am a logged-in, has agent user");
+		 System.out.println("#Given I am a logged-in, has verified user");
 		 wait_Long();	
 		 login.Click_Home_Me();
 		 
@@ -53,11 +45,10 @@ public class C4_PageRendering_Homepage_AgentLogin extends Base_Test {
 			     login.Click_Home_Me();
 				 login.Click_MeLogin();
 				 login.Click_Login();
-				 login.InputUsername(CONFIG.getProperty("Agent_Email"));
-				 login.InputPassword(CONFIG.getProperty("Agent_Pass"));
+				 login.InputUsername(CONFIG.getProperty("Ver_Email"));
+				 login.InputPassword(CONFIG.getProperty("Ver_Pass"));
 				 login.Click_ButtonLogin(); 
 			     wait_Long();
-			     hp.Click_NotNow();
 		     
 			     System.out.println("#When I go to homepage");			
 					
@@ -205,18 +196,6 @@ public class C4_PageRendering_Homepage_AgentLogin extends Base_Test {
 					}	
 				 
 				 
-				 
-				 //This method for check if bar my listings displayed
-				 try {
-						assertEquals(hpae.Verify_BarMyListings(), true, "#And the bar my listings in Homepage displayed");
-						System.out.println("State :  MyListings  in bar displayed as expected");
-						
-					} catch (Exception e){
-								
-						System.out.println("State : MyListings in bar Not Shown as expected");
-						
-					}	
-				 
 
 			} else {
 				
@@ -225,12 +204,10 @@ public class C4_PageRendering_Homepage_AgentLogin extends Base_Test {
 					login.Click_Home_Me();
 					login.Click_MeLogin();
 					login.Click_Login();
-					login.InputUsername(CONFIG.getProperty("Agent_Email"));
-					login.InputPassword(CONFIG.getProperty("Agent_Pass"));
+					login.InputUsername(CONFIG.getProperty("Ver_Email"));
+					login.InputPassword(CONFIG.getProperty("Ver_Pass"));
 					login.Click_ButtonLogin();
-					wait_Long();
-					hp.Click_NotNow();
-				
+					
 				
 				     System.out.println("#When I go to homepage");			
 						
@@ -377,16 +354,6 @@ public class C4_PageRendering_Homepage_AgentLogin extends Base_Test {
 							
 						}	
 					 
-					 //This method for check if bar my listings displayed
-					 try {
-							assertEquals(hpae.Verify_BarMyListings(), true, "#And the bar my listings in Homepage displayed");
-							System.out.println("State :  MyListings  in bar displayed as expected");
-							
-						} catch (Exception e){
-									
-							System.out.println("State : MyListings in bar Not Shown as expected");
-							
-						}	
 					 
 				
 			}

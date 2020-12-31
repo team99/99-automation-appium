@@ -18,11 +18,13 @@ public class ListingCreation extends Base_Test {
 
 	By LC_CreateListing = By.xpath("//*[@text='Create listing']");
 	By LC_CreateMustSee = By.xpath("//*[@text='Create Must See listing']");
+	By LC_CreateReg = By.xpath("//*[@id='createRegularListing']");
 	
 	By LC_EnterPostalCode = By.xpath("//*[@class='android.view.View' and ./parent::*[@class='android.view.ViewGroup']]");
 	By LC_InputPostalCode = By.xpath("//*[@id='etSearchLocation']");
 	
 	By LC_Result_534040 = By.xpath("//*[@class='android.view.View' and ./parent::*[@class='android.view.ViewGroup']]");
+	By LC_Result_544720 = By.xpath("//*[@class='android.view.View' and ./parent::*[@class='android.view.ViewGroup']]");
 	
 	//Listing creation flow
 	By LC_Rent = By.xpath("//*[@text='Rental']");
@@ -36,6 +38,11 @@ public class ListingCreation extends Base_Test {
 	//method below for click Create Listing button
 	public void Click_GotItButton() throws Exception{
 		function.click(LC_GotItButton);
+	}
+	
+	//method below for click Create Listing button
+	public void Click_CreateReg() throws Exception{
+		function.click(LC_CreateReg);
 	}
 	
 		//method below for click Create Listing button
@@ -58,6 +65,10 @@ public class ListingCreation extends Base_Test {
 			function.click(LC_Result_534040);
 		}
 		
+		//method below for click Create Listing button
+		public void Click_Result544720() throws Exception{
+			function.click(LC_Result_544720);
+		}
 		
 		
 		//Listing Creation Flow

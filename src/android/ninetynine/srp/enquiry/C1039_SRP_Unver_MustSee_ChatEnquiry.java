@@ -91,10 +91,9 @@ public class C1039_SRP_Unver_MustSee_ChatEnquiry extends Base_Test {
 				wait_Med();			
 				
 			     System.out.println("#And I am on search page");
-//			     lp.Input_Sale_Search(CONFIG.getProperty("RegisteredNumberNonTsel"));
 				 ldp.Click_LdpSaleResult();
 				 
-			
+		
 				srp.Click_Srp_BtChat();
 				System.out.println("#When click chat button");	
 
