@@ -9,14 +9,10 @@ import android.ninetynine.util.Base_Test;
 import android.ninetynine.util.GeneralUtilities;
 import android.ninetynine.pageobjects.*;
 
-public class C2_PageRendering_Homepage_UnverLogin extends Base_Test {
+public class C33403_PageRendering_Homepage_UnverLogin extends Base_Test {
 	
 	private Login login;
-	private AssertEqual_List asl;
-	private Homepage hp;
 	private GeneralUtilities util;
-	private Landing_Page ldp;
-	private SearchResultPage srp;
 	private Homepage_AssertEqual hpae;
 	
 	@Test
@@ -25,15 +21,11 @@ public class C2_PageRendering_Homepage_UnverLogin extends Base_Test {
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);
 		login = new Login(driver);
-		asl = new AssertEqual_List(driver);
-		hp = new Homepage(driver);
 		util = new GeneralUtilities(driver);
-		ldp = new Landing_Page(driver); 
-		srp = new SearchResultPage(driver);
 		hpae = new Homepage_AssertEqual(driver);
 			
 		 System.out.println("=========");
-		 System.out.println("TestCase : C2");	
+		 System.out.println("TestCase : C33403");	
 		 System.out.println("Page Rendering Homepage - Unverfied User");	
 		 System.out.println("---------");		 
 		 System.out.println("#Given I am a logged-in, has unverified user");

@@ -9,14 +9,11 @@ import android.ninetynine.util.Base_Test;
 import android.ninetynine.util.GeneralUtilities;
 import android.ninetynine.pageobjects.*;
 
-public class C5_PageRendering_User_AgentLogin extends Base_Test {
+public class C33406_PageRendering_User_AgentLogin extends Base_Test {
 	
 	private Login login;
-	private AssertEqual_List asl;
 	private Homepage hp;
 	private GeneralUtilities util;
-	private Landing_Page ldp;
-	private SearchResultPage srp;
 	private User_AssertEqual uae;
 	
 	@Test
@@ -25,15 +22,12 @@ public class C5_PageRendering_User_AgentLogin extends Base_Test {
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);
 		login = new Login(driver);
-		asl = new AssertEqual_List(driver);
 		hp = new Homepage(driver);
 		util = new GeneralUtilities(driver);
-		ldp = new Landing_Page(driver); 
-		srp = new SearchResultPage(driver);
 		uae = new User_AssertEqual(driver);
 			
 		 System.out.println("=========");
-		 System.out.println("TestCase : C5");	
+		 System.out.println("TestCase : C33406");	
 		 System.out.println("Page Rendering User - Agent User");	
 		 System.out.println("---------");		 
 		 System.out.println("#Given I am a logged-in, has agent user");
