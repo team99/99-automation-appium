@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Page Rendering">
+  <test thread-count="5" name="Page Rendering">
+    <classes>
+ 	<class name="android.ninetynine.pagerendering.C33402_PageRendering_Homepage_NonLogin"/>
+	<class name="android.ninetynine.pagerendering.C33403_PageRendering_Homepage_UnverLogin"/>
+	<class name="android.ninetynine.pagerendering.C33404_PageRendering_Homepage_VerLogin"/>
+	<class name="android.ninetynine.pagerendering.C33405_PageRendering_Homepage_AgentLogin"/>
+	<class name="android.ninetynine.pagerendering.C33406_PageRendering_User_AgentLogin"/>
+	<class name="android.ninetynine.pagerendering.C33407_PageRendering_User_UnverLogin"/>
+	<class name="android.ninetynine.pagerendering.C33408_PageRendering_User_VerLogin"/>
+	<class name="android.ninetynine.pagerendering.C33409_PageRendering_LDP_MustSee_NonLogin"/>
+	<class name="android.ninetynine.pagerendering.C33410_PageRendering_LDP_MustSee_LoginUnver"/>
+	<class name="android.ninetynine.pagerendering.C33411_PageRendering_LDP_MustSee_LoginVer"/>
+	<class name="android.ninetynine.pagerendering.C33412_PageRendering_LDP_MustSee_LoginAgent"/>
+	<class name="android.ninetynine.pagerendering.C33413_PageRendering_LDP_Reg_NonLogin"/>
+	<class name="android.ninetynine.pagerendering.C33414_PageRendering_LDP_Reg_LoginUnver"/>
+	<class name="android.ninetynine.pagerendering.C33415_PageRendering_LDP_Reg_LoginVer"/>
+	<class name="android.ninetynine.pagerendering.C33416_PageRendering_LDP_Reg_LoginAgent"/>
+	<class name="android.ninetynine.pagerendering.C33417_PageRendering_SRP_NonLogin"/>
+	<class name="android.ninetynine.pagerendering.C33418_PageRendering_SRP_LoginUnver"/>
+	<class name="android.ninetynine.pagerendering.C33419_PageRendering_SRP_LoginVer"/>
+	<class name="android.ninetynine.pagerendering.C33420_PageRendering_SRP_LoginAgent"/>
+	<class name="android.ninetynine.pagerendering.C33421_PageRendering_CreateListing_MustSee"/>
+	<class name="android.ninetynine.pagerendering.C33422_PageRendering_CreateListing_Reg"/>
+      </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
