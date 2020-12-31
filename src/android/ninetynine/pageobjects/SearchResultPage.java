@@ -14,7 +14,11 @@ public class SearchResultPage extends Base_Test {
 		
 	}
 
-		//SRP
+		//SRP Rent
+		By Srp_MustSee_Rent = By.xpath("(//*[@id='rvAutocomplete']/*/*[@id='tvAutocompleteCategoryTitle'])[2]");
+		By Srp_MustSee_Rent_Listing = By.xpath("//*[@id='cvSearchListingViewContent' and ./*[./*[@id='llSearchResultPageAgent']]]");
+			
+		//SRP sale
 		By Srp_Listing = By.xpath("//*[@id='cvSearchListingViewContent']");
 		By Srp_Reg_Listing = By.xpath("//*[@id='cvSearchListingViewContent' and ./*[./*[./*[@id='ivSearchResultPageForRegularListing'] and ./*[@id='llSearchResultPagePhotoInfo']]]]");
 		By Srp_MustSee_Listing = By.xpath("//*[@id='cvSearchListingViewContent' and ./*[./*[./*[@id='vpSearchResultPageGallery'] and ./*[@id='llSearchResultPagePhotoInfo']]]]");
@@ -33,6 +37,17 @@ public class SearchResultPage extends Base_Test {
 		By CA_Button_Confirm = By.xpath("//*[@text='Verify & continue']");
 		By CA_ContinueToCall = By.xpath("//*[@text='Continue to Call']");
 		
+		
+		
+		//method below for click anywhere in sg rent
+		public void Click_Rent_Srp() throws Exception{
+			function.click(Srp_MustSee_Rent);
+		}
+		
+		//method below for click must see rent listing
+				public void Click_Rent_Listing() throws Exception{
+					function.click(Srp_MustSee_Rent_Listing);
+				}
 		
 		//method below for click SRP result Pollen & Blue
 		public void Click_Srp_ResultPollen() throws Exception{
