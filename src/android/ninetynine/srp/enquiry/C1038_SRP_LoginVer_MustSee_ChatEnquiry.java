@@ -51,8 +51,8 @@ public class C1038_SRP_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 		     login.Click_Home_Me();
 			 login.Click_MeLogin();
 			 login.Click_Login();
-			 login.InputUsername(CONFIG.getProperty("Ver_Email"));
-			 login.InputPassword(CONFIG.getProperty("Ver_Pass"));
+			 login.InputUsername(CONFIG.getProperty("Ver2_Email"));
+			 login.InputPassword(CONFIG.getProperty("Ver2_Pass"));
 			 login.Click_ButtonLogin(); 
 		     wait_Long();
 	     
@@ -61,8 +61,7 @@ public class C1038_SRP_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 		     wait_Med();			
 		     System.out.println("#And I am on search page");
 			 ldp.Click_LdpSaleResult();
-			 
-		
+
 			srp.Click_Srp_BtChat();
 			System.out.println("#When click chat button");	
 			  
@@ -89,8 +88,8 @@ public class C1038_SRP_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 				login.Click_Home_Me();
 				login.Click_MeLogin();
 				login.Click_Login();
-				login.InputUsername(CONFIG.getProperty("Ver_Email"));
-				login.InputPassword(CONFIG.getProperty("Ver_Pass"));
+				login.InputUsername(CONFIG.getProperty("Ver2_Email"));
+				login.InputPassword(CONFIG.getProperty("Ver2_Pass"));
 				login.Click_ButtonLogin();
 				
 				wait_Long();
@@ -98,8 +97,7 @@ public class C1038_SRP_LoginVer_MustSee_ChatEnquiry extends Base_Test {
 				wait_Med();			
 				
 				 System.out.println("#And I am on search page");
-				 ldp.Click_LdpSaleResult();
-				 
+				 ldp.Click_LdpSaleResult();			 
 			
 				srp.Click_Srp_BtChat();
 				System.out.println("#When click chat button");	

@@ -53,8 +53,8 @@ public class C1139_SRP_LoginVer_Reg_ChatEnquiry extends Base_Test {
 		     login.Click_Home_Me();
 			 login.Click_MeLogin();
 			 login.Click_Login();
-			 login.InputUsername(CONFIG.getProperty("Ver_Email"));
-			 login.InputPassword(CONFIG.getProperty("Ver_Pass"));
+			 login.InputUsername(CONFIG.getProperty("Ver2_Email"));
+			 login.InputPassword(CONFIG.getProperty("Ver2_Pass"));
 			 login.Click_ButtonLogin(); 
 		     wait_Long();
 		     hp.Click_HomeSale();
@@ -63,7 +63,9 @@ public class C1139_SRP_LoginVer_Reg_ChatEnquiry extends Base_Test {
 		     driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");  
 			 srp.Click_Srp_ResultPollen();
 			 driver.swipe(620, 1114, 604, 235, 2845);
-	
+
+				
+			 
 			srp.Click_Srp_BtChat();
 			System.out.println("#When click chat button");	
 			  
@@ -91,8 +93,8 @@ public class C1139_SRP_LoginVer_Reg_ChatEnquiry extends Base_Test {
 				login.Click_Home_Me();
 				login.Click_MeLogin();
 				login.Click_Login();
-				login.InputUsername(CONFIG.getProperty("Ver_Email"));
-				login.InputPassword(CONFIG.getProperty("Ver_Pass"));
+				login.InputUsername(CONFIG.getProperty("Ver2_Email"));
+				login.InputPassword(CONFIG.getProperty("Ver2_Pass"));
 				login.Click_ButtonLogin();
 				
 				wait_Long();
@@ -104,7 +106,8 @@ public class C1139_SRP_LoginVer_Reg_ChatEnquiry extends Base_Test {
 			     driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");  
 				 srp.Click_Srp_ResultPollen();
 				 driver.swipe(620, 1114, 604, 235, 2845);
-			
+
+						
 				srp.Click_Srp_BtChat();
 				System.out.println("#When click chat button");	
 
