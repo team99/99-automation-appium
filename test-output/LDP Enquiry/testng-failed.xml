@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [LDP Enquiry]">
+  <test name="Sticky Bar - Chat(failed)">
+    <classes>
+      <class name="android.ninetynine.ldp.enquiry.C1341_LDP_NoAcc_Reg_ChatEnquiry">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1341_LDP_NoAcc_Reg_ChatEnquiry -->
+      <class name="android.ninetynine.ldp.enquiry.C1337_LDP_Unver_MustSee_ChatEnquiry">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1337_LDP_Unver_MustSee_ChatEnquiry -->
+      <class name="android.ninetynine.ldp.enquiry.C1339_Ldp_LoginUnver_MustSee_ChatEnquiry">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1339_Ldp_LoginUnver_MustSee_ChatEnquiry -->
+      <class name="android.ninetynine.ldp.enquiry.C1345_LDP_LoginVer_Reg_ChatEnquiry">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1345_LDP_LoginVer_Reg_ChatEnquiry -->
+      <class name="android.ninetynine.ldp.enquiry.C1336_LDP_NoAcc_MustSee_ChatEnquiry">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1336_LDP_NoAcc_MustSee_ChatEnquiry -->
+      <class name="android.ninetynine.ldp.enquiry.C1343_LDP_Ver_Reg_ChatEnquiry">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1343_LDP_Ver_Reg_ChatEnquiry -->
+      <class name="android.ninetynine.ldp.enquiry.C1344_LDP_LoginUnver_Reg_ChatEnquiry">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1344_LDP_LoginUnver_Reg_ChatEnquiry -->
+      <class name="android.ninetynine.ldp.enquiry.C1342_LDP_Unver_Reg_ChatEnquiry">
+        <methods>
+          <include name="tearDown"/>
+          <include name="C1342_LDP_Unver_Reg_Chat_Enquiry"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1342_LDP_Unver_Reg_ChatEnquiry -->
+      <class name="android.ninetynine.ldp.enquiry.C1338_LDP_Ver_MustSee_ChatEnquiry">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1338_LDP_Ver_MustSee_ChatEnquiry -->
+      <class name="android.ninetynine.ldp.enquiry.C1340_Ldp_LoginVer_MustSee_ChatEnquiry">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1340_Ldp_LoginVer_MustSee_ChatEnquiry -->
+    </classes>
+  </test> <!-- Sticky Bar - Chat(failed) -->
+</suite> <!-- Failed suite [LDP Enquiry] -->

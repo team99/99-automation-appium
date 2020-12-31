@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="android.ninetynine.srp.enquiry.C1047_SRP_LoginUnver_MustSee_PhoneEnquiry">
+      <class name="android.ninetynine.pagerendering.C33402_PageRendering_Homepage_NonLogin">
         <methods>
-          <include name="tearDown"/>
-          <include name="C1047_SRP_LoginUnver_MustSee_Phone_Enquiry"/>
           <include name="setUp"/>
+          <include name="C33402_PageRendering_Homepage_Non_Login"/>
         </methods>
-      </class> <!-- android.ninetynine.srp.enquiry.C1047_SRP_LoginUnver_MustSee_PhoneEnquiry -->
+      </class> <!-- android.ninetynine.pagerendering.C33402_PageRendering_Homepage_NonLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

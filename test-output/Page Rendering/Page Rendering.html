@@ -1,0 +1,184 @@
+<html>
+<head>
+<title>TestNG:  Page Rendering</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Page Rendering</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>21/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Dec 31 02:18:54 SGT 2020</td>
+</tr>
+<tr><td>Total time:</td><td>3539 seconds (3539335 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='android.ninetynine.pagerendering.C33411_PageRendering_LDP_MustSee_LoginVer.C10_PageRendering_LDP_Must_See_LoginVer()'><b>C10_PageRendering_LDP_Must_See_LoginVer</b><br>Test class: android.ninetynine.pagerendering.C33411_PageRendering_LDP_MustSee_LoginVer</td>
+<td></td>
+<td>158</td>
+<td>android.ninetynine.pagerendering.C33411_PageRendering_LDP_MustSee_LoginVer@589838eb</td></tr>
+<tr>
+<td title='android.ninetynine.pagerendering.C33412_PageRendering_LDP_MustSee_LoginAgent.C11_PageRendering_LDP_MustSee_Login_Agent()'><b>C11_PageRendering_LDP_MustSee_Login_Agent</b><br>Test class: android.ninetynine.pagerendering.C33412_PageRendering_LDP_MustSee_LoginAgent</td>
+<td></td>
+<td>184</td>
+<td>android.ninetynine.pagerendering.C33412_PageRendering_LDP_MustSee_LoginAgent@42dafa95</td></tr>
+<tr>
+<td title='android.ninetynine.pagerendering.C33413_PageRendering_LDP_Reg_NonLogin.C12_PageRendering_LDP_Reg_Non_Login()'><b>C12_PageRendering_LDP_Reg_Non_Login</b><br>Test class: android.ninetynine.pagerendering.C33413_PageRendering_LDP_Reg_NonLogin</td>
+<td></td>
+<td>109</td>
+<td>android.ninetynine.pagerendering.C33413_PageRendering_LDP_Reg_NonLogin@6500df86</td></tr>
+<tr>
+<td title='android.ninetynine.pagerendering.C33414_PageRendering_LDP_Reg_LoginUnver.C13_PageRendering_LDP_Reg_Login_Unver()'><b>C13_PageRendering_LDP_Reg_Login_Unver</b><br>Test class: android.ninetynine.pagerendering.C33414_PageRendering_LDP_Reg_LoginUnver</td>
+<td></td>
+<td>143</td>
+<td>android.ninetynine.pagerendering.C33414_PageRendering_LDP_Reg_LoginUnver@402a079c</td></tr>
+<tr>
+<td title='android.ninetynine.pagerendering.C33415_PageRendering_LDP_Reg_LoginVer.C14_PageRendering_LDP_Reg_Login_Ver()'><b>C14_PageRendering_LDP_Reg_Login_Ver</b><br>Test class: android.ninetynine.pagerendering.C33415_PageRendering_LDP_Reg_LoginVer</td>
+<td></td>
+<td>155</td>
+<td>android.ninetynine.pagerendering.C33415_PageRendering_LDP_Reg_LoginVer@59ec2012</td></tr>
+<tr>
+<td title='android.ninetynine.pagerendering.C33416_PageRendering_LDP_Reg_LoginAgent.C15_PageRendering_LDP_Reg_Login_Agent()'><b>C15_PageRendering_LDP_Reg_Login_Agent</b><br>Test class: android.ninetynine.pagerendering.C33416_PageRendering_LDP_Reg_LoginAgent</td>
+<td></td>
+<td>183</td>
+<td>android.ninetynine.pagerendering.C33416_PageRendering_LDP_Reg_LoginAgent@4cf777e8</td></tr>
+<tr>
+<td title='android.ninetynine.pagerendering.C33417_PageRendering_SRP_NonLogin.C16_PageRendering_SRP_Non_Login()'><b>C16_PageRendering_SRP_Non_Login</b><br>Test class: android.ninetynine.pagerendering.C33417_PageRendering_SRP_NonLogin</td>
+<td></td>
+<td>98</td>
+<td>android.ninetynine.pagerendering.C33417_PageRendering_SRP_NonLogin@2f686d1f</td></tr>
+<tr>
+<td title='android.ninetynine.pagerendering.C33418_PageRendering_SRP_LoginUnver.C17_PageRendering_SRP_Login_Unver()'><b>C17_PageRendering_SRP_Login_Unver</b><br>Test class: android.ninetynine.pagerendering.C33418_PageRendering_SRP_LoginUnver</td>
+<td></td>
+<td>121</td>
+<td>android.ninetynine.pagerendering.C33418_PageRendering_SRP_LoginUnver@3fee9989</td></tr>
+<tr>
+<td title='android.ninetynine.pagerendering.C33419_PageRendering_SRP_LoginVer.C18_PageRendering_SRP_Login_Ver()'><b>C18_PageRendering_SRP_Login_Ver</b><br>Test class: android.ninetynine.pagerendering.C33419_PageRendering_SRP_LoginVer</td>
+<td></td>
+<td>145</td>
+<td>android.ninetynine.pagerendering.C33419_PageRendering_SRP_LoginVer@73ad2d6</td></tr>
+<tr>
+<td title='android.ninetynine.pagerendering.C33420_PageRendering_SRP_LoginAgent.C19_PageRendering_SRP_Login_Agent()'><b>C19_PageRendering_SRP_Login_Agent</b><br>Test class: android.ninetynine.pagerendering.C33420_PageRendering_SRP_LoginAgent</td>
+<td></td>
+<td>172</td>
+<td>android.ninetynine.pagerendering.C33420_PageRendering_SRP_LoginAgent@7085bdee</td></tr>
+<tr>
+<td title='android.ninetynine.pagerendering.C33421_PageRendering_CreateListing_MustSee.C20_PageRendering_CreateListing_MustSee()'><b>C20_PageRendering_CreateListing_MustSee</b><br>Test class: android.ninetynine.pagerendering.C33421_PageRendering_CreateListing_MustSee</td>
+<td></td>
+<td>198</td>
+<td>android.ninetynine.pagerendering.C33421_PageRendering_CreateListing_MustSee@1ce92674</td></tr>
+<tr>
+<td title='android.ninetynine.pagerendering.C33422_PageRendering_CreateListing_Reg.C21_PageRendering_Create_Listing_Reg()'><b>C21_PageRendering_Create_Listing_Reg</b><br>Test class: android.ninetynine.pagerendering.C33422_PageRendering_CreateListing_Reg</td>
+<td></td>
+<td>201</td>
+<td>android.ninetynine.pagerendering.C33422_PageRendering_CreateListing_Reg@5700d6b1</td></tr>
+<tr>
+<td title='android.ninetynine.pagerendering.C33403_PageRendering_Homepage_UnverLogin.C2_PageRendering_Home_page_UnverLogin()'><b>C2_PageRendering_Home_page_UnverLogin</b><br>Test class: android.ninetynine.pagerendering.C33403_PageRendering_Homepage_UnverLogin</td>
+<td></td>
+<td>78</td>
+<td>android.ninetynine.pagerendering.C33403_PageRendering_Homepage_UnverLogin@31ef45e3</td></tr>
+<tr>
+<td title='android.ninetynine.pagerendering.C33402_PageRendering_Homepage_NonLogin.C33402_PageRendering_Homepage_Non_Login()'><b>C33402_PageRendering_Homepage_Non_Login</b><br>Test class: android.ninetynine.pagerendering.C33402_PageRendering_Homepage_NonLogin</td>
+<td></td>
+<td>72</td>
+<td>android.ninetynine.pagerendering.C33402_PageRendering_Homepage_NonLogin@57fffcd7</td></tr>
+<tr>
+<td title='android.ninetynine.pagerendering.C33404_PageRendering_Homepage_VerLogin.C3_PageRendering_Homepage_Ver_Login()'><b>C3_PageRendering_Homepage_Ver_Login</b><br>Test class: android.ninetynine.pagerendering.C33404_PageRendering_Homepage_VerLogin</td>
+<td></td>
+<td>114</td>
+<td>android.ninetynine.pagerendering.C33404_PageRendering_Homepage_VerLogin@598067a5</td></tr>
+<tr>
+<td title='android.ninetynine.pagerendering.C33405_PageRendering_Homepage_AgentLogin.C4_PageRendering_Homepage_Agent_Login()'><b>C4_PageRendering_Homepage_Agent_Login</b><br>Test class: android.ninetynine.pagerendering.C33405_PageRendering_Homepage_AgentLogin</td>
+<td></td>
+<td>123</td>
+<td>android.ninetynine.pagerendering.C33405_PageRendering_Homepage_AgentLogin@3c0ecd4b</td></tr>
+<tr>
+<td title='android.ninetynine.pagerendering.C33406_PageRendering_User_AgentLogin.C5_PageRendering_User_Agent_Login()'><b>C5_PageRendering_User_Agent_Login</b><br>Test class: android.ninetynine.pagerendering.C33406_PageRendering_User_AgentLogin</td>
+<td></td>
+<td>125</td>
+<td>android.ninetynine.pagerendering.C33406_PageRendering_User_AgentLogin@14bf9759</td></tr>
+<tr>
+<td title='android.ninetynine.pagerendering.C33407_PageRendering_User_UnverLogin.C6_PageRendering_User_Unver_Login()'><b>C6_PageRendering_User_Unver_Login</b><br>Test class: android.ninetynine.pagerendering.C33407_PageRendering_User_UnverLogin</td>
+<td></td>
+<td>117</td>
+<td>android.ninetynine.pagerendering.C33407_PageRendering_User_UnverLogin@5f341870</td></tr>
+<tr>
+<td title='android.ninetynine.pagerendering.C33408_PageRendering_User_VerLogin.C7_PageRendering_User_Ver_Login()'><b>C7_PageRendering_User_Ver_Login</b><br>Test class: android.ninetynine.pagerendering.C33408_PageRendering_User_VerLogin</td>
+<td></td>
+<td>117</td>
+<td>android.ninetynine.pagerendering.C33408_PageRendering_User_VerLogin@553f17c</td></tr>
+<tr>
+<td title='android.ninetynine.pagerendering.C33409_PageRendering_LDP_MustSee_NonLogin.C8_PageRendering_LDP_Must_See_NonLogin()'><b>C8_PageRendering_LDP_Must_See_NonLogin</b><br>Test class: android.ninetynine.pagerendering.C33409_PageRendering_LDP_MustSee_NonLogin</td>
+<td></td>
+<td>109</td>
+<td>android.ninetynine.pagerendering.C33409_PageRendering_LDP_MustSee_NonLogin@4f7d0008</td></tr>
+<tr>
+<td title='android.ninetynine.pagerendering.C33410_PageRendering_LDP_MustSee_LoginUnver.C9_PageRendering_LDP_MustSee_Login_Unver()'><b>C9_PageRendering_LDP_MustSee_Login_Unver</b><br>Test class: android.ninetynine.pagerendering.C33410_PageRendering_LDP_MustSee_LoginUnver</td>
+<td></td>
+<td>124</td>
+<td>android.ninetynine.pagerendering.C33410_PageRendering_LDP_MustSee_LoginUnver@271053e1</td></tr>
+</table><p>
+</body>
+</html>
