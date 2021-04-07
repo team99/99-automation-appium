@@ -18,7 +18,7 @@ public class C33420_PageRendering_SRP_LoginAgent extends Base_Test {
 	private SRP_AssertEqual srpae;
 	
 	@Test
-	public void C19_PageRendering_SRP_Login_Agent() throws Exception {
+	public void C33420_PageRendering_SRP_Login_Agent() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);

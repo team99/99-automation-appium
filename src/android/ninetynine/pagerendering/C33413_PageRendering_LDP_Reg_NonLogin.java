@@ -20,7 +20,7 @@ public class C33413_PageRendering_LDP_Reg_NonLogin extends Base_Test {
 	private LDP_AssertEqual ldpae;
 	
 	@Test
-	public void C12_PageRendering_LDP_Reg_Non_Login() throws Exception {
+	public void C33413_PageRendering_LDP_Reg_Non_Login() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);
@@ -51,8 +51,7 @@ public class C33413_PageRendering_LDP_Reg_NonLogin extends Base_Test {
 		     wait_Med();   
 		     driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");
 			 srp.Click_Srp_ResultPollen();
-			 driver.swipe(620, 1114, 604, 235, 2845);
-			 driver.swipe(633, 1162, 612, 493, 3771);
+	
 			 srp.Click_Srp_Reg_List();
 		     wait_Long();
 		     
@@ -131,9 +130,7 @@ public class C33413_PageRendering_LDP_Reg_NonLogin extends Base_Test {
 			     wait_Med();
 			     driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");
 				 srp.Click_Srp_ResultPollen();
-				 
-				 driver.swipe(620, 1114, 604, 235, 2845);
-				 driver.swipe(633, 1162, 612, 493, 3771);
+
 				 srp.Click_Srp_Reg_List();
 			     wait_Long();
 			     

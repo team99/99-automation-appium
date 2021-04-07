@@ -16,7 +16,7 @@ public class C33404_PageRendering_Homepage_VerLogin extends Base_Test {
 	private Homepage_AssertEqual hpae;
 	
 	@Test
-	public void C3_PageRendering_Homepage_Ver_Login() throws Exception {
+	public void C33404_PageRendering_Homepage_Ver_Login() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);

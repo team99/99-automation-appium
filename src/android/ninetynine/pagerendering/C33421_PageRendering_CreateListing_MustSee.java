@@ -20,7 +20,7 @@ public class C33421_PageRendering_CreateListing_MustSee extends Base_Test {
 	private CreateListing_AssertEqual clae;
 	
 	@Test
-	public void  C20_PageRendering_CreateListing_MustSee() throws Exception {
+	public void  C33421_PageRendering_Create_Listing_MustSee() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);

@@ -50,30 +50,23 @@ public class C1348_LDP_Ver_MustSee_PhoneEnquiry extends Base_Test {
 		     login.Click_MeLogout();
 		     login.Click_ConfLogout();		  
 		     wait_Long();		     
-		 	 hp.Click_HomeSale();		     
-		     wait_Med();
-		     
-		     
-		     //LDP search method in SRP
-			 ldp.Click_LdpSaleResult();
-			 
-			 
-			 srp.Click_Srp_Ldp_MustSeeList(); 
-			 System.out.println("#And I am on Must see listing detail page");
-			 
+		 	 hp.Click_HomeSale();		  
+		 	 
+		 	 wait_Med();
+		     driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Tanglin");
+			   
+		     srp.Click_Srp_Tanglin();
+		     wait_Low();
+		     driver.swipe(620, 1114, 604, 235, 2845);
+//		     srp.Click_Rent_Listing();
+		     srp.Click_Unver_Listing();
+		     wait_Long();
 			 
 			ldp.Click_BtPhone();
 			System.out.println("#When click Call button in sticky bar");	
 	
-			 try {
-					assertEquals(asl.Verify_ModalCallAgent(), true, "#And the Chat enquiry form should display as expected");
-					System.out.println("State : Call Enquiry Form displayed as expected");
-					
-				} catch (Exception e){
-							
-					System.out.println("State : Call Enquiry For Not Shown as expected");
-					
-				}
+	
+				
 			 
 			   System.out.println("#And the form will ask for my name, phone number, and email address"); 
 			   srp.Ca_InputName(CONFIG.getProperty("Ver_Name"));
@@ -90,40 +83,34 @@ public class C1348_LDP_Ver_MustSee_PhoneEnquiry extends Base_Test {
 			
 				System.out.println("State : Logged out");
 				hp.Click_Homepage();
-				wait_Long();
-				hp.Click_HomeSale();
-				wait_Med();			
-				
-			    //LDP search method in SRP
-				 ldp.Click_LdpSaleResult(); 
+				 wait_Med();
 				 
-				 srp.Click_Srp_Ldp_MustSeeList(); 
-				 System.out.println("#And I am on Must see listing detail page");	
-					
-				ldp.Click_BtPhone();
-				System.out.println("#When click Call button in sticky bar");	
-								
-				
-								
-				 try {
-						assertEquals(asl.Verify_ModalCallAgent(), true, "#And the Chat enquiry form should display as expected");
-						System.out.println("State : Call Enquiry Form displayed as expected");
-						
-					} catch (Exception e){
-								
-						System.out.println("State : Call Enquiry For Not Shown as expected");
-						
-					}
+				 hp.Click_HomeSale();	
+			     driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Tanglin");
+				   
+			     srp.Click_Srp_Tanglin();
+			     wait_Low();
+			     driver.swipe(620, 1114, 604, 235, 2845);
+//			     srp.Click_Rent_Listing();
+			     srp.Click_Unver_Listing();
+			     wait_Long();
+				   
 				 
-				   System.out.println("#And the form will ask for my name, phone number, and email address"); 
-				   srp.Ca_InputName(CONFIG.getProperty("Ver_Name"));
-				   srp.Ca_InputPhone(CONFIG.getProperty("Ver_Phone"));
-				   srp.Ca_InputEmail(CONFIG.getProperty("Ver_Email"));
-				   
-				   System.out.println("#And I send enquiry"); 
-				   srp.Click_CA_BtConfirm();
-				   
-				   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otp_unverID"));
+					ldp.Click_BtPhone();
+					System.out.println("#When click Call button in sticky bar");	
+			
+			
+						
+					 
+					   System.out.println("#And the form will ask for my name, phone number, and email address"); 
+					   srp.Ca_InputName(CONFIG.getProperty("Ver_Name"));
+					   srp.Ca_InputPhone(CONFIG.getProperty("Ver_Phone"));
+					   srp.Ca_InputEmail(CONFIG.getProperty("Ver_Email"));
+					 
+					   System.out.println("#And I send enquiry"); 
+					   srp.Click_CA_BtConfirm();
+				
+					   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otp_verID"));
 						
 				   
 			

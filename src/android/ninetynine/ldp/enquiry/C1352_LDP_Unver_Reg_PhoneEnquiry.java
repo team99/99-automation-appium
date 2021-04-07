@@ -57,23 +57,34 @@ public class C1352_LDP_Unver_Reg_PhoneEnquiry extends Base_Test {
 		     //LDP search method in SRP
 			 driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");
 			 srp.Click_Srp_ResultPollen();
-			 driver.swipe(620, 1114, 604, 235, 2845);
+			 //driver.swipe(620, 1114, 604, 235, 2845);
 			 srp.Click_Srp_Reg_List();
 			 System.out.println("#And I am on Regular listing detail page");
 			 
-			 
-			ldp.Click_BtPhone();
-			System.out.println("#When click Call button in sticky bar");	
-	
-			 try {
-					assertEquals(asl.Verify_ModalCallAgent(), true, "#And the Chat enquiry form should display as expected");
-					System.out.println("State : Call Enquiry Form displayed as expected");
-					
-				} catch (Exception e){
-							
-					System.out.println("State : Call Enquiry For Not Shown as expected");
-					
-				}
+			 driver.swipe(620, 1114, 604, 235, 2845);
+			 driver.swipe(633, 1162, 612, 493, 3771);
+		     driver.swipe(597, 1204, 622, 593, 2131);
+		     driver.swipe(620, 1114, 604, 235, 2845);
+			 driver.swipe(633, 1162, 612, 493, 3771);
+		     driver.swipe(597, 1204, 622, 593, 2131);
+			 driver.swipe(620, 1114, 604, 235, 2845);
+			 driver.swipe(633, 1162, 612, 493, 3771);
+			 driver.swipe(620, 1114, 604, 235, 2845);
+			 driver.swipe(633, 1162, 612, 493, 3771);
+		     
+		     ldp.Click_Bt_ShowPhone();
+//			ldp.Click_BtPhone();
+//			System.out.println("#When click Call button in sticky bar");	
+//	
+//			 try {
+//					assertEquals(asl.Verify_ModalCallAgent(), true, "#And the Chat enquiry form should display as expected");
+//					System.out.println("State : Call Enquiry Form displayed as expected");
+//					
+//				} catch (Exception e){
+//							
+//					System.out.println("State : Call Enquiry For Not Shown as expected");
+//					
+//				}
 			 
 			   System.out.println("#And the form will ask for my name, phone number, and email address"); 
 			   srp.Ca_InputName(CONFIG.getProperty("Unver_Name"));
@@ -97,22 +108,36 @@ public class C1352_LDP_Unver_Reg_PhoneEnquiry extends Base_Test {
 			     //LDP search method in SRP
 				 driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Pollen & Blue");
 				 srp.Click_Srp_ResultPollen();
-				 driver.swipe(620, 1114, 604, 235, 2845);
+				// driver.swipe(620, 1114, 604, 235, 2845);
 				 srp.Click_Srp_Reg_List();
 				 System.out.println("#And I am on Regular listing detail page");
 								
-				ldp.Click_BtPhone();
-				System.out.println("#When click Call button in sticky bar");			
-								
-				 try {
-						assertEquals(asl.Verify_ModalCallAgent(), true, "#And the Chat enquiry form should display as expected");
-						System.out.println("State : Call Enquiry Form displayed as expected");
-						
-					} catch (Exception e){
-								
-						System.out.println("State : Call Enquiry For Not Shown as expected");
-						
-					}
+				 
+				 driver.swipe(620, 1114, 604, 235, 2845);
+				 driver.swipe(633, 1162, 612, 493, 3771);
+			     driver.swipe(597, 1204, 622, 593, 2131);
+			     driver.swipe(620, 1114, 604, 235, 2845);
+				 driver.swipe(633, 1162, 612, 493, 3771);
+			     driver.swipe(597, 1204, 622, 593, 2131);
+				 driver.swipe(620, 1114, 604, 235, 2845);
+				 driver.swipe(633, 1162, 612, 493, 3771);
+				 driver.swipe(620, 1114, 604, 235, 2845);
+				 driver.swipe(633, 1162, 612, 493, 3771);
+			     
+			     ldp.Click_Bt_ShowPhone();
+				 
+//				ldp.Click_BtPhone();
+//				System.out.println("#When click Call button in sticky bar");			
+//								
+//				 try {
+//						assertEquals(asl.Verify_ModalCallAgent(), true, "#And the Chat enquiry form should display as expected");
+//						System.out.println("State : Call Enquiry Form displayed as expected");
+//						
+//					} catch (Exception e){
+//								
+//						System.out.println("State : Call Enquiry For Not Shown as expected");
+//						
+//					}
 				 
 				   System.out.println("#And the form will ask for my name, phone number, and email address"); 
 				   srp.Ca_InputName(CONFIG.getProperty("Unver_Name"));

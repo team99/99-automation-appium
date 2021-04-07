@@ -1,0 +1,211 @@
+<html>
+<head>
+<title>TestNG:  SRP Enquiry Phone</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SRP Enquiry Phone</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Feb 19 15:16:35 WITA 2021</td>
+</tr>
+<tr><td>Total time:</td><td>1279 seconds (1279451 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='android.ninetynine.srp.enquiry.C1130_SRP_NoAcc_Reg_PhoneEnquiry.C1130_SRP_NoAcc_Reg_Phone_Enquiry()'><b>C1130_SRP_NoAcc_Reg_Phone_Enquiry</b><br>Test class: android.ninetynine.srp.enquiry.C1130_SRP_NoAcc_Reg_PhoneEnquiry</td>
+<td><div><pre>java.lang.AssertionError: Object not found step failed
+	at android.ninetynine.util.GeneralUtilities.verifyelemen(GeneralUtilities.java:51)
+	at android.ninetynine.util.GeneralUtilities.click(GeneralUtilities.java:60)
+	at android.ninetynine.pageobjects.SearchResultPage.Click_Srp_BtPhone(SearchResultPage.java:118)
+	at android.ninetynine.srp.enquiry.C1130_SRP_NoAcc_Reg_PhoneEnquiry.C1130_SRP_NoAcc_Reg_Phone_Enquiry(C1130_SRP_NoAcc_Reg_PhoneEnquiry.java:61)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace144699438", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace144699438'><pre>java.lang.AssertionError: Object not found step failed
+	at org.testng.Assert.fail(Assert.java:94)
+	at android.ninetynine.util.GeneralUtilities.verifyelemen(GeneralUtilities.java:51)
+	at android.ninetynine.util.GeneralUtilities.click(GeneralUtilities.java:60)
+	at android.ninetynine.pageobjects.SearchResultPage.Click_Srp_BtPhone(SearchResultPage.java:118)
+	at android.ninetynine.srp.enquiry.C1130_SRP_NoAcc_Reg_PhoneEnquiry.C1130_SRP_NoAcc_Reg_Phone_Enquiry(C1130_SRP_NoAcc_Reg_PhoneEnquiry.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>79</td>
+<td>android.ninetynine.srp.enquiry.C1130_SRP_NoAcc_Reg_PhoneEnquiry@762ef0ea</td></tr>
+<tr>
+<td title='android.ninetynine.srp.enquiry.C1133_SRP_LoginUnver_Reg_PhoneEnquiry.C1133_SRP_LoginUnver_Reg_Phone_Enquiry()'><b>C1133_SRP_LoginUnver_Reg_Phone_Enquiry</b><br>Test class: android.ninetynine.srp.enquiry.C1133_SRP_LoginUnver_Reg_PhoneEnquiry</td>
+<td><div><pre>java.lang.AssertionError: Object not found step failed
+	at android.ninetynine.util.GeneralUtilities.verifyelemen(GeneralUtilities.java:51)
+	at android.ninetynine.util.GeneralUtilities.click(GeneralUtilities.java:60)
+	at android.ninetynine.pageobjects.SearchResultPage.Click_CA_BtConfirm(SearchResultPage.java:140)
+	at android.ninetynine.srp.enquiry.C1133_SRP_LoginUnver_Reg_PhoneEnquiry.C1133_SRP_LoginUnver_Reg_Phone_Enquiry(C1133_SRP_LoginUnver_Reg_PhoneEnquiry.java:86)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1870723838", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1870723838'><pre>java.lang.AssertionError: Object not found step failed
+	at org.testng.Assert.fail(Assert.java:94)
+	at android.ninetynine.util.GeneralUtilities.verifyelemen(GeneralUtilities.java:51)
+	at android.ninetynine.util.GeneralUtilities.click(GeneralUtilities.java:60)
+	at android.ninetynine.pageobjects.SearchResultPage.Click_CA_BtConfirm(SearchResultPage.java:140)
+	at android.ninetynine.srp.enquiry.C1133_SRP_LoginUnver_Reg_PhoneEnquiry.C1133_SRP_LoginUnver_Reg_Phone_Enquiry(C1133_SRP_LoginUnver_Reg_PhoneEnquiry.java:86)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+	at org.testng.TestNG.runSuites(TestNG.java:1133)
+	at org.testng.TestNG.run(TestNG.java:1104)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>130</td>
+<td>android.ninetynine.srp.enquiry.C1133_SRP_LoginUnver_Reg_PhoneEnquiry@10d68fcd</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='android.ninetynine.srp.enquiry.C1045_SRP_Unver_MustSee_PhoneEnquiry.C1045_SRP_Unver_MustSee_Phone_Enquiry()'><b>C1045_SRP_Unver_MustSee_Phone_Enquiry</b><br>Test class: android.ninetynine.srp.enquiry.C1045_SRP_Unver_MustSee_PhoneEnquiry</td>
+<td></td>
+<td>93</td>
+<td>android.ninetynine.srp.enquiry.C1045_SRP_Unver_MustSee_PhoneEnquiry@63070bab</td></tr>
+<tr>
+<td title='android.ninetynine.srp.enquiry.C1046_SRP_Ver_MustSee_PhoneEnquiry.C1046_SRP_Ver_MustSee_Phone_Enquiry()'><b>C1046_SRP_Ver_MustSee_Phone_Enquiry</b><br>Test class: android.ninetynine.srp.enquiry.C1046_SRP_Ver_MustSee_PhoneEnquiry</td>
+<td></td>
+<td>91</td>
+<td>android.ninetynine.srp.enquiry.C1046_SRP_Ver_MustSee_PhoneEnquiry@68e5eea7</td></tr>
+<tr>
+<td title='android.ninetynine.srp.enquiry.C1047_SRP_LoginUnver_MustSee_PhoneEnquiry.C1047_SRP_LoginUnver_MustSee_Phone_Enquiry()'><b>C1047_SRP_LoginUnver_MustSee_Phone_Enquiry</b><br>Test class: android.ninetynine.srp.enquiry.C1047_SRP_LoginUnver_MustSee_PhoneEnquiry</td>
+<td></td>
+<td>129</td>
+<td>android.ninetynine.srp.enquiry.C1047_SRP_LoginUnver_MustSee_PhoneEnquiry@291b4bf5</td></tr>
+<tr>
+<td title='android.ninetynine.srp.enquiry.C1048_SRP_LoginVer_MustSee_PhoneEnquiry.C1048_SRP_LoginVer_MustSee_Chat_Enquiry()'><b>C1048_SRP_LoginVer_MustSee_Chat_Enquiry</b><br>Test class: android.ninetynine.srp.enquiry.C1048_SRP_LoginVer_MustSee_PhoneEnquiry</td>
+<td></td>
+<td>137</td>
+<td>android.ninetynine.srp.enquiry.C1048_SRP_LoginVer_MustSee_PhoneEnquiry@2d2ffcb7</td></tr>
+<tr>
+<td title='android.ninetynine.srp.enquiry.C1134_SRP_LoginVer_Reg_PhoneEnquiry.C1048_SRP_LoginVer_MustSee_Chat_Enquiry()'><b>C1048_SRP_LoginVer_MustSee_Chat_Enquiry</b><br>Test class: android.ninetynine.srp.enquiry.C1134_SRP_LoginVer_Reg_PhoneEnquiry</td>
+<td></td>
+<td>131</td>
+<td>android.ninetynine.srp.enquiry.C1134_SRP_LoginVer_Reg_PhoneEnquiry@117e949d</td></tr>
+<tr>
+<td title='android.ninetynine.srp.enquiry.C1131_SRP_Unver_Reg_PhoneEnquiry.C1131_SRP_Unver_Reg_Phone_Enquiry()'><b>C1131_SRP_Unver_Reg_Phone_Enquiry</b><br>Test class: android.ninetynine.srp.enquiry.C1131_SRP_Unver_Reg_PhoneEnquiry</td>
+<td></td>
+<td>89</td>
+<td>android.ninetynine.srp.enquiry.C1131_SRP_Unver_Reg_PhoneEnquiry@31f9b85e</td></tr>
+<tr>
+<td title='android.ninetynine.srp.enquiry.C1132_SRP_Ver_Reg_PhoneEnquiry.C1132_SRP_Ver_Reg_Phone_Enquiry()'><b>C1132_SRP_Ver_Reg_Phone_Enquiry</b><br>Test class: android.ninetynine.srp.enquiry.C1132_SRP_Ver_Reg_PhoneEnquiry</td>
+<td></td>
+<td>99</td>
+<td>android.ninetynine.srp.enquiry.C1132_SRP_Ver_Reg_PhoneEnquiry@424e1977</td></tr>
+<tr>
+<td title='android.ninetynine.srp.enquiry.C742_SRP_NoAcc_MustSee_PhoneEnquiry.C742_SRP_NoAcc_MustSee_Phone_Enquiry()'><b>C742_SRP_NoAcc_MustSee_Phone_Enquiry</b><br>Test class: android.ninetynine.srp.enquiry.C742_SRP_NoAcc_MustSee_PhoneEnquiry</td>
+<td></td>
+<td>91</td>
+<td>android.ninetynine.srp.enquiry.C742_SRP_NoAcc_MustSee_PhoneEnquiry@6db9f5a4</td></tr>
+</table><p>
+</body>
+</html>

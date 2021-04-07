@@ -23,6 +23,12 @@ public class AssertEqual_List extends Base_Test {
 	//SRP
 	By CallAgent = By.xpath("//*[@text='Call agent']");
 	
+	//Error
+	By Error_InvalidOTP = By.xpath("//*[@text='The verification code you provided is incorrect. Please check the code you entered and try again.']");
+	By Confirm_Button = By.xpath("//*[@id='btnConfirm']");
+	
+	By EnquiryConfirmButton = By.xpath("//*[@text='CONFIRM']");
+	
 	//Homepage text 
 	public boolean Verify_HomepageText() {
 		boolean verify=false;
@@ -62,7 +68,25 @@ public class AssertEqual_List extends Base_Test {
 		verify=driver.findElement(CallAgent).isDisplayed();
 		return verify;
 				}
+		
+		//Invalid OTP Notification assert equal
+		//This method to verify invalid otp notification
+		public boolean Verify_InvalidOTP() {
+			boolean verify=false;
+			verify=driver.findElement(Error_InvalidOTP).isDisplayed();
+			return verify;
+		}
+		
+		//Call after not filled OTP 
+		//This method to verify if the confirm button still there (it shouldn't)
+		public boolean Verify_ConfirmButton() {
+			boolean verify=false;
+			verify=driver.findElement(Confirm_Button).isDisplayed();
+			return verify;
+		}
 	
+		
+		
 }
 	
 

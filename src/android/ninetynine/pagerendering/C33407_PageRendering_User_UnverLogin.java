@@ -1,4 +1,4 @@
-package android.ninetynine.pagerendering;
+ package android.ninetynine.pagerendering;
 
 import static org.testng.Assert.assertEquals;
 
@@ -16,7 +16,7 @@ public class C33407_PageRendering_User_UnverLogin extends Base_Test {
 	private User_AssertEqual uae;
 	
 	@Test
-	public void C6_PageRendering_User_Unver_Login() throws Exception {
+	public void C33407_PageRendering_User_Unver_Login() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);

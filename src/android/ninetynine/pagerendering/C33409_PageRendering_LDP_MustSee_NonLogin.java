@@ -4,6 +4,8 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.FileInputStream;
 import java.util.Properties;
+
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import android.ninetynine.util.Base_Test;
 import android.ninetynine.util.GeneralUtilities;
@@ -18,7 +20,7 @@ public class C33409_PageRendering_LDP_MustSee_NonLogin extends Base_Test {
 	private LDP_AssertEqual ldpae;
 	
 	@Test
-	public void C8_PageRendering_LDP_Must_See_NonLogin() throws Exception {
+	public void C33409_PageRendering_LDP_MustSee_Non_Login() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);
@@ -47,7 +49,9 @@ public class C33409_PageRendering_LDP_MustSee_NonLogin extends Base_Test {
 		     
 		     hp.Click_Home_Rent();
 		     wait_Med();
-		     srp.Click_Rent_Srp();
+		     driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Tanglin");
+		   
+		     srp.Click_Srp_Tanglin();
 		     wait_Low();
 		     srp.Click_Rent_Listing();
 		     wait_Long();
@@ -178,7 +182,9 @@ public class C33409_PageRendering_LDP_MustSee_NonLogin extends Base_Test {
 				
 			     hp.Click_Home_Rent();
 			     wait_Med();
-			     srp.Click_Rent_Srp();
+			     driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Tanglin");
+				   
+			     srp.Click_Srp_Tanglin();
 			     wait_Low();
 			     srp.Click_Rent_Listing();
 			     wait_Long();

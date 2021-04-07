@@ -16,7 +16,7 @@ public class C33408_PageRendering_User_VerLogin extends Base_Test {
 	private User_AssertEqual uae;
 	
 	@Test
-	public void C7_PageRendering_User_Ver_Login() throws Exception {
+	public void C33408_PageRendering_User_Ver_Login() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [LDP Enquiry Phone Suite]" guice-stage="DEVELOPMENT">
+  <test name="LDP Sticky Bar Phone(failed)">
+    <classes>
+      <class name="android.ninetynine.ldp.enquiry.C1349_Ldp_LoginUnver_MustSee_PhoneEnquiry">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1349_Ldp_LoginUnver_MustSee_PhoneEnquiry -->
+      <class name="android.ninetynine.ldp.enquiry.C1355_Ldp_LoginVer_Reg_PhoneEnquiry">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1355_Ldp_LoginVer_Reg_PhoneEnquiry -->
+      <class name="android.ninetynine.ldp.enquiry.C1347_LDP_Unver_MustSee_PhoneEnquiry">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1347_LDP_Unver_MustSee_PhoneEnquiry -->
+      <class name="android.ninetynine.ldp.enquiry.C1348_LDP_Ver_MustSee_PhoneEnquiry">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1348_LDP_Ver_MustSee_PhoneEnquiry -->
+      <class name="android.ninetynine.ldp.enquiry.C1352_LDP_Unver_Reg_PhoneEnquiry">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1352_LDP_Unver_Reg_PhoneEnquiry -->
+      <class name="android.ninetynine.ldp.enquiry.C1354_Ldp_LoginUnver_Reg_PhoneEnquiry">
+        <methods>
+          <include name="tearDown"/>
+          <include name="C1354_Ldp_LoginUnver_Reg_Phone_Enquiry"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1354_Ldp_LoginUnver_Reg_PhoneEnquiry -->
+      <class name="android.ninetynine.ldp.enquiry.C1350_Ldp_LoginVer_MustSee_PhoneEnquiry">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1350_Ldp_LoginVer_MustSee_PhoneEnquiry -->
+      <class name="android.ninetynine.ldp.enquiry.C1353_LDP_Ver_Reg_PhoneEnquiry">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1353_LDP_Ver_Reg_PhoneEnquiry -->
+      <class name="android.ninetynine.ldp.enquiry.C1351_LDP_NoAcc_Reg_PhoneEnquiry">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1351_LDP_NoAcc_Reg_PhoneEnquiry -->
+      <class name="android.ninetynine.ldp.enquiry.C1346_LDP_NoAcc_MustSee_PhoneEnquiry">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.ldp.enquiry.C1346_LDP_NoAcc_MustSee_PhoneEnquiry -->
+    </classes>
+  </test> <!-- LDP Sticky Bar Phone(failed) -->
+</suite> <!-- Failed suite [LDP Enquiry Phone Suite] -->

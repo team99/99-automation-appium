@@ -16,7 +16,7 @@ public class C33403_PageRendering_Homepage_UnverLogin extends Base_Test {
 	private Homepage_AssertEqual hpae;
 	
 	@Test
-	public void C2_PageRendering_Home_page_UnverLogin() throws Exception {
+	public void C33403_PageRendering_Homepage_Unver_Login() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);

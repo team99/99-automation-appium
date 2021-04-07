@@ -61,32 +61,22 @@ public class C1349_Ldp_LoginUnver_MustSee_PhoneEnquiry extends Base_Test {
 	     
 		     //LDP search method in SRP
 		     hp.Click_HomeSale();
-		     wait_Med();			
-		     ldp.Click_LdpSaleResult();
-			 
-			 
-		     srp.Click_Srp_Ldp_MustSeeList(); 
-			 System.out.println("#And I am on Must see listing detail page");
-			 
-			
-			ldp.Click_BtPhone();
-			System.out.println("#When click Call button in sticky bar");	
-			
-			try {
-					assertEquals(asl.Verify_ModalCallAgent(), true, "#And the Chat enquiry form should display as expected");
-					System.out.println("State : Call Enquiry Form displayed as expected");
-					
-				} catch (Exception e){
-							
-					System.out.println("State : Call Enquiry For Not Shown as expected");
-					
-				}
-
-			 
-			   System.out.println("#And I send enquiry"); 
-			   srp.Click_CA_BtConfirm();
+		   
+		     wait_Med();
+		     driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Tanglin");
 			   
-			   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otp_unverID"));
+		     srp.Click_Srp_Tanglin();
+		     wait_Low();
+		     driver.swipe(620, 1114, 604, 235, 2845);
+		     srp.Click_Unver_Listing();
+		     //srp.Click_Rent_Listing();
+		     wait_Long();
+		     
+			ldp.Click_BtPhone();
+			srp.Click_CA_BtConfirm();
+			driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otp_unverID"));
+			
+				   
 					
 				
 
@@ -104,33 +94,21 @@ public class C1349_Ldp_LoginUnver_MustSee_PhoneEnquiry extends Base_Test {
 				
 				wait_Long();
 				hp.Click_HomeSale();
-				wait_Med();			
-				
-			    //LDP search method in SRP
-			     wait_Med();
-				 ldp.Click_LdpSaleResult(); 
-				 
-				 srp.Click_Srp_Ldp_MustSeeList(); 
-				 System.out.println("#And I am on Must see listing detail page");	
-				
+				  wait_Med();
+				     driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Tanglin");
+					   
+				     srp.Click_Srp_Tanglin();
+				     wait_Low();
+				     driver.swipe(620, 1114, 604, 235, 2845);
+//				     srp.Click_Rent_Listing();
+				     srp.Click_Unver_Listing();
+				     wait_Long();
+				     
 					
 				ldp.Click_BtPhone();
-				System.out.println("#When click Call button in sticky bar");	
-			
-				 try {
-						assertEquals(asl.Verify_ModalCallAgent(), true, "#And the Chat enquiry form should display as expected");
-						System.out.println("State : Call Enquiry Form displayed as expected");
-						
-					} catch (Exception e){
-								
-						System.out.println("State : Call Enquiry For Not Shown as expected");
-						
-					}		 
-	
-				   System.out.println("#And I send enquiry"); 
-				   srp.Click_CA_BtConfirm();
-				   
-				   driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otp_unverID"));
+				srp.Click_CA_BtConfirm();
+				
+				driver.findElement(By.xpath("//*[@id='etPinEdit']")).sendKeys(CONFIG.getProperty("otp_unverID"));
 						
 					
 				 

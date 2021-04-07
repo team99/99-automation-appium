@@ -61,30 +61,18 @@ public class C1350_Ldp_LoginVer_MustSee_PhoneEnquiry extends Base_Test {
 	     
 		     //LDP search method in SRP
 		     hp.Click_HomeSale();
-		     wait_Med();			
-		     ldp.Click_LdpSaleResult();
-			 
-			 
-			 srp.Click_Srp_Ldp_MustSeeList();
-			 System.out.println("#And I am on Must see listing detail page");
-			 
+		     wait_Med();
+		     driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Tanglin");
+			   
+		     srp.Click_Srp_Tanglin();
+		     wait_Low();
+		     srp.Click_Rent_Listing();
+		     wait_Long();
+		     
 			
 			ldp.Click_BtPhone();
-			System.out.println("#When click Call button in sticky bar");	
 			
-			try {
-					assertEquals(asl.Verify_ModalCallAgent(), true, "#And the Chat enquiry form should display as expected");
-					System.out.println("State : Call Enquiry Form displayed as expected");
-					
-				} catch (Exception e){
-							
-					System.out.println("State : Call Enquiry For Not Shown as expected");
-					
-				}
-
-			 
-			   System.out.println("#And I send enquiry"); 
-			   ldp.Click_Bt_ContToCall();
+			 ldp.Click_Bt_ContToCall();
 
 
 		} else {
@@ -100,30 +88,17 @@ public class C1350_Ldp_LoginVer_MustSee_PhoneEnquiry extends Base_Test {
 				
 				wait_Long();
 				hp.Click_HomeSale();
-				wait_Med();			
-				
-			    //LDP search method in SRP
-			     wait_Med();
-				 ldp.Click_LdpSaleResult(); 
-				 
-				 srp.Click_Srp_Ldp_MustSeeList(); 
-				 System.out.println("#And I am on Must see listing detail page");	
-				
+				wait_Med();
+				driver.findElement(By.xpath("//*[@id='etAutocomplete']")).sendKeys("Tanglin");
+					   
+				srp.Click_Srp_Tanglin();
+				wait_Low();
+				srp.Click_Rent_Listing();
+				wait_Long();
+				     
 					
 				ldp.Click_BtPhone();
-				System.out.println("#When click Call button in sticky bar");	
-			
-				 try {
-						assertEquals(asl.Verify_ModalCallAgent(), true, "#And the Chat enquiry form should display as expected");
-						System.out.println("State : Call Enquiry Form displayed as expected");
-						
-					} catch (Exception e){
-								
-						System.out.println("State : Call Enquiry For Not Shown as expected");
-						
-					}		 
-	
-				   System.out.println("#And I send enquiry"); 
+				 
 				   ldp.Click_Bt_ContToCall();
 			
 		}

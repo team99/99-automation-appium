@@ -17,7 +17,7 @@ public class C33406_PageRendering_User_AgentLogin extends Base_Test {
 	private User_AssertEqual uae;
 	
 	@Test
-	public void C5_PageRendering_User_Agent_Login() throws Exception {
+	public void C33406_PageRendering_User_Agent_Login() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);

@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test Suite">
     <classes>
- 			<class name="android.ninetynine.ldp.enquiry.C1336_LDP_NoAcc_MustSee_ChatEnquiry"/>
+ 				<class name="android.ninetynine.ldp.enquiry.C1336_LDP_NoAcc_MustSee_ChatEnquiry"/>
 		<class name="android.ninetynine.ldp.enquiry.C1336_LDP_NoAcc_MustSee_ChatEnquiry"/>
       	<class name="android.ninetynine.ldp.enquiry.C1337_LDP_Unver_MustSee_ChatEnquiry"/>
       	<class name="android.ninetynine.ldp.enquiry.C1338_LDP_Ver_MustSee_ChatEnquiry"/>
@@ -73,7 +73,6 @@
 		<class name="android.ninetynine.pagerendering.C33419_PageRendering_SRP_LoginVer"/>
 		<class name="android.ninetynine.pagerendering.C33420_PageRendering_SRP_LoginAgent"/>
 		<class name="android.ninetynine.pagerendering.C33421_PageRendering_CreateListing_MustSee"/>
-		<class name="android.ninetynine.pagerendering.C33422_PageRendering_CreateListing_Reg"/>
        </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

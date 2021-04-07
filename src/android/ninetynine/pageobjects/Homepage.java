@@ -14,11 +14,12 @@ public class Homepage extends Base_Test {
 	}
 	
 
-	By Home_Sale = By.xpath("(//*[@id='rvHSWidgetsHorizontalGridView']/*/*[@id='ivAgentItemIcon'])[1]");
+	By Home_Sale = By.xpath("//*[@id='ivAgentItemIcon' and (./preceding-sibling::* | ./following-sibling::*)[./*[@text='Sale']]]");
 	By Home_Rent = By.xpath("(//*[@id='rvHSWidgetsHorizontalGridView']/*/*[@id='ivAgentItemIcon'])[2]");
 	By Home_Page = By.xpath("//*[@id='llHomeScreenBottomBar']");
 	By Home_MyListings = By.xpath("//*[@id='llMyListingBottomBar']");
 	By NotNow = By.xpath("//*[@text='Not Now']");
+	
 
 	//Agent logged in homepage
 	By Home_Agent_Rent = By.xpath("(//*[@id='rvHSWidgetsHorizontalGridView']/*/*[@id='ivAgentItemIcon' and ./parent::*[@class='android.view.ViewGroup']])[2]");

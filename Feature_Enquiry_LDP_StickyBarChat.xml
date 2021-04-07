@@ -6,7 +6,7 @@
       	<class name="android.ninetynine.ldp.enquiry.C1336_LDP_NoAcc_MustSee_ChatEnquiry"/>
       	<class name="android.ninetynine.ldp.enquiry.C1337_LDP_Unver_MustSee_ChatEnquiry"/>
       	<class name="android.ninetynine.ldp.enquiry.C1338_LDP_Ver_MustSee_ChatEnquiry"/>
-	  	<class name="android.ninetynine.ldp.enquiry C1339_Ldp_LoginUnver_MustSee_ChatEnquiry"/>
+	  	<class name="android.ninetynine.ldp.enquiry.C1339_Ldp_LoginUnver_MustSee_ChatEnquiry"/>
 	  	<class name="android.ninetynine.ldp.enquiry.C1340_Ldp_LoginVer_MustSee_ChatEnquiry"/>
 	  	<class name="android.ninetynine.ldp.enquiry.C1341_LDP_NoAcc_Reg_ChatEnquiry"/>
 	  	<class name="android.ninetynine.ldp.enquiry.C1342_LDP_Unver_Reg_ChatEnquiry"/>

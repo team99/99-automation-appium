@@ -18,7 +18,7 @@ public class C33412_PageRendering_LDP_MustSee_LoginAgent extends Base_Test {
 	private LDP_AssertEqual ldpae;
 	
 	@Test
-	public void C11_PageRendering_LDP_MustSee_Login_Agent() throws Exception {
+	public void C33412_PageRendering_LDP_MustSee_Login_Agent() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);

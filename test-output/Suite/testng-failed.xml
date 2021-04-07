@@ -1,39 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test name="Test Suite(failed)">
     <classes>
-      <class name="com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_Support">
+      <class name="android.ninetynine.auth.C1259_LoginUnverUser">
         <methods>
-          <include name="Test_Regression_Pre_TestCases_Support"/>
+          <include name="C1259_Login_UnverUser"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_Support -->
-      <class name="com.telkomsel.android.vmp.test.Group2_Regression_PostLoginBrowseFlow_ContentPlayback">
-        <methods>
-          <include name="test_Group2_Regression_PostLoginBrowseFlow_ContentPlayback"/>
-        </methods>
-      </class> <!-- com.telkomsel.android.vmp.test.Group2_Regression_PostLoginBrowseFlow_ContentPlayback -->
-      <class name="com.telkomsel.android.vmp.test.Group2_Regression_PostLoginBrowseFlow_GenrePreference">
-        <methods>
-          <include name="Test_Regression_PostLoginBrowseFlow_GenrePreference"/>
-        </methods>
-      </class> <!-- com.telkomsel.android.vmp.test.Group2_Regression_PostLoginBrowseFlow_GenrePreference -->
-      <class name="com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_TnC">
+      </class> <!-- android.ninetynine.auth.C1259_LoginUnverUser -->
+      <class name="android.ninetynine.auth.C1258_LoginVerUser">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_TnC -->
-      <class name="com.telkomsel.android.vmp.test.Group1_Regression_PreLoginBrowseFlow_Nickelodeon">
-        <methods>
-          <include name="Test_Group1_Regression_PreBrowse_Nickelodeon"/>
-        </methods>
-      </class> <!-- com.telkomsel.android.vmp.test.Group1_Regression_PreLoginBrowseFlow_Nickelodeon -->
-      <class name="com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_Search">
-        <methods>
-          <include name="Test_Regression_Pre_TestCases_Search"/>
-        </methods>
-      </class> <!-- com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_Search -->
+      </class> <!-- android.ninetynine.auth.C1258_LoginVerUser -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test Suite(failed) -->
 </suite> <!-- Failed suite [Suite] -->

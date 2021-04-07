@@ -20,7 +20,7 @@ public class C33415_PageRendering_LDP_Reg_LoginVer extends Base_Test {
 	private LDP_AssertEqual ldpae;
 	
 	@Test
-	public void C14_PageRendering_LDP_Reg_Login_Ver() throws Exception {
+	public void C33415_PageRendering_LDP_Reg_Login_Ver() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);

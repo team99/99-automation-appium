@@ -40,11 +40,20 @@ public class Landing_Page extends Base_Test {
 		By CWA_Button_Confirm = By.xpath("//*[@text='CONFIRM']");
 		
 		
+		
+		
 		//LDP Chat With Agent Modal (Photo Gallery)
 		By CWA_Photo_Button_Enquire = By.xpath("//*[@text='Enquire']");
 		
 		//LDP Phone 
 		By Bt_ContToCall = By.xpath("//*[@text='Continue to Call']");
+		By Bt_ShowPhone = By.xpath("//*[@id='tvRegularAgentBioCallShow']");
+		
+		
+		//method below for click continue to call in call agent modal
+		public void Click_Bt_ShowPhone() throws Exception{
+			function.click(Bt_ShowPhone);
+		}
 		
 		//method below for click continue to call in call agent modal
 		public void Click_Bt_ContToCall() throws Exception{

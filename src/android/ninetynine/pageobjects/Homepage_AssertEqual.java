@@ -45,7 +45,7 @@ public class Homepage_AssertEqual extends Base_Test {
 						return verify;
 					}			
 			
-	//This method to verify rent
+	//This method to verify rent button
 			public boolean Verify_Rent() {
 				boolean verify=false;
 						verify=driver.findElement(Homepage_Rent).isDisplayed();

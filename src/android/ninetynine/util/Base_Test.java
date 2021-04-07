@@ -6,7 +6,6 @@ import java.net.URL;
 import java.util.Properties;
 import io.appium.java_client.TouchAction;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -32,23 +31,39 @@ public class Base_Test {
 	public WebDriverWait wait=null;
 	DesiredCapabilities capabilities = new DesiredCapabilities();
 	public Properties CONFIG = null;
-	public String configs = System.getProperty("user.dir")+"\\src\\android\\ninetynine\\config\\Config.properties";
-	public String test_data = System.getProperty("user.dir")+"\\src\\android\\\\ninetynine\\config\\AndroidTestData.properties";
+	public String configs = System.getProperty("user.dir")+"//src//android//ninetynine//config//Config.properties";
+	public String test_data = System.getProperty("user.dir")+"//src//android//ninetynine//config//AndroidTestData.properties";
 	
+	//public String configs = System.getProperty(null)+"\\Users\\idmac008\\Documents\\GitHub\\team99-automation-appium\\99-automation-appium\\src\\android\\ninetynine\\config\\Config.properties";	
 	//App_Package 99
 	String ninentynineAppPackageName = "co.ninetynine.android.dev";
-	String ninetynineActivityName = "co.ninetynine.android.Launcher";
+//	String ninetynineActivityName = "co.ninetynine.android.Launcher";
+	String ninetynineActivityName = "com.squareup.leakcanary.internal.DisplayLeakActivity";
+
+
+	
+	
+	//App Package rumah123
+	String rumah123PackageName = "com.rumah123.android.agent2.demo";
+	String rumah123ActivityName = "com.rumah123.android.agent2.activities.TopActivity";
+	
+	
 	
 	//App_Package Google Chrome
 	String chromeAppPackageName = "com.android.chrome";
 	String chromeAppActivityName = "com.google.android.apps.chrome.Main";
 	/*===========*/
 	
+	
+	
+	
+	
 	//Change_App to 99 Apps
 	public void changed_ninentynineApps() {
 		driver.startActivity(ninentynineAppPackageName, ninetynineActivityName);
 	}
-
+	
+	
 	//Change_App to Chrome
 	public void changed_chromeApps() {
 		driver.startActivity(ninentynineAppPackageName, ninetynineActivityName);

@@ -1,69 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [SRP Enquiry]">
-  <test name="SRP Enquiry - Chat(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test(failed)">
     <classes>
-      <class name="android.ninetynine.srp.enquiry.C1136_SRP_Unver_Reg_ChatEnquiry">
+      <class name="android.ninetynine.auth.C1258_LoginVerUser">
         <methods>
+          <include name="C1258_Login_VerUser"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- android.ninetynine.srp.enquiry.C1136_SRP_Unver_Reg_ChatEnquiry -->
-      <class name="android.ninetynine.srp.enquiry.C1038_SRP_LoginVer_MustSee_ChatEnquiry">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- android.ninetynine.srp.enquiry.C1038_SRP_LoginVer_MustSee_ChatEnquiry -->
-      <class name="android.ninetynine.srp.enquiry.C1040_SRP_Ver_MustSee_ChatEnquiry">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- android.ninetynine.srp.enquiry.C1040_SRP_Ver_MustSee_ChatEnquiry -->
-      <class name="android.ninetynine.srp.enquiry.C740_SRP_NoAcc_MustSee_ChatEnquiry">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- android.ninetynine.srp.enquiry.C740_SRP_NoAcc_MustSee_ChatEnquiry -->
-      <class name="android.ninetynine.srp.enquiry.C1037_SRP_LoginUnver_MustSee_ChatEnquiry">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- android.ninetynine.srp.enquiry.C1037_SRP_LoginUnver_MustSee_ChatEnquiry -->
-      <class name="android.ninetynine.srp.enquiry.C1139_SRP_LoginVer_Reg_ChatEnquiry">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="C1139_SRP_LoginVer_MustSee_Chat_Enquiry"/>
-        </methods>
-      </class> <!-- android.ninetynine.srp.enquiry.C1139_SRP_LoginVer_Reg_ChatEnquiry -->
-      <class name="android.ninetynine.srp.enquiry.C1138_SRP_LoginUnver_Reg_ChatEnquiry">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- android.ninetynine.srp.enquiry.C1138_SRP_LoginUnver_Reg_ChatEnquiry -->
-      <class name="android.ninetynine.srp.enquiry.C1137_SRP_Ver_Reg_ChatEnquiry">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- android.ninetynine.srp.enquiry.C1137_SRP_Ver_Reg_ChatEnquiry -->
-      <class name="android.ninetynine.srp.enquiry.C1039_SRP_Unver_MustSee_ChatEnquiry">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- android.ninetynine.srp.enquiry.C1039_SRP_Unver_MustSee_ChatEnquiry -->
-      <class name="android.ninetynine.srp.enquiry.C1135_SRP_NoAcc_Reg_ChatEnquiry">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- android.ninetynine.srp.enquiry.C1135_SRP_NoAcc_Reg_ChatEnquiry -->
+      </class> <!-- android.ninetynine.auth.C1258_LoginVerUser -->
     </classes>
-  </test> <!-- SRP Enquiry - Chat(failed) -->
-</suite> <!-- Failed suite [SRP Enquiry] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

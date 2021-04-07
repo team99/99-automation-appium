@@ -21,19 +21,21 @@ public class Regression_Login extends Base_Test {
 		login = new Login(driver);
 		asl = new AssertEqual_List(driver);
 		
+		wait_Long();
+		
+		login.Click_Home_Me();
+		
 
 		login.Click_MeLogin();
 		
 		login.Click_Login();
 		
-		login.InputUsername(CONFIG.getProperty("AccUsername"));
-		login.InputPassword(CONFIG.getProperty("AccPassword"));
+		login.InputUsername(CONFIG.getProperty("Ver_Email"));
+		login.InputPassword(CONFIG.getProperty("Ver_Pass"));
 		
 		login.Click_ButtonLogin();
 		//login.Click_HomeSearch(); 
 		
-		wait_Med();
-		login.Click_ModalNotNow();
 		wait_Med();
 		
 		try {

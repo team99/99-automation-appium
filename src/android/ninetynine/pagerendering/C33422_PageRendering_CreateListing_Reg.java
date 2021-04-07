@@ -20,7 +20,7 @@ public class C33422_PageRendering_CreateListing_Reg extends Base_Test {
 	private CreateListing_AssertEqual clae;
 	
 	@Test
-	public void  C21_PageRendering_Create_Listing_Reg() throws Exception {
+	public void  C33422_PageRendering_Create_Listing_Reg() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);

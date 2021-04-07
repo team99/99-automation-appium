@@ -17,7 +17,7 @@ public class C33405_PageRendering_Homepage_AgentLogin extends Base_Test {
 	private Homepage_AssertEqual hpae;
 	
 	@Test
-	public void C4_PageRendering_Homepage_Agent_Login() throws Exception {
+	public void C33405_PageRendering_Homepage_Agent_Login() throws Exception {
 		CONFIG = new Properties();
 		FileInputStream fsconf = new FileInputStream(test_data);
 		CONFIG.load(fsconf);

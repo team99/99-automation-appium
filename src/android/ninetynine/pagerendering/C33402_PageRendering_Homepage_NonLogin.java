@@ -97,7 +97,6 @@ public class C33402_PageRendering_Homepage_NonLogin extends Base_Test {
 				} catch (Exception e){
 							
 					System.out.println("State : New Launch For Not Shown as expected");
-					
 				}
 			 
 			 //This method for check if commercial displayed
