@@ -13,7 +13,7 @@ public class AssertEqual_List extends Base_Test {
 		function = new GeneralUtilities(driver);
 	}
 	
-	By Homepage_Text = By.xpath("//*[@text='Listings specially curated by 99 for a better home buying experience.']");
+	By Homepage_Text = By.xpath("//*[@text='Listings specially created by 99 for a better home buying experience']");
 	By Me_Edit = By.xpath("//*[@text='Edit']");
 	
 	//LDP

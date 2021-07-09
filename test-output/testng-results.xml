@@ -1,190 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="10" passed="9">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="SRP Enquiry" duration-ms="2185208" started-at="2020-12-31T10:03:48Z" finished-at="2020-12-31T10:40:13Z">
+  <suite started-at="2021-07-09T07:54:34Z" name="Default suite" finished-at="2021-07-09T07:58:35Z" duration-ms="241246">
     <groups>
     </groups>
-    <test name="SRP Enquiry - Chat" duration-ms="2185208" started-at="2020-12-31T10:03:48Z" finished-at="2020-12-31T10:40:13Z">
-      <class name="android.ninetynine.srp.enquiry.C1136_SRP_Unver_Reg_ChatEnquiry">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:android.ninetynine.srp.enquiry.C1136_SRP_Unver_Reg_ChatEnquiry@6eebc39e]" name="setUp" is-config="true" duration-ms="11579" started-at="2020-12-31T18:21:04Z" finished-at="2020-12-31T18:21:16Z">
+    <test started-at="2021-07-09T07:54:34Z" name="Default test" finished-at="2021-07-09T07:58:35Z" duration-ms="241246">
+      <class name="android.ninetynine.createlisting.C1412_CreateACondoSaleRegularListing">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:android.ninetynine.createlisting.C1412_CreateACondoSaleRegularListing@7aaca91a]" started-at="2021-07-09T15:54:34Z" name="setUp" finished-at="2021-07-09T15:54:43Z" duration-ms="8854" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="C1136_SRP_Unver_Reg_Chat_Enquiry()[pri:0, instance:android.ninetynine.srp.enquiry.C1136_SRP_Unver_Reg_ChatEnquiry@6eebc39e]" name="C1136_SRP_Unver_Reg_Chat_Enquiry" duration-ms="156681" started-at="2020-12-31T18:21:16Z" finished-at="2020-12-31T18:23:53Z">
+        <test-method signature="C1412_CreateACondoSaleRegular_Listing()[pri:0, instance:android.ninetynine.createlisting.C1412_CreateACondoSaleRegularListing@7aaca91a]" started-at="2021-07-09T15:54:43Z" name="C1412_CreateACondoSaleRegular_Listing" finished-at="2021-07-09T15:58:13Z" duration-ms="210570" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- C1136_SRP_Unver_Reg_Chat_Enquiry -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:android.ninetynine.srp.enquiry.C1136_SRP_Unver_Reg_ChatEnquiry@6eebc39e]" name="tearDown" is-config="true" duration-ms="33433" started-at="2020-12-31T18:23:53Z" finished-at="2020-12-31T18:24:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- android.ninetynine.srp.enquiry.C1136_SRP_Unver_Reg_ChatEnquiry -->
-      <class name="android.ninetynine.srp.enquiry.C1138_SRP_LoginUnver_Reg_ChatEnquiry">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:android.ninetynine.srp.enquiry.C1138_SRP_LoginUnver_Reg_ChatEnquiry@f6c48ac]" name="setUp" is-config="true" duration-ms="13845" started-at="2020-12-31T18:27:37Z" finished-at="2020-12-31T18:27:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="C1138_SRP_LoginUnver_MustSee_Chat_Enquiry()[pri:0, instance:android.ninetynine.srp.enquiry.C1138_SRP_LoginUnver_Reg_ChatEnquiry@f6c48ac]" name="C1138_SRP_LoginUnver_MustSee_Chat_Enquiry" duration-ms="207289" started-at="2020-12-31T18:27:51Z" finished-at="2020-12-31T18:31:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- C1138_SRP_LoginUnver_MustSee_Chat_Enquiry -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:android.ninetynine.srp.enquiry.C1138_SRP_LoginUnver_Reg_ChatEnquiry@f6c48ac]" name="tearDown" is-config="true" duration-ms="44680" started-at="2020-12-31T18:31:19Z" finished-at="2020-12-31T18:32:03Z">
+        </test-method> <!-- C1412_CreateACondoSaleRegular_Listing -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:android.ninetynine.createlisting.C1412_CreateACondoSaleRegularListing@7aaca91a]" started-at="2021-07-09T15:58:13Z" name="tearDown" finished-at="2021-07-09T15:58:35Z" duration-ms="21787" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- android.ninetynine.srp.enquiry.C1138_SRP_LoginUnver_Reg_ChatEnquiry -->
-      <class name="android.ninetynine.srp.enquiry.C1135_SRP_NoAcc_Reg_ChatEnquiry">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:android.ninetynine.srp.enquiry.C1135_SRP_NoAcc_Reg_ChatEnquiry@4dfa3a9d]" name="setUp" is-config="true" duration-ms="11989" started-at="2020-12-31T18:17:43Z" finished-at="2020-12-31T18:17:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="C1135_SRP_NoAcc_Reg_Chat_Enquiry()[pri:0, instance:android.ninetynine.srp.enquiry.C1135_SRP_NoAcc_Reg_ChatEnquiry@4dfa3a9d]" name="C1135_SRP_NoAcc_Reg_Chat_Enquiry" duration-ms="154104" started-at="2020-12-31T18:17:55Z" finished-at="2020-12-31T18:20:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- C1135_SRP_NoAcc_Reg_Chat_Enquiry -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:android.ninetynine.srp.enquiry.C1135_SRP_NoAcc_Reg_ChatEnquiry@4dfa3a9d]" name="tearDown" is-config="true" duration-ms="34894" started-at="2020-12-31T18:20:30Z" finished-at="2020-12-31T18:21:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- android.ninetynine.srp.enquiry.C1135_SRP_NoAcc_Reg_ChatEnquiry -->
-      <class name="android.ninetynine.srp.enquiry.C1037_SRP_LoginUnver_MustSee_ChatEnquiry">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:android.ninetynine.srp.enquiry.C1037_SRP_LoginUnver_MustSee_ChatEnquiry@204f30ec]" name="setUp" is-config="true" duration-ms="18638" started-at="2020-12-31T18:03:48Z" finished-at="2020-12-31T18:04:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="C1037_SRP_LoginUnver_MustSee_Chat_Enquiry()[pri:0, instance:android.ninetynine.srp.enquiry.C1037_SRP_LoginUnver_MustSee_ChatEnquiry@204f30ec]" name="C1037_SRP_LoginUnver_MustSee_Chat_Enquiry" duration-ms="255113" started-at="2020-12-31T18:04:07Z" finished-at="2020-12-31T18:08:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- C1037_SRP_LoginUnver_MustSee_Chat_Enquiry -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:android.ninetynine.srp.enquiry.C1037_SRP_LoginUnver_MustSee_ChatEnquiry@204f30ec]" name="tearDown" is-config="true" duration-ms="36923" started-at="2020-12-31T18:08:22Z" finished-at="2020-12-31T18:08:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- android.ninetynine.srp.enquiry.C1037_SRP_LoginUnver_MustSee_ChatEnquiry -->
-      <class name="android.ninetynine.srp.enquiry.C1040_SRP_Ver_MustSee_ChatEnquiry">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:android.ninetynine.srp.enquiry.C1040_SRP_Ver_MustSee_ChatEnquiry@146ba0ac]" name="setUp" is-config="true" duration-ms="13614" started-at="2020-12-31T18:14:36Z" finished-at="2020-12-31T18:14:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="C1040_SRP_Ver_MustSee_Chat_Enquiry()[pri:0, instance:android.ninetynine.srp.enquiry.C1040_SRP_Ver_MustSee_ChatEnquiry@146ba0ac]" name="C1040_SRP_Ver_MustSee_Chat_Enquiry" duration-ms="142630" started-at="2020-12-31T18:14:50Z" finished-at="2020-12-31T18:17:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- C1040_SRP_Ver_MustSee_Chat_Enquiry -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:android.ninetynine.srp.enquiry.C1040_SRP_Ver_MustSee_ChatEnquiry@146ba0ac]" name="tearDown" is-config="true" duration-ms="30964" started-at="2020-12-31T18:17:12Z" finished-at="2020-12-31T18:17:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- android.ninetynine.srp.enquiry.C1040_SRP_Ver_MustSee_ChatEnquiry -->
-      <class name="android.ninetynine.srp.enquiry.C1038_SRP_LoginVer_MustSee_ChatEnquiry">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:android.ninetynine.srp.enquiry.C1038_SRP_LoginVer_MustSee_ChatEnquiry@e25b2fe]" name="setUp" is-config="true" duration-ms="11622" started-at="2020-12-31T18:08:59Z" finished-at="2020-12-31T18:09:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="C1038_SRP_LoginVer_MustSee_Chat_Enquiry()[pri:0, instance:android.ninetynine.srp.enquiry.C1038_SRP_LoginVer_MustSee_ChatEnquiry@e25b2fe]" name="C1038_SRP_LoginVer_MustSee_Chat_Enquiry" duration-ms="164193" started-at="2020-12-31T18:09:11Z" finished-at="2020-12-31T18:11:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- C1038_SRP_LoginVer_MustSee_Chat_Enquiry -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:android.ninetynine.srp.enquiry.C1038_SRP_LoginVer_MustSee_ChatEnquiry@e25b2fe]" name="tearDown" is-config="true" duration-ms="34907" started-at="2020-12-31T18:11:55Z" finished-at="2020-12-31T18:12:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- android.ninetynine.srp.enquiry.C1038_SRP_LoginVer_MustSee_ChatEnquiry -->
-      <class name="android.ninetynine.srp.enquiry.C740_SRP_NoAcc_MustSee_ChatEnquiry">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:android.ninetynine.srp.enquiry.C740_SRP_NoAcc_MustSee_ChatEnquiry@239963d8]" name="setUp" is-config="true" duration-ms="13639" started-at="2020-12-31T18:36:54Z" finished-at="2020-12-31T18:37:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="C740_SRP_NoAcc_MustSee_Chat_Enquiry()[pri:0, instance:android.ninetynine.srp.enquiry.C740_SRP_NoAcc_MustSee_ChatEnquiry@239963d8]" name="C740_SRP_NoAcc_MustSee_Chat_Enquiry" duration-ms="152517" started-at="2020-12-31T18:37:08Z" finished-at="2020-12-31T18:39:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- C740_SRP_NoAcc_MustSee_Chat_Enquiry -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:android.ninetynine.srp.enquiry.C740_SRP_NoAcc_MustSee_ChatEnquiry@239963d8]" name="tearDown" is-config="true" duration-ms="33148" started-at="2020-12-31T18:39:40Z" finished-at="2020-12-31T18:40:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- android.ninetynine.srp.enquiry.C740_SRP_NoAcc_MustSee_ChatEnquiry -->
-      <class name="android.ninetynine.srp.enquiry.C1137_SRP_Ver_Reg_ChatEnquiry">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:android.ninetynine.srp.enquiry.C1137_SRP_Ver_Reg_ChatEnquiry@464bee09]" name="setUp" is-config="true" duration-ms="12309" started-at="2020-12-31T18:24:26Z" finished-at="2020-12-31T18:24:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="C1137_SRP_Ver_Reg_Chat_Enquiry()[pri:0, instance:android.ninetynine.srp.enquiry.C1137_SRP_Ver_Reg_ChatEnquiry@464bee09]" name="C1137_SRP_Ver_Reg_Chat_Enquiry" duration-ms="151389" started-at="2020-12-31T18:24:38Z" finished-at="2020-12-31T18:27:10Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- C1137_SRP_Ver_Reg_Chat_Enquiry -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:android.ninetynine.srp.enquiry.C1137_SRP_Ver_Reg_ChatEnquiry@464bee09]" name="tearDown" is-config="true" duration-ms="27610" started-at="2020-12-31T18:27:10Z" finished-at="2020-12-31T18:27:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- android.ninetynine.srp.enquiry.C1137_SRP_Ver_Reg_ChatEnquiry -->
-      <class name="android.ninetynine.srp.enquiry.C1139_SRP_LoginVer_Reg_ChatEnquiry">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:android.ninetynine.srp.enquiry.C1139_SRP_LoginVer_Reg_ChatEnquiry@13deb50e]" name="setUp" is-config="true" duration-ms="11071" started-at="2020-12-31T18:32:03Z" finished-at="2020-12-31T18:32:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="C1139_SRP_LoginVer_MustSee_Chat_Enquiry()[pri:0, instance:android.ninetynine.srp.enquiry.C1139_SRP_LoginVer_Reg_ChatEnquiry@13deb50e]" name="C1139_SRP_LoginVer_MustSee_Chat_Enquiry" duration-ms="244650" started-at="2020-12-31T18:32:14Z" finished-at="2020-12-31T18:36:19Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Object not found step failed]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Object not found step failed
-	at org.testng.Assert.fail(Assert.java:94)
-	at android.ninetynine.util.GeneralUtilities.verifyelemen(GeneralUtilities.java:51)
-	at android.ninetynine.util.GeneralUtilities.click(GeneralUtilities.java:60)
-	at android.ninetynine.pageobjects.Landing_Page.Click_BtCWABtConfirm(Landing_Page.java:86)
-	at android.ninetynine.srp.enquiry.C1139_SRP_LoginVer_Reg_ChatEnquiry.C1139_SRP_LoginVer_MustSee_Chat_Enquiry(C1139_SRP_LoginVer_Reg_ChatEnquiry.java:87)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- C1139_SRP_LoginVer_MustSee_Chat_Enquiry -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:android.ninetynine.srp.enquiry.C1139_SRP_LoginVer_Reg_ChatEnquiry@13deb50e]" name="tearDown" is-config="true" duration-ms="34869" started-at="2020-12-31T18:36:19Z" finished-at="2020-12-31T18:36:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- android.ninetynine.srp.enquiry.C1139_SRP_LoginVer_Reg_ChatEnquiry -->
-      <class name="android.ninetynine.srp.enquiry.C1039_SRP_Unver_MustSee_ChatEnquiry">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:android.ninetynine.srp.enquiry.C1039_SRP_Unver_MustSee_ChatEnquiry@754ba872]" name="setUp" is-config="true" duration-ms="12419" started-at="2020-12-31T18:12:30Z" finished-at="2020-12-31T18:12:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="C1039_SRP_Unver_MustSee_Chat_Enquiry()[pri:0, instance:android.ninetynine.srp.enquiry.C1039_SRP_Unver_MustSee_ChatEnquiry@754ba872]" name="C1039_SRP_Unver_MustSee_Chat_Enquiry" duration-ms="93071" started-at="2020-12-31T18:12:42Z" finished-at="2020-12-31T18:14:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- C1039_SRP_Unver_MustSee_Chat_Enquiry -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:android.ninetynine.srp.enquiry.C1039_SRP_Unver_MustSee_ChatEnquiry@754ba872]" name="tearDown" is-config="true" duration-ms="20896" started-at="2020-12-31T18:14:15Z" finished-at="2020-12-31T18:14:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- android.ninetynine.srp.enquiry.C1039_SRP_Unver_MustSee_ChatEnquiry -->
-    </test> <!-- SRP Enquiry - Chat -->
-  </suite> <!-- SRP Enquiry -->
+      </class> <!-- android.ninetynine.createlisting.C1412_CreateACondoSaleRegularListing -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

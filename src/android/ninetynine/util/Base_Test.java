@@ -32,8 +32,8 @@ public class Base_Test {
 	public WebDriverWait wait=null;
 	DesiredCapabilities capabilities = new DesiredCapabilities();
 	public Properties CONFIG = null;
-	public String configs = System.getProperty("user.dir")+"\\src\\android\\ninetynine\\config\\Config.properties";
-	public String test_data = System.getProperty("user.dir")+"\\src\\android\\\\ninetynine\\config\\AndroidTestData.properties";
+	public String configs = System.getProperty("user.dir")+"//src//android//ninetynine//config//Config.properties";
+	public String test_data = System.getProperty("user.dir")+"//src//android//ninetynine//config//AndroidTestData.properties";
 	
 	//App_Package 99
 	String ninentynineAppPackageName = "co.ninetynine.android.dev";

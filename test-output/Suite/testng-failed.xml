@@ -1,39 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test name="Test Suite(failed)">
     <classes>
-      <class name="com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_Support">
-        <methods>
-          <include name="Test_Regression_Pre_TestCases_Support"/>
-        </methods>
-      </class> <!-- com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_Support -->
-      <class name="com.telkomsel.android.vmp.test.Group2_Regression_PostLoginBrowseFlow_ContentPlayback">
-        <methods>
-          <include name="test_Group2_Regression_PostLoginBrowseFlow_ContentPlayback"/>
-        </methods>
-      </class> <!-- com.telkomsel.android.vmp.test.Group2_Regression_PostLoginBrowseFlow_ContentPlayback -->
-      <class name="com.telkomsel.android.vmp.test.Group2_Regression_PostLoginBrowseFlow_GenrePreference">
-        <methods>
-          <include name="Test_Regression_PostLoginBrowseFlow_GenrePreference"/>
-        </methods>
-      </class> <!-- com.telkomsel.android.vmp.test.Group2_Regression_PostLoginBrowseFlow_GenrePreference -->
-      <class name="com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_TnC">
+      <class name="android.ninetynine.createlisting.C1409_CreateALandedRentRegularListing">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_TnC -->
-      <class name="com.telkomsel.android.vmp.test.Group1_Regression_PreLoginBrowseFlow_Nickelodeon">
+      </class> <!-- android.ninetynine.createlisting.C1409_CreateALandedRentRegularListing -->
+      <class name="android.ninetynine.createlisting.C1407_CreateACondoRentRegularListing">
         <methods>
-          <include name="Test_Group1_Regression_PreBrowse_Nickelodeon"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.telkomsel.android.vmp.test.Group1_Regression_PreLoginBrowseFlow_Nickelodeon -->
-      <class name="com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_Search">
+      </class> <!-- android.ninetynine.createlisting.C1407_CreateACondoRentRegularListing -->
+      <class name="android.ninetynine.createlisting.C1412_CreateACondoSaleRegularListing">
         <methods>
-          <include name="Test_Regression_Pre_TestCases_Search"/>
+          <include name="tearDown"/>
+          <include name="C1412_CreateACondoSaleRegular_Listing"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.telkomsel.android.vmp.test.Group1_Regression_Pre_TestCases_Search -->
+      </class> <!-- android.ninetynine.createlisting.C1412_CreateACondoSaleRegularListing -->
+      <class name="android.ninetynine.createlisting.C1413_CreateALandedSaleRegularListing">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- android.ninetynine.createlisting.C1413_CreateALandedSaleRegularListing -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test Suite(failed) -->
 </suite> <!-- Failed suite [Suite] -->

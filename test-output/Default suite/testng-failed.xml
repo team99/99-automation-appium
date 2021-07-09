@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="android.ninetynine.pagerendering.C33402_PageRendering_Homepage_NonLogin">
+      <class name="android.ninetynine.createlisting.C1408_CreateALandedRentRegularListing">
         <methods>
+          <include name="C1407_CreateALandedRentRegular_Listing"/>
+          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="C33402_PageRendering_Homepage_Non_Login"/>
         </methods>
-      </class> <!-- android.ninetynine.pagerendering.C33402_PageRendering_Homepage_NonLogin -->
+      </class> <!-- android.ninetynine.createlisting.C1408_CreateALandedRentRegularListing -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
