@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-09T07:54:34Z" name="Default suite" finished-at="2021-07-09T07:58:35Z" duration-ms="241246">
+  <suite started-at="2021-07-12T08:36:01Z" name="Default suite" finished-at="2021-07-12T08:39:42Z" duration-ms="221164">
     <groups>
     </groups>
-    <test started-at="2021-07-09T07:54:34Z" name="Default test" finished-at="2021-07-09T07:58:35Z" duration-ms="241246">
-      <class name="android.ninetynine.createlisting.C1412_CreateACondoSaleRegularListing">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:android.ninetynine.createlisting.C1412_CreateACondoSaleRegularListing@7aaca91a]" started-at="2021-07-09T15:54:34Z" name="setUp" finished-at="2021-07-09T15:54:43Z" duration-ms="8854" status="PASS">
+    <test started-at="2021-07-12T08:36:01Z" name="Default test" finished-at="2021-07-12T08:39:42Z" duration-ms="221164">
+      <class name="android.ninetynine.createlisting.C46783_CreateACondoRoomRentalRegularListing">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:android.ninetynine.createlisting.C46783_CreateACondoRoomRentalRegularListing@7aaca91a]" started-at="2021-07-12T16:36:01Z" name="setUp" finished-at="2021-07-12T16:36:13Z" duration-ms="11853" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="C1412_CreateACondoSaleRegular_Listing()[pri:0, instance:android.ninetynine.createlisting.C1412_CreateACondoSaleRegularListing@7aaca91a]" started-at="2021-07-09T15:54:43Z" name="C1412_CreateACondoSaleRegular_Listing" finished-at="2021-07-09T15:58:13Z" duration-ms="210570" status="PASS">
+        <test-method signature="C46783_CreateACondoRoomRentalRegular_Listing()[pri:0, instance:android.ninetynine.createlisting.C46783_CreateACondoRoomRentalRegularListing@7aaca91a]" started-at="2021-07-12T16:36:13Z" name="C46783_CreateACondoRoomRentalRegular_Listing" finished-at="2021-07-12T16:39:32Z" duration-ms="199397" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- C1412_CreateACondoSaleRegular_Listing -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:android.ninetynine.createlisting.C1412_CreateACondoSaleRegularListing@7aaca91a]" started-at="2021-07-09T15:58:13Z" name="tearDown" finished-at="2021-07-09T15:58:35Z" duration-ms="21787" status="PASS">
+        </test-method> <!-- C46783_CreateACondoRoomRentalRegular_Listing -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:android.ninetynine.createlisting.C46783_CreateACondoRoomRentalRegularListing@7aaca91a]" started-at="2021-07-12T16:39:32Z" name="tearDown" finished-at="2021-07-12T16:39:42Z" duration-ms="9874" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- android.ninetynine.createlisting.C1412_CreateACondoSaleRegularListing -->
+      </class> <!-- android.ninetynine.createlisting.C46783_CreateACondoRoomRentalRegularListing -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -7,6 +7,7 @@
  		<class name="android.ninetynine.createlisting.C1409_CreateALandedRentRegularListing"/>
  		<class name="android.ninetynine.createlisting.C1412_CreateACondoSaleRegularListing"/>
  		<class name="android.ninetynine.createlisting.C1413_CreateALandedSaleRegularListing"/>
+ 		<class name="android.ninetynine.createlisting.C46783_CreateACondoRoomRentalRegularListing"/>
        </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
