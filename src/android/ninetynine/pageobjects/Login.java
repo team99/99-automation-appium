@@ -38,6 +38,69 @@ public class Login extends Base_Test {
 	By Me_Button_Logout = By.xpath("//*[@text='Logout']");
 	By Logout_Conf = By.xpath("//*[@text='OK']");
 	
+	//Jinhao
+	// Home button
+	By Home_Account = By.xpath("//*[@id='ivProfileBottomBar']");
+
+	// Account page
+	By Home_Account_Login= By.xpath("//*[@id='rlNonLogin']");
+
+	// Welcome modal
+	By Home_Welcome_Login = By.xpath("//*[@id='btnLogin']");
+
+	// Login modal
+	By Home_Login_Email = By.xpath("//*[@id='etEmail']");
+	By Home_Login_Password = By.xpath("//*[@id='etPassword']");
+	By Home_Login_Login = By.xpath("//*[@class='android.widget.TextView' and ./parent::*[@id='btnLogin']]");
+	
+	// Logout
+	By Home_Logout = By.xpath("//*[@id='tvLogOut']");
+	By Home_Logout_Conf = By.xpath("//*[@id='button1']");
+	
+	//no account user error
+	By Home_Login_Invalid = By.xpath("//*[@id='tvErrorLabel']");
+	
+	//Login//
+	//method for home button
+	public void Click_Home_Account() throws Exception{
+		function.click(Home_Account);
+	}
+	
+	//Account page//
+	//method for account page
+	public void Click_Account_Login() throws Exception{
+		function.click(Home_Account_Login);
+	}
+
+	//Welcome modal//
+	//method for login button on home page
+	public void Click_Welcome_Login() throws Exception{
+		function.click(Home_Welcome_Login);
+	}
+
+	//Login modal//
+	//method to input email in login modal
+	public void Login_Input_Email(String email) throws Exception{
+		function.input(Home_Login_Email, email);
+	}
+	
+	//method to input password in login modal
+	public void Login_Input_Password(String pass) throws Exception{
+		function.input(Home_Login_Password, pass);
+	}
+
+	//method for clicking on login button 
+	public void Click_Login_Login() throws Exception{
+		function.click(Home_Login_Login);
+	}
+	
+	public void Click_Logout() throws Exception{
+		function.click(Home_Logout);
+	}
+	
+	public void Click_Logout_Confirm() throws Exception{
+		function.click(Home_Logout_Conf);
+	}
 	
 	//SignUp//
 	//method below for sign up button 

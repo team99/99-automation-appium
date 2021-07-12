@@ -101,7 +101,7 @@ public class C33421_PageRendering_CreateListing_MustSee extends Base_Test {
 		     System.out.println("#And I input listing details");
 			 lc.Click_PostalCode();
 			 driver.findElement(By.xpath("//*[@id='etSearchLocation']")).sendKeys("534040");
-			 lc.Click_Result543030();
+			 lc.Click_Result();
 			 wait_Long();
 			 
 			 //This method for check if the listing type text displayed
@@ -200,7 +200,7 @@ public class C33421_PageRendering_CreateListing_MustSee extends Base_Test {
 			     System.out.println("#And I input listing details");
 				 lc.Click_PostalCode();
 				 driver.findElement(By.xpath("//*[@id='etSearchLocation']")).sendKeys("534040");
-				 lc.Click_Result543030();
+				 lc.Click_Result();
 				 wait_Long();
 				 
 				 //This method for check if the listing type text displayed
